@@ -1,0 +1,29 @@
+# Este repositório é PÚBLICO e vive dentro da pasta do projeto de estudos,
+# que contém material privado (ESTADO.md, diário, PDF da CNNR-RS, cache).
+# Por isso a regra é invertida: nada é versionado, exceto o que for liberado
+# explicitamente abaixo. Ao liberar algo novo, libere também a pasta-mãe —
+# o git não consegue re-incluir um arquivo se o diretório pai está excluído.
+
+*
+
+!.gitignore
+!README.md
+
+# site publicado (gerado)
+!docs/
+!docs/**
+
+# conteúdo das fichas
+!resumos/
+!resumos/dados/
+!resumos/dados/*.json
+
+# gerador
+!.claude/
+!.claude/scripts/
+!.claude/scripts/gerar_resumos.py
+
+# nunca, em hipótese alguma
+.DS_Store
+__pycache__/
+*.pyc

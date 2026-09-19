@@ -1,0 +1,838 @@
+{
+  "materia": {
+    "id": "civil",
+    "nome": "Direito Civil",
+    "icone": "📘",
+    "peso": "20 questões (20%)",
+    "ordem": 1,
+    "nota": "Ponto de reforço prioritário do edital. Toda ficha termina com a ponte para o Direito Notarial e Registral."
+  },
+  "abas": [
+    {
+      "id": "civil-parte-geral",
+      "nome": "Parte Geral e LINDB",
+      "grupos": [
+        {
+          "nome": "Negócio jurídico",
+          "cards": [
+            {
+              "id": "civil-planos-invalidade",
+              "titulo": "Planos do negócio jurídico e invalidades",
+              "edital": "2.1",
+              "fontes": ["Civil 01 - Invalidades do Negócio Jurídico"],
+              "regra": "Existência → validade → eficácia. A invalidade ataca o **plano da validade** e se divide em **nulidade** (nulo) e **anulabilidade** (anulável). Quando o enunciado afirma que os requisitos de validade foram observados, a resposta está no **plano da eficácia** — e toda alternativa que fale em nulidade, anulabilidade ou convalidação já se autoeliminou.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Nulo × anulável — o quadro que a FGV cobra",
+                  "colunas": ["", "NULO (nulidade)", "ANULÁVEL (anulabilidade)"],
+                  "linhas": [
+                    ["Hipóteses", "art. 166 (incapaz absoluto; objeto ilícito ou impossível; forma/solenidade preterida; fraude a lei imperativa) e art. 167 (simulação)", "art. 171 (incapaz relativo; erro, dolo, coação, estado de perigo, lesão; fraude contra credores)"],
+                    ["Quem alega", "qualquer interessado, o MP; **juiz de ofício** (168, p.ú.)", "só os interessados (nunca de ofício); aproveita apenas a quem alega"],
+                    ["Tempo", "**não convalesce** nunca (169)", "**decai**: 4 anos (178) ou 2 anos (179)"],
+                    ["Confirmação", "não admite", "admite ratificação (172)"],
+                    ["Efeitos", "*ex tunc* (retroage)", "em regra *ex nunc* (vale até ser anulado)"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Pegadinha central: simulação × fraude contra credores",
+                  "colunas": ["", "Simulação", "Fraude contra credores"],
+                  "linhas": [
+                    ["Natureza", "negócio **aparente**, sem vontade real", "negócio **real**, que gera ou agrava a insolvência"],
+                    ["Sanção", "**NULO** (art. 167)", "**ANULÁVEL** (arts. 158–165)"],
+                    ["Ação e prazo", "a qualquer tempo, por qualquer interessado — não convalesce", "ação pauliana (revocatória), decadência de **4 anos**"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Blindagem patrimonial no balcão do tabelionato",
+                "caso": "Devedor com execuções em curso procura o tabelionato para \"vender\" seu imóvel ao cunhado. Em um cenário, não há intenção real de transferir: o preço não é pago e o vendedor continua morando no imóvel. Em outro, a venda é real, com preço de mercado efetivamente pago, mas deixa o devedor insolvente.",
+                "solucao": "Primeiro cenário = **simulação** (CC 167) → negócio **nulo**, não convalesce, e o registro dele decorrente é cancelável (LRP, art. 214). Segundo cenário = **fraude contra credores** (CC 158–165) → negócio **anulável** por ação pauliana em 4 anos; enquanto não anulado, produz efeitos e o título é registrável. A diferença não está na intenção de prejudicar, e sim em haver ou não negócio real."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 166", "literal": false, "texto": "Rol das nulidades: celebrado por absolutamente incapaz; objeto ilícito, impossível ou indeterminável; motivo determinante comum ilícito; forma prescrita não observada; solenidade essencial preterida; fraude a lei imperativa; lei taxativamente declarar nulo ou proibir a prática sem cominar sanção."},
+                {"ref": "CC, art. 169", "literal": false, "texto": "O negócio jurídico nulo não é suscetível de confirmação nem convalesce pelo decurso do tempo."},
+                {"ref": "CC, art. 171", "literal": false, "texto": "É anulável o negócio por incapacidade relativa do agente e por vício resultante de erro, dolo, coação, estado de perigo, lesão ou fraude contra credores."},
+                {"ref": "LRP, art. 214", "literal": false, "texto": "As nulidades de pleno direito do registro podem ser declaradas e o registro cancelado, independentemente de ação direta."}
+              ],
+              "pegadinhas": [
+                {"errado": "Simulação gera anulabilidade.", "certo": "Simulação é causa de **nulidade** (art. 167). O anulável é a fraude contra credores."},
+                {"errado": "O juiz pode reconhecer de ofício a anulabilidade.", "certo": "Só a nulidade se conhece de ofício (168, p.ú.); a anulabilidade depende de alegação do interessado."},
+                {"errado": "Nulidade também decai em 4 anos.", "certo": "A nulidade **não convalesce** (169). Os prazos de 4 e 2 anos (178 e 179) são de anulação."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Qualificação notarial:** o tabelião deve recusar título nulo — é a aplicação direta do art. 166 na conferência da capacidade, do objeto e da forma.",
+                  "**Qualificação registral:** escritura simulada é nula e não convalesce; o registro dela decorrente é passível de cancelamento por nulidade de pleno direito (LRP, art. 214), sem ação direta.",
+                  "**Efeito prático da distinção:** título anulável (fraude contra credores) ainda não desconstituído **ingressa** no registro; título nulo (simulação declarada) **não ingressa**. O oficial não anula negócio — ele qualifica."
+                ]
+              }
+            },
+            {
+              "id": "civil-defeitos-vontade",
+              "titulo": "Defeitos do negócio: estado de perigo × lesão × coação",
+              "edital": "2.1",
+              "fontes": ["Civil 01 - Invalidades do Negócio Jurídico"],
+              "regra": "Todos são causa de **anulabilidade** (CC 171, II), nunca de nulidade. Chave de leitura: **o que está em risco?** Pessoa → estado de perigo (156). Patrimônio → lesão (157). Ameaça da outra parte ou de terceiro → coação (151). Se o enunciado diz que o contratante \"sabia\" da situação, está entregando o art. 156.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Os três institutos lado a lado",
+                  "colunas": ["", "Estado de perigo (156)", "Lesão (157)", "Coação (151)"],
+                  "linhas": [
+                    ["Fonte do constrangimento", "perigo **externo** (dano a pessoa)", "premente necessidade **econômica** ou inexperiência", "**ameaça** da outra parte ou de terceiro"],
+                    ["Risco protegido", "**pessoa** (vida, integridade)", "**patrimônio**", "liberdade da vontade"],
+                    ["Quem se salva", "o declarante **ou pessoa de sua família** (terceiro estranho: o juiz decide)", "—", "—"],
+                    ["Ciência da outra parte", "**essencial** — dolo de aproveitamento", "**dispensável**", "inerente"],
+                    ["Desproporção", "obrigação **excessivamente onerosa**", "**manifestamente desproporcional**, aferida ao tempo do negócio", "irrelevante"],
+                    ["Prazo (4 anos, CC 178)", "**do dia do negócio**", "**do dia do negócio**", "**da cessação da coação**"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Escritura assinada no hospital",
+                "caso": "Para conseguir a internação imediata do filho, o pai assina escritura de venda de imóvel por valor muito abaixo do mercado ao dono da clínica, que conhecia toda a situação.",
+                "solucao": "**Estado de perigo** (CC 156): o risco é a **pessoa da família**, há **obrigação excessivamente onerosa** e o dano grave era **conhecido pela outra parte**. Negócio **anulável** em 4 anos contados **do dia do negócio** (178, II). Pelo Enunciado 148/CJF, aplica-se por analogia o § 2º do art. 157 — cabe conservar o negócio com suplemento ou redução do proveito, em vez de anular. Se fosse mera necessidade econômica, sem risco a pessoa, seria **lesão**."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 156", "literal": true, "texto": "Configura-se o estado de perigo quando alguém, premido da necessidade de salvar-se, ou a pessoa de sua família, de grave dano conhecido pela outra parte, assume obrigação excessivamente onerosa."},
+                {"ref": "CC, art. 157, § 2º", "literal": false, "texto": "Não se decretará a anulação se for oferecido suplemento suficiente ou se a parte favorecida concordar com a redução do proveito."},
+                {"ref": "CC, art. 178", "literal": false, "texto": "Prazo decadencial de 4 anos: da cessação da coação (I); do dia em que se realizou o negócio, nos casos de erro, dolo, fraude contra credores, estado de perigo e lesão (II)."},
+                {"ref": "Enunciado 148/CJF (III Jornada)", "literal": true, "texto": "Ao \"estado de perigo\" (art. 156) aplica-se, por analogia, o disposto no § 2º do art. 157."}
+              ],
+              "pegadinhas": [
+                {"errado": "Estado de perigo gera nulidade.", "certo": "Gera **anulabilidade** (171, II)."},
+                {"errado": "O prazo conta da cessação do perigo.", "certo": "Da cessação conta-se na **coação**. No estado de perigo e na lesão, conta-se **do dia do negócio**."},
+                {"errado": "No estado de perigo só importa a desproporção objetiva.", "certo": "Isso é da **lesão** — e mesmo nela há elemento subjetivo. No 156 é essencial que a outra parte **conheça** o grave dano."},
+                {"errado": "É irrelevante o vínculo familiar.", "certo": "O *caput* do 156 protege expressamente quem age para salvar **pessoa de sua família**."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "O tabelião não julga vício de vontade, mas **recolhe elementos**: declaração das partes, valor do negócio, presença de terceiro interessado. Escritura lavrada em hospital, presídio ou com preço muito fora do mercado é ponto sensível de qualificação.",
+                  "Como o vício gera **anulabilidade**, o título continua registrável enquanto não anulado — a desconstituição vem por sentença, que depois entra na matrícula por averbação de cancelamento."
+                ]
+              }
+            },
+            {
+              "id": "civil-condicao-termo",
+              "titulo": "Condição, termo e o plano da eficácia",
+              "edital": "2.1",
+              "fontes": ["Civil 01 - Invalidades do Negócio Jurídico"],
+              "regra": "**Condição** é a cláusula que, derivando exclusivamente da vontade das partes, subordina o efeito do negócio a evento **futuro e incerto** (CC 121). **Termo** é evento futuro e **certo** — e a boa-fé objetiva não converte uma coisa na outra.",
+              "blocos": [
+                {
+                  "tipo": "lista",
+                  "titulo": "Pontos de decisão",
+                  "itens": [
+                    "**Suspensiva:** enquanto não se verificar, **não se adquire o direito** a que ela visa (CC 125). **Resolutiva:** o negócio vigora desde a conclusão (CC 127).",
+                    "**Condição ilícita:** veda-se a que sujeita o negócio ao puro arbítrio de **uma das partes** (CC 122) — puramente potestativa. Evento que depende de **terceiro** (aprovação de financiamento pelo banco) é **lícito**.",
+                    "**Impossíveis (CC 123–124):** suspensiva impossível **invalida** o negócio; resolutiva impossível **tem-se por inexistente**.",
+                    "**Pendência:** o titular de direito eventual pode praticar atos de **conservação** (CC 130); e reputa-se **verificada** a condição cujo implemento for **maliciosamente obstado** pela parte a quem desfavorecer (CC 129) — é aqui que a boa-fé objetiva atua."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Compra e venda condicionada à aprovação do financiamento",
+                "caso": "Escritura de compra e venda com cláusula: \"o negócio produzirá efeitos se o banco aprovar o financiamento em 60 dias\". Antes da aprovação, o comprador já contrata a reforma e compra material.",
+                "solucao": "Condição **suspensiva lícita** — depende de **terceiro** (o banco), não do puro arbítrio de uma das partes (CC 122). Enquanto pendente, **o direito não foi adquirido** (CC 125): comprar insumos não é ato de conservação (CC 130) nem implementa a condição. O negócio é **válido** e o problema está só no plano da **eficácia**."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 121", "literal": false, "texto": "Considera-se condição a cláusula que, derivando exclusivamente da vontade das partes, subordina o efeito do negócio jurídico a evento futuro e incerto."},
+                {"ref": "CC, art. 125", "literal": true, "texto": "Subordinando-se a eficácia do negócio jurídico à condição suspensiva, enquanto esta se não verificar, não se terá adquirido o direito, a que ele visa."},
+                {"ref": "CC, art. 1.359", "literal": false, "texto": "Resolvida a propriedade pelo implemento da condição ou pelo advento do termo, entendem-se também resolvidos os direitos reais concedidos na sua pendência."},
+                {"ref": "CC, art. 1.360", "literal": false, "texto": "Se a propriedade se resolver por causa superveniente, o possuidor que a tiver adquirido por título anterior à resolução será considerado proprietário perfeito, restando à parte a ação contra aquele cuja propriedade se resolveu."}
+              ],
+              "pegadinhas": [
+                {"errado": "Condição que depende de terceiro é puramente potestativa e ilícita.", "certo": "A vedação do art. 122 alcança o puro arbítrio de **uma das partes**. Terceiro (banco, poder público) torna a condição lícita — a FGV desloca o destinatário da vedação."},
+                {"errado": "A boa-fé objetiva converte a condição em termo.", "certo": "A boa-fé atua no art. 129 (condição maliciosamente obstada reputa-se verificada), não na conversão de institutos."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "Cláusula condicional registrada gera **propriedade resolúvel** — é exatamente a estrutura da **alienação fiduciária**: o fiduciário tem propriedade resolúvel e o pagamento resolve a propriedade em favor do fiduciante.",
+                  "Resolvida a propriedade, resolvem-se também os **direitos reais concedidos na pendência** (CC 1.359) — os ônus registrados caem junto. Se a resolução vier de causa **superveniente** (CC 1.360), o adquirente por título anterior é proprietário perfeito e resta só ação pessoal.",
+                  "Na matrícula, a resolução entra por **averbação**; é o que sustenta o cancelamento da AF pelo pagamento e a consolidação da propriedade pelo inadimplemento."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "nome": "Pessoa natural",
+          "cards": [
+            {
+              "id": "civil-capacidade",
+              "titulo": "Capacidade, EPD e emancipação",
+              "edital": "2.1 · 1.5",
+              "fontes": ["Civil 09 - Pessoa Natural - Capacidade, Ausência e Morte Presumida"],
+              "regra": "**Capacidade de direito** toda pessoa tem (CC 1º); o que se discute é a **capacidade de fato**. Depois do Estatuto da Pessoa com Deficiência, **o único absolutamente incapaz é o menor de 16 anos**; para os demais, o critério deixou de ser o diagnóstico e passou a ser **funcional** — \"não puder exprimir sua vontade\".",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Quem é quem",
+                  "colunas": ["", "Absolutamente incapaz", "Relativamente incapaz", "Capaz"],
+                  "linhas": [
+                    ["Quem", "menor de 16", "16–18 · ébrio habitual · viciado em tóxico · quem não pode exprimir vontade · pródigo", "os demais"],
+                    ["Atua", "**representado**", "**assistido**", "sozinho"],
+                    ["Sanção do ato", "**nulo** (166, I)", "**anulável** (171, I)", "—"],
+                    ["Prazo", "não convalesce (169)", "4 anos da **cessação da incapacidade** (178, III)", "—"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Emancipação (CC 5º, p.ú.)",
+                  "colunas": ["Espécie", "Como", "Idade mínima"],
+                  "linhas": [
+                    ["**Voluntária**", "escritura pública dos pais, **sem homologação judicial**", "16"],
+                    ["**Judicial**", "sentença, ouvido o tutor", "16"],
+                    ["**Legal**", "casamento · emprego público efetivo · colação de grau · economia própria (empresa ou emprego)", "16 (colação de grau e casamento seguem regra própria)"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Venda de imóvel por jovem de 17 anos",
+                "caso": "Rapaz de 17 anos, com renda própria de emprego CLT, quer vender imóvel recebido em herança. Os pais levam ao tabelionato uma escritura de emancipação lavrada na semana anterior.",
+                "solucao": "A emancipação **voluntária** por escritura pública dos pais é válida **independentemente de homologação judicial** (CC 5º, p.ú., I) e o rapaz tem 16 anos completos. Emancipado, comparece **sozinho** à escritura de venda — mas o tabelião deve exigir a **certidão do Livro \"E\"** que comprove o registro da emancipação. Sem emancipação, ele seria **assistido** (não representado) pelos pais, e o ato praticado sem assistência seria **anulável**."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 3º", "literal": true, "texto": "São absolutamente incapazes de exercer pessoalmente os atos da vida civil os menores de 16 (dezesseis) anos."},
+                {"ref": "CC, art. 4º", "literal": true, "texto": "São incapazes, relativamente a certos atos ou à maneira de os exercer: I - os maiores de dezesseis e menores de dezoito anos; II - os ébrios habituais e os viciados em tóxico; III - aqueles que, por causa transitória ou permanente, não puderem exprimir sua vontade; IV - os pródigos."},
+                {"ref": "EPD (Lei 13.146/2015), art. 6º", "literal": true, "texto": "A deficiência não afeta a plena capacidade civil da pessoa."},
+                {"ref": "EPD, art. 85 e § 1º", "literal": false, "texto": "A curatela afetará tão somente os atos relacionados aos direitos de natureza patrimonial e negocial, não alcançando corpo, sexualidade, matrimônio, privacidade, educação, saúde, trabalho e voto."},
+                {"ref": "CC, art. 1.783-A", "literal": false, "texto": "Tomada de decisão apoiada: a pessoa com deficiência elege ao menos 2 apoiadores e continua plenamente capaz; a decisão tomada nos limites do apoio é válida e eficaz perante terceiros."}
+              ],
+              "pegadinhas": [
+                {"errado": "Pessoa com esquizofrenia ou Alzheimer é incapaz.", "certo": "**Diagnóstico não é causa de incapacidade** (EPD 6º e 84). Só entra no art. 4º, III quem, no caso concreto, não puder exprimir a vontade — e isso se apura em processo."},
+                {"errado": "Maiores de 70 anos são relativamente incapazes.", "certo": "Idade só é critério na faixa **16–18** (CC 4º, I)."},
+                {"errado": "A emancipação voluntária exige homologação judicial.", "certo": "Escritura pública dos pais, **independentemente de homologação** (CC 5º, p.ú., I)."},
+                {"errado": "A emancipação antecipa a maioridade para todos os efeitos.", "certo": "É **irrevogável**, mas não antecipa efeitos penais nem os que a lei fixa por idade (ex.: habilitação para dirigir)."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Registro civil:** a emancipação por outorga dos pais ou por sentença é **registrada no Livro \"E\"** (CC 9º, II; LRP 89–90); a interdição/curatela também se **registra** no Livro \"E\" (LRP 92–93), e a **tomada de decisão apoiada** registra-se no domicílio **atual** do apoiado.",
+                  "**Qualificação:** a capacidade das partes é o primeiro item da conferência notarial e registral. Menor de 16 é **representado**; de 16 a 18 é **assistido**; emancipado comparece sozinho **mediante certidão do Livro \"E\"**.",
+                  "**Pegadinha do par registro × averbação:** ausência e interdição se **registram**; substituição de curador e alteração dos limites da curatela se **averbam**."
+                ]
+              }
+            },
+            {
+              "id": "civil-ausencia",
+              "titulo": "Ausência e morte presumida",
+              "edital": "2.1 · 1.5",
+              "fontes": ["Civil 09 - Pessoa Natural - Capacidade, Ausência e Morte Presumida"],
+              "regra": "A ausência tem **três fases**: curadoria dos bens → sucessão provisória → sucessão definitiva (que equivale à **morte presumida** do art. 6º). Fora dela, o art. 7º admite morte presumida **sem** decretação de ausência, mas só em duas hipóteses fechadas.",
+              "blocos": [
+                {
+                  "tipo": "timeline",
+                  "titulo": "Linha do tempo (decore esta)",
+                  "itens": [
+                    "**Desaparecimento** — sem prazo mínimo para requerer",
+                    "**Declaração de ausência + curador** (CC 22) → arrecadação dos bens (CPC 744) + editais por 1 ano (CPC 745)",
+                    "**1 ano da arrecadação** (ou **3 anos**, se havia procurador) → **sucessão provisória** (CC 26)",
+                    "Sentença só produz efeito **180 dias** depois de publicada (CC 28)",
+                    "**10 anos** do trânsito em julgado — ou ausente com **80 anos** de idade e **5 anos** de últimas notícias (CC 37 e 38) → **sucessão definitiva = morte presumida**",
+                    "**+10 anos** sem regresso nem interessado → bens ao **Município/DF** (ou União, em território federal)"
+                  ]
+                },
+                {
+                  "tipo": "lista",
+                  "titulo": "Detalhes que decidem a questão",
+                  "itens": [
+                    "**Ordem legal do curador** (CC 25): cônjuge não separado (judicialmente ou de fato há mais de 2 anos) → pais → descendentes mais próximos → escolha do juiz. O cônjuge é curador **legítimo**, por força de lei.",
+                    "**Interessados na sucessão provisória** (CC 27, rol taxativo): cônjuge não separado judicialmente; herdeiros presumidos; quem tiver direito dependente da morte; **credores de obrigações vencidas e não pagas**.",
+                    "**Garantias** (CC 30): herdeiros só se imitem na posse dando penhor ou hipoteca — **ascendentes, descendentes e cônjuge entram sem garantia**.",
+                    "**Comoriência** (CC 8º): mortos na mesma ocasião, sem se apurar a ordem, presumem-se **simultaneamente** mortos — não há transmissão de um para o outro."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Credor que quer abrir a sucessão provisória",
+                "caso": "Empresário desaparece em 2020 sem deixar procurador. Em 2021 o juiz declara a ausência e nomeia a esposa curadora; os bens são arrecadados. Em 2023, um fornecedor com duplicatas vencidas e não pagas requer a abertura da sucessão provisória; os filhos alegam que credor não tem legitimidade e que o prazo conta do desaparecimento.",
+                "solucao": "O credor de obrigação **vencida e não paga** é interessado legítimo (CC 27, IV). O prazo de **1 ano conta da arrecadação** — não do desaparecimento (CC 26); seriam 3 anos apenas se houvesse procurador. Declarada a sucessão provisória, a sentença só produz efeito **180 dias** após a publicação (CC 28); os filhos e a esposa entram na posse **sem prestar garantia** (CC 30). Alienar imóvel do ausente nessa fase exige **ordem judicial para evitar a ruína** (CC 31)."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 22", "literal": true, "texto": "Desaparecendo uma pessoa do seu domicílio sem dela haver notícia, se não houver deixado representante ou procurador a quem caiba administrar-lhe os bens, o juiz, a requerimento de qualquer interessado ou do Ministério Público, declarará a ausência, e nomear-lhe-á curador."},
+                {"ref": "CC, art. 26", "literal": true, "texto": "Decorrido um ano da arrecadação dos bens do ausente, ou, se ele deixou representante ou procurador, em se passando três anos, poderão os interessados requerer que se declare a ausência e se abra provisoriamente a sucessão."},
+                {"ref": "CC, art. 7º", "literal": true, "texto": "I - se for extremamente provável a morte de quem estava em perigo de vida; II - se alguém, desaparecido em campanha ou feito prisioneiro, não for encontrado até dois anos após o término da guerra. Parágrafo único. A declaração da morte presumida, nesses casos, somente poderá ser requerida depois de esgotadas as buscas e averiguações, devendo a sentença fixar a data provável do falecimento."},
+                {"ref": "CC, art. 31", "literal": false, "texto": "Os imóveis do ausente só se podem alienar, não sendo por desapropriação, ou hipotecar, quando o ordene o juiz, para lhes evitar a ruína."}
+              ],
+              "pegadinhas": [
+                {"errado": "1 ano contado do desaparecimento.", "certo": "Da **arrecadação** dos bens (CC 26)."},
+                {"errado": "1 ano com procurador e 3 anos sem.", "certo": "Invertido: **3 anos com** procurador, 1 ano sem (CC 26)."},
+                {"errado": "A declaração de ausência é privativa do cônjuge, herdeiros e MP.", "certo": "**Qualquer interessado** ou o MP (CC 22)."},
+                {"errado": "A sentença de sucessão provisória produz efeito imediato.", "certo": "**180 dias** depois de publicada pela imprensa (CC 28)."},
+                {"errado": "Para a morte presumida direta basta o encerramento das buscas.", "certo": "O esgotamento das buscas é requisito **adicional**: sem perigo de vida (I) ou guerra (II), o caminho é o da ausência."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Tudo desemboca no Livro \"E\" do RCPN.** Sentença de ausência: **registro**, no domicílio **anterior** do ausente, com as mesmas cautelas do registro de interdição (LRP 94; CNNR-RS 251).",
+                  "**Abertura da sucessão provisória:** **averbação** no assento de ausência, após o trânsito em julgado (LRP 104, p.ú.). Cessação da ausência e troca de curador também se **averbam**.",
+                  "**Morte presumida SEM ausência** (CC 7º): registra-se no **Livro C (óbitos)**, à vista de mandado judicial. **Com ausência prévia:** **averbação** à margem, com mandado do juízo que determinou a sucessão definitiva (CNNR-RS 244, §§ 1º e 2º).",
+                  "**No RI:** alienação ou hipoteca de imóvel do ausente exige ordem judicial (CC 31) — o título deve vir instruído com ela, sob pena de nota de exigência."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "nome": "Tempo, representação e LINDB",
+          "cards": [
+            {
+              "id": "civil-prescricao",
+              "titulo": "Prescrição × decadência",
+              "edital": "2.1",
+              "fontes": ["Civil 02 - Prescrição e Decadência"],
+              "regra": "A **prescrição** atinge a **pretensão** (CC 189) — o direito a uma prestação. A **decadência** atinge o **direito potestativo** em si. Daí decorrem todas as diferenças de regime.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Regimes",
+                  "colunas": ["", "Prescrição", "Decadência"],
+                  "linhas": [
+                    ["Suspende / interrompe", "**sim** (arts. 197–202)", "**não**, salvo disposição legal (art. 207)"],
+                    ["Renúncia", "pode, **após consumada** (art. 191)", "**legal**: nula (art. 209) · convencional: pode"],
+                    ["Conhecimento de ofício", "sim (CPC 487, III)", "**legal**: de ofício (art. 210) · **convencional**: só se alegada (art. 211)"],
+                    ["Absolutamente incapaz", "não corre (art. 198, I)", "**também não corre** (art. 208 c/c 198, I)"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Prazos prescricionais do art. 206 — decorar",
+                  "colunas": ["Prazo", "Principais hipóteses"],
+                  "linhas": [
+                    ["1 ano", "hospedagem; segurado × segurador; peritos e serventuários"],
+                    ["2 anos", "prestações alimentares, a partir do vencimento"],
+                    ["3 anos", "**reparação civil**; **aluguéis**; enriquecimento sem causa; juros e dividendos"],
+                    ["4 anos", "pretensões relativas à tutela"],
+                    ["5 anos", "**dívidas líquidas** de instrumento público ou particular; **profissionais liberais**; vencedor haver do vencido"],
+                    ["10 anos", "**regra geral** (art. 205), quando a lei não fixa prazo menor"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Reparação civil: 3 ou 5 anos?",
+                "caso": "Cliente pretende ser indenizado por dano causado por serviço defeituoso. Um colega sustenta prazo de 5 anos; outro, de 3 anos.",
+                "solucao": "No **Código Civil**, a pretensão de **reparação civil** prescreve em **3 anos** (206, § 3º, V). Os **5 anos** são do **CDC** (art. 27), para o fato do produto ou do serviço. Trocar um pelo outro é o erro clássico — a pergunta a fazer antes é qual microssistema rege a relação."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 189", "literal": false, "texto": "Violado o direito, nasce para o titular a pretensão, a qual se extingue pela prescrição, nos prazos dos arts. 205 e 206."},
+                {"ref": "CC, art. 207", "literal": false, "texto": "Salvo disposição legal em contrário, não se aplicam à decadência as normas que impedem, suspendem ou interrompem a prescrição."},
+                {"ref": "CC, art. 209", "literal": false, "texto": "É nula a renúncia à decadência fixada em lei."},
+                {"ref": "CC, art. 445", "literal": false, "texto": "Vícios redibitórios: 30 dias (móvel) e 1 ano (imóvel) contados da tradição; se já estava na posse, o prazo conta da alienação, pela metade."}
+              ],
+              "pegadinhas": [
+                {"errado": "A decadência legal pode ser renunciada e não é conhecida de ofício.", "certo": "Renúncia à decadência **legal é nula** (209) e o juiz a conhece **de ofício** (210)."},
+                {"errado": "A decadência corre contra absolutamente incapaz.", "certo": "**Não corre** (208 c/c 198, I)."},
+                {"errado": "Reparação civil prescreve em 5 anos pelo CC.", "certo": "**3 anos** (206, § 3º, V); 5 anos é do CDC."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Usucapião** é prescrição **aquisitiva**: o decurso do prazo é requisito de aquisição, e não extinção de pretensão. É a base da usucapião extrajudicial (LRP, art. 216-A).",
+                  "**Prenotação** tem prazo próprio de caducidade — a prioridade se perde se as exigências não forem cumpridas na vigência do protocolo (LRP, art. 205, hoje 20 dias úteis pela Lei 14.382/2022).",
+                  "**Responsabilidade do delegatário:** prescrição em **3 anos** contados da lavratura do ato (Lei 8.935/94, art. 22, red. Lei 13.286/2016) — mesmo prazo da reparação civil."
+                ]
+              }
+            },
+            {
+              "id": "civil-representacao",
+              "titulo": "Representação, mandato e procuração",
+              "edital": "2.1",
+              "fontes": ["Civil 08 - Representação e Mandato"],
+              "regra": "**Representação** é o gênero (poderes por lei ou pelo interessado — CC 115); **mandato** é a espécie voluntária (CC 653); **procuração** é o *instrumento* do mandato. O vício de poderes fica no plano da **eficácia** (ineficaz, salvo ratificação — CC 662), e não no da validade.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Em que plano fica o vício",
+                  "colunas": ["Situação", "Plano", "Consequência", "Base"],
+                  "linhas": [
+                    ["Sem poderes ou poderes insuficientes", "**eficácia**", "ineficaz para o representado; a ratificação **retroage**", "CC 662"],
+                    ["Consigo mesmo · conflito de interesses", "**validade**", "**anulável**", "CC 117 e 119"],
+                    ["Forma prescrita não observada (procuração particular para ato que exige escritura)", "**validade**", "**nulo**", "CC 166, IV c/c 657"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Extensão dos poderes — duas classificações que a FGV embaralha",
+                  "colunas": ["Classificação", "Pergunta", "Pares"],
+                  "linhas": [
+                    ["Quanto aos **negócios** (CC 660)", "para quais negócios?", "especial × **geral**"],
+                    ["Quanto aos **poderes** (CC 661)", "que tipo de ato?", "em termos gerais (só administração) × **especiais e expressos**"]
+                  ]
+                },
+                {
+                  "tipo": "lista",
+                  "titulo": "Irrevogabilidade",
+                  "itens": [
+                    "Cláusula de irrevogabilidade **comum**: a revogação **vale**, mas o mandante paga **perdas e danos** (CC 683).",
+                    "Irrevogabilidade como condição de negócio bilateral ou no exclusivo interesse do mandatário: a revogação é **ineficaz** (CC 684).",
+                    "Mandato **em causa própria** (CC 685): revogação sem eficácia; **não se extingue pela morte** de qualquer das partes; mandatário dispensado de prestar contas e pode **transferir para si** os bens, observadas as formalidades legais."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Procuração em termos gerais para vender imóvel",
+                "caso": "Procurador apresenta ao tabelionato procuração pública \"para administrar todos os negócios do outorgante\" e pretende assinar escritura de venda do imóvel do mandante. Traz ainda um substabelecimento por instrumento particular.",
+                "solucao": "O mandato **em termos gerais só confere poderes de administração** (CC 661). Para **alienar, hipotecar ou transigir** são necessários poderes **especiais e expressos** (661, § 1º) — a escritura não pode ser lavrada. Já o **substabelecimento por instrumento particular é válido**, ainda que o mandato tenha sido outorgado por instrumento público (CC 655) — essa é a exceção à simetria de forma do art. 657. Se a venda fosse feita assim mesmo, seria **ineficaz** para o mandante, salvo ratificação (CC 662)."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 661, § 1º", "literal": true, "texto": "Para alienar, hipotecar, transigir, ou praticar outros quaisquer atos que exorbitem da administração ordinária, depende a procuração de poderes especiais e expressos."},
+                {"ref": "CC, art. 657", "literal": true, "texto": "A outorga do mandato está sujeita à forma exigida por lei para o ato a ser praticado. Não se admite mandato verbal quando o ato deva ser celebrado por escrito."},
+                {"ref": "CC, art. 655", "literal": true, "texto": "Ainda quando se outorgue mandato por instrumento público, pode substabelecer-se mediante instrumento particular."},
+                {"ref": "CC, art. 662", "literal": true, "texto": "Os atos praticados por quem não tenha mandato, ou o tenha sem poderes suficientes, são ineficazes em relação àquele em cujo nome foram praticados, salvo se este os ratificar."},
+                {"ref": "CC, art. 686", "literal": false, "texto": "A revogação notificada somente ao mandatário não se pode opor a terceiros que, ignorando-a, de boa-fé com ele trataram."}
+              ],
+              "pegadinhas": [
+                {"errado": "É nulo o negócio celebrado consigo mesmo.", "certo": "É **anulável** (CC 117), salvo se permitido pela lei ou pelo representado."},
+                {"errado": "O prazo do conflito de interesses (CC 119) é de 2 anos.", "certo": "**180 dias**, da conclusão do negócio ou da cessação da incapacidade."},
+                {"errado": "Procuração omissa sobre substabelecimento faz o mandatário responder por caso fortuito.", "certo": "A responsabilidade por caso fortuito é da hipótese em que o substabelecimento era **proibido** (CC 667, § 1º)."},
+                {"errado": "Mandato em causa própria extingue-se pela morte do mandante.", "certo": "**Não se extingue** (CC 685)."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Competência exclusiva:** lavrar escrituras e **procurações públicas** é dos tabeliães de notas (Lei 8.935/94, art. 7º, I).",
+                  "**Qualificação notarial (CNNR-RS, art. 856, III):** antes de lavrar, o tabelião examina procurações e substabelecimentos para verificar a legitimidade da representação e a suficiência dos poderes, registrando-os no livro próprio — é o CC 661, § 1º e o CC 662 na prática.",
+                  "**Simetria de forma (CNNR-RS, art. 857):** procuração para ato que exige instrumento público deve ser **pública**. Não confundir com o **substabelecimento**, que o CC 655 admite por instrumento particular.",
+                  "**Procuração em causa própria para compra e venda (CNNR-RS, art. 876):** deve conter os requisitos da compra e venda (coisa, preço e consentimento), recolhe-se **imposto de transmissão** e cobram-se emolumentos de escritura com valor declarado.",
+                  "**Mandato estrangeiro (CNNR-RS, art. 842):** faz-se referência, no ato, ao livro e à folha do **RTD** onde foi registrado (LRP, art. 163)."
+                ]
+              }
+            },
+            {
+              "id": "civil-lindb-vigencia",
+              "titulo": "LINDB — vigência, revogação e integração",
+              "edital": "2.1 · 2.4",
+              "fontes": ["Civil 06 - LINDB"],
+              "regra": "A ordem de estudo é a \"vida da lei\": vigência → revogação → integração → aplicação. Salvo disposição contrária, a lei entra em vigor **45 dias** depois de publicada (3 meses no estrangeiro) — e **não existe prazo mínimo obrigatório** de *vacatio*.",
+              "blocos": [
+                {
+                  "tipo": "lista",
+                  "titulo": "Pontos-chave",
+                  "itens": [
+                    "**Correção de texto antes** da vigência → o prazo **recomeça** da nova publicação (art. 1º, § 3º). **Depois** da vigência → a correção é **lei nova** (§ 4º).",
+                    "**Revogação** expressa ou tácita; lei nova com disposições gerais ou especiais **a par das já existentes** não revoga a anterior (art. 2º, § 2º).",
+                    "**Repristinação não é automática:** \"a lei revogada não se restaura por ter a lei revogadora perdido a vigência\", salvo disposição em contrário (art. 2º, § 3º).",
+                    "**Integração** (art. 4º): analogia, costumes e princípios gerais de direito. O juiz **não se exime de decidir** alegando lacuna (CPC 140) e só decide por **equidade** nos casos previstos em lei (CPC 140, p.ú.).",
+                    "**Aplicação** (art. 5º): o juiz atende aos **fins sociais** e às exigências do **bem comum** — isso orienta a interpretação, **não autoriza retroagir**."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Norma nova × norma da corregedoria",
+                "caso": "Publicado provimento do CNJ que altera a forma de um ato registral, sem que a corregedoria estadual tenha atualizado a consolidação normativa local.",
+                "solucao": "A norma nova prevalece: a aplicação **independe** de alteração prévia da consolidação estadual. É a lógica do art. 2º da LINDB (a norma posterior incompatível revoga a anterior) aplicada ao sistema de provimentos — e a CNNR-RS, no art. 1º, assume expressamente essa convivência. O registrador não pode recusar o ato alegando que a norma local ainda não foi ajustada."
+              },
+              "citacoes": [
+                {"ref": "LINDB, art. 2º, § 3º", "literal": true, "texto": "Salvo disposição em contrário, a lei revogada não se restaura por ter a lei revogadora perdido a vigência."},
+                {"ref": "LINDB, art. 3º", "literal": true, "texto": "Ninguém se escusa de cumprir a lei, alegando que não a conhece."},
+                {"ref": "LINDB, art. 4º", "literal": true, "texto": "Quando a lei for omissa, o juiz decidirá o caso de acordo com a analogia, os costumes e os princípios gerais de direito."},
+                {"ref": "LINDB, art. 5º", "literal": true, "texto": "Na aplicação da lei, o juiz atenderá aos fins sociais a que ela se dirige e às exigências do bem comum."}
+              ],
+              "pegadinhas": [
+                {"errado": "Há prazo mínimo de vacatio legis de seis meses por segurança jurídica.", "certo": "Não existe prazo mínimo — a lei pode fixar prazo maior, menor ou vigência imediata."},
+                {"errado": "Revogada a lei revogadora, a antiga volta a valer.", "certo": "Não há **repristinação automática** (art. 2º, § 3º)."},
+                {"errado": "A omissão da lei autoriza o juiz a decidir discricionariamente ou por equidade.", "certo": "Integra-se por analogia, costumes e princípios; equidade **só nos casos previstos em lei** (CPC 140, p.ú.)."},
+                {"errado": "A lei pode retroagir sempre que atender aos fins sociais.", "certo": "Fins sociais orientam a **interpretação**; a retroatividade esbarra no art. 6º e na CF 5º, XXXVI."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Sucessão de provimentos do CNJ** é o dia a dia registral: Prov. 149/2023 alterado pelos Provs. 188/2024, 190/2025, 195/2025 e 196/2023. Saber qual regra estava em vigor **na data do ato** é aplicação pura da LINDB.",
+                  "**Qualificação registral:** o título é examinado pela lei do tempo do ato; registro já praticado é situação consolidada.",
+                  "Exemplo concreto do vaivém normativo: a regra sobre CNIB × prenotação mudou duas vezes entre 2024 e 2025 — ver a ficha de CNIB em Registro de Imóveis."
+                ]
+              }
+            },
+            {
+              "id": "civil-lindb-intertemporal",
+              "titulo": "LINDB — direito intertemporal e as três definições do art. 6º",
+              "edital": "2.1 · 5.2",
+              "fontes": ["Civil 06 - LINDB"],
+              "regra": "\"A lei em vigor terá **efeito imediato e geral**, respeitados o **ato jurídico perfeito**, o **direito adquirido** e a **coisa julgada**\" (art. 6º) — garantia repetida na CF, art. 5º, XXXVI. Efeito imediato alcança fatos **pendentes e futuros**; a lei antiga só continua para situações **consolidadas**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Definições literais (a FGV adultera)",
+                  "colunas": ["Instituto", "Texto do art. 6º", "Palavra-chave"],
+                  "linhas": [
+                    ["**Ato jurídico perfeito** (§ 1º)", "\"o **já consumado** segundo a lei vigente ao tempo em que se efetuou\"", "**consumado** (passado)"],
+                    ["**Direito adquirido** (§ 2º)", "\"os direitos que o seu titular, ou alguém por ele, **possa exercer**, como aqueles cujo começo do exercício tenha **termo pré-fixo**, ou **condição pré-estabelecida inalterável, a arbítrio de outrem**\"", "**pode exercer** (não precisa ter exercido)"],
+                    ["**Coisa julgada** (§ 3º)", "\"a decisão **judicial** de que já não caiba recurso\"", "**judicial** · **nenhum** recurso"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Direito adquirido × expectativa de direito",
+                  "colunas": ["", "Direito adquirido", "Expectativa de direito"],
+                  "linhas": [
+                    ["Requisitos", "**todos reunidos** sob a lei antiga", "ainda **não** reunidos"],
+                    ["Lei nova", "**não atinge**", "**aplica-se**"],
+                    ["Requerimento", "irrelevante — é mero exercício", "—"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Fiança locatícia e a Lei 12.112/2009",
+                "caso": "Contrato de locação de 11/2008 com fiança \"durante toda a vigência do contrato\". Em 2009 entra em vigor a Lei 12.112; em 11/2010 o contrato se prorroga automaticamente por prazo indeterminado; em 2015 o locador cobra o fiador.",
+                "solucao": "A prorrogação ocorreu **depois** da lei nova, o que tenta empurrar a resposta para \"efeitos futuros\" ou \"nova relação jurídica\". Mas quem define a lei aplicável é a **data do contrato** = **ato jurídico perfeito** (art. 6º, § 1º). Vale o regime anterior: a fiança não admite interpretação extensiva (CC 819) e o fiador não responde por aditamento a que não anuiu (Súmula 214/STJ), salvo cláusula expressa de garantia até a entrega das chaves. O regime novo (Lei 8.245/91, art. 39) só alcança contratos firmados a partir da vigência da Lei 12.112/2009."
+              },
+              "citacoes": [
+                {"ref": "LINDB, art. 6º", "literal": true, "texto": "A Lei em vigor terá efeito imediato e geral, respeitados o ato jurídico perfeito, o direito adquirido e a coisa julgada."},
+                {"ref": "CF, art. 5º, XXXVI", "literal": true, "texto": "A lei não prejudicará o direito adquirido, o ato jurídico perfeito e a coisa julgada."},
+                {"ref": "Súmula 214/STJ", "literal": true, "texto": "O fiador na locação não responde por obrigações resultantes de aditamento ao qual não anuiu."},
+                {"ref": "Lei 8.245/91, art. 39", "literal": true, "texto": "Salvo disposição contratual em contrário, qualquer das garantias da locação se estende até a efetiva devolução do imóvel, ainda que prorrogada a locação por prazo indeterminado, por força desta Lei."}
+              ],
+              "pegadinhas": [
+                {"errado": "\"Ato jurídico perfeito é o já consumado…, desde que não alcançado o lapso de 90 dias.\"", "certo": "O § 1º **não tem prazo**. Número ou qualificador que não está no texto = alternativa errada."},
+                {"errado": "\"Coisa julgada é a decisão judicial, administrativa ou controladora de que não caiba recurso com efeito suspensivo.\"", "certo": "Só **judicial**, e **nenhum** recurso. O vocabulário \"controladora\" vem dos arts. 20–24."},
+                {"errado": "Só há direito adquirido depois do requerimento.", "certo": "Basta **poder exercer**: reunidos os requisitos sob a lei antiga, a lei nova não atinge."},
+                {"errado": "Existe retroatividade da lei civil em favor do vulnerável.", "certo": "Retroatividade benéfica obrigatória é regra **penal** (CF 5º, XL)."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Regime de bens e pactos antenupciais** anteriores a leis novas, **fianças averbadas**, **cláusulas contratuais de loteamentos antigos**: todos se qualificam pela lei do tempo do ato.",
+                  "**Registro já praticado** é situação consolidada — a norma nova não o desfaz; ela rege os atos posteriores.",
+                  "Na prática registral isso aparece em prazos de prenotação, exigências documentais novas e regras de georreferenciamento: o título protocolado sob a regra antiga se qualifica por ela."
+                ]
+              }
+            },
+            {
+              "id": "civil-lindb-internacional",
+              "titulo": "LINDB — obrigações internacionais e segurança jurídica no direito público",
+              "edital": "2.4 · 6.3",
+              "fontes": ["Civil 06 - LINDB"],
+              "regra": "Art. 9º: para qualificar e reger as obrigações, aplica-se a **lei do país em que se constituírem**; e a obrigação contratual reputa-se constituída **no lugar em que residir o proponente** (§ 2º). Nos arts. 20–30 (Lei 13.655/2018), a LINDB passou a exigir decisão com base em **consequências práticas** e responsabilidade pessoal do agente só por **dolo ou erro grosseiro**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Agente público: art. 22 × art. 28 × CF 37, § 6º",
+                  "colunas": ["", "CF 37, § 6º", "LINDB 28"],
+                  "linhas": [
+                    ["Situação", "dano **a terceiro** → o Estado indeniza", "decisão ou opinião técnica do agente"],
+                    ["Quem responde", "Estado (objetiva) → regresso contra o agente", "o agente, **pessoalmente**"],
+                    ["Elemento subjetivo", "dolo **ou culpa**", "dolo **ou erro grosseiro**"]
+                  ]
+                },
+                {
+                  "tipo": "lista",
+                  "titulo": "Art. 9º passo a passo",
+                  "itens": [
+                    "1º — **quem fez a proposta?** A obrigação contratual se constitui no lugar da residência do **proponente** (§ 2º).",
+                    "2º — **onde se executa?** Destinando-se a obrigação a ser executada no Brasil e dependendo de forma essencial, observa-se a **forma brasileira**, admitidas as peculiaridades da lei estrangeira quanto aos requisitos **extrínsecos** (§ 1º).",
+                    "Diálogo com o CC: \"reputar-se-á celebrado o contrato no lugar em que foi proposto\" (CC 435) — mesma lógica, redação diferente."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Documento estrangeiro apresentado no balcão",
+                "caso": "Empresa de Singapura envia proposta a uma sociedade brasileira, que aceita. O contrato tem cláusula de garantia sobre imóvel situado no Brasil e será apresentado a registro.",
+                "solucao": "A obrigação reputa-se constituída **em Singapura** (residência do proponente — art. 9º, § 2º), e a lei de Singapura rege a substância. Mas o ato que se destina a produzir efeito **real no Brasil** submete-se à **forma brasileira** (§ 1º), à competência absoluta do RI da situação do imóvel e às exigências de tradução juramentada e legalização/apostilamento para ingresso (LRP, art. 221, III)."
+              },
+              "citacoes": [
+                {"ref": "LINDB, art. 9º", "literal": true, "texto": "Para qualificar e reger as obrigações, aplicar-se-á a lei do país em que se constituirem."},
+                {"ref": "LINDB, art. 9º, § 2º", "literal": true, "texto": "A obrigação resultante do contrato reputa-se constituida no lugar em que residir o proponente."},
+                {"ref": "LINDB, art. 28", "literal": true, "texto": "O agente público responderá pessoalmente por suas decisões ou opiniões técnicas em caso de dolo ou erro grosseiro."},
+                {"ref": "LINDB, art. 22, § 1º", "literal": true, "texto": "Em decisão sobre regularidade de conduta ou validade de ato, contrato, ajuste, processo ou norma administrativa, serão consideradas as circunstâncias práticas que houverem imposto, limitado ou condicionado a ação do agente."}
+              ],
+              "pegadinhas": [
+                {"errado": "Lugar de residência do **aceitante**.", "certo": "Do **proponente** (art. 9º, § 2º)."},
+                {"errado": "Requisitos **intrínsecos** da lei estrangeira.", "certo": "**Extrínsecos** (§ 1º)."},
+                {"errado": "O agente responde por dolo ou culpa grave.", "certo": "**Dolo ou erro grosseiro** (art. 28). \"Dolo ou culpa\" é da CF 37, § 6º, e para dano a terceiro."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Títulos estrangeiros:** atos autênticos de país estrangeiro ingressam no RI legalizados ou apostilados e com tradução juramentada (LRP, art. 221); o **mandato estrangeiro** exige referência ao registro no **RTD** (LRP, art. 163; CNNR-RS, art. 842).",
+                  "**Arts. 20–30 na correição:** o delegatário responde pessoalmente por **dolo ou erro grosseiro**; decisões da corregedoria devem considerar as circunstâncias práticas da serventia e indicar as consequências da invalidação (LINDB 21 e 22)."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "civil-reais",
+      "nome": "Direitos Reais",
+      "grupos": [
+        {
+          "nome": "Teoria geral e bem de família",
+          "cards": [
+            {
+              "id": "civil-direitos-reais",
+              "titulo": "Direitos reais — teoria geral",
+              "edital": "2.2",
+              "fontes": ["Civil 03 - Direitos Reais"],
+              "regra": "O rol dos direitos reais é **TAXATIVO** (*numerus clausus*) — só a lei cria direito real; a autonomia da vontade não. E a propriedade **imóvel entre vivos transfere-se pelo REGISTRO** (CC 1.227 e 1.245): o contrato só gera obrigação.",
+              "blocos": [
+                {
+                  "tipo": "lista",
+                  "titulo": "Rol do art. 1.225",
+                  "itens": [
+                    "Propriedade · superfície · servidões · usufruto · uso · habitação · direito do promitente comprador · penhor · hipoteca · anticrese · concessão de uso especial para moradia · concessão de direito real de uso · **laje** (inciso XIII).",
+                    "**Usufruto:** temporário e **personalíssimo**; extingue-se com a **morte** do usufrutuário (CC 1.410, I) — não passa a herdeiros; cede-se apenas o **exercício**.",
+                    "**Servidão predial:** constitui-se por **registro** (CC 1.378); **não se presume** e jamais nasce de acordo verbal.",
+                    "**Laje** (CC 1.510-A): unidade autônoma com **matrícula própria**; não gera condomínio sobre o solo.",
+                    "**Uso e habitação:** personalíssimos, ainda mais restritos que o usufruto. **Superfície** (CC 1.369): temporária, para construir ou plantar em terreno alheio."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "\"Direito real de uso vitalício de vaga de garagem\"",
+                "caso": "As partes levam ao registro contrato criando, em favor de um vizinho, um \"direito real perpétuo de estacionar\", com nome inventado pelas partes e pedido de registro na matrícula.",
+                "solucao": "**Não é inscritível**: o rol do art. 1.225 é taxativo e as partes não criam direito real atípico. O negócio vale entre elas como **direito pessoal** (obrigacional), mas não gera oponibilidade *erga omnes* nem ingressa na matrícula. Caminhos legítimos: constituir **servidão** (registro, CC 1.378), **usufruto** ou **direito de uso** — figuras típicas."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 1.227", "literal": false, "texto": "Os direitos reais sobre imóveis constituídos ou transmitidos por atos entre vivos só se adquirem com o registro no Cartório de Registro de Imóveis."},
+                {"ref": "CC, art. 1.245", "literal": false, "texto": "Transfere-se entre vivos a propriedade mediante o registro do título translativo no Registro de Imóveis; enquanto não se registrar, o alienante continua a ser havido como dono."},
+                {"ref": "CC, art. 1.410, I", "literal": false, "texto": "O usufruto extingue-se pela morte do usufrutuário."},
+                {"ref": "CC, art. 1.378", "literal": false, "texto": "A servidão proporciona utilidade para o prédio dominante e grava o serviente, constituindo-se mediante declaração expressa dos proprietários, ou por testamento, e subsequente registro no Registro de Imóveis."}
+              ],
+              "pegadinhas": [
+                {"errado": "O rol do art. 1.225 é exemplificativo.", "certo": "É **taxativo** — *numerus clausus*."},
+                {"errado": "O usufruto transmite-se aos herdeiros do usufrutuário.", "certo": "**Extingue-se com a morte** (1.410, I); cede-se só o exercício."},
+                {"errado": "A servidão pode ser provada por acordo verbal ou presumida pelo uso.", "certo": "Constitui-se por **registro** e **não se presume**."},
+                {"errado": "A propriedade imóvel se transfere pela escritura.", "certo": "Pelo **registro** do título (1.227 e 1.245). A escritura é título, não modo."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "Esta é a **matéria-prima do Livro 2**: quase todo direito real nasce ou se transmite por **registro** no RI — a ficha \"Registro × averbação\" mostra o que entra por cada via.",
+                  "O *numerus clausus* é fundamento direto da **qualificação negativa**: direito real atípico é **não inscritível**.",
+                  "**Laje, superfície e servidão** exigem descrição precisa (especialidade objetiva) e, na laje, **matrícula própria**."
+                ]
+              }
+            },
+            {
+              "id": "civil-bem-familia-legal",
+              "titulo": "Bem de família legal (Lei 8.009/1990)",
+              "edital": "2.2 · 2.4",
+              "fontes": ["Civil 07 - Bem de Família"],
+              "regra": "O bem de família **legal** é **automático**: independe de escritura, registro ou declaração. Basta que o imóvel seja **residência da entidade familiar**. Impenhorabilidade **não é intocabilidade** — o art. 3º traz exceções que precisam ser conhecidas literalmente.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Legal × voluntário",
+                  "colunas": ["Bem de família LEGAL", "Bem de família VOLUNTÁRIO"],
+                  "linhas": [
+                    ["Lei 8.009/1990", "CC, arts. 1.711 a 1.722"],
+                    ["**Automático**", "depende de **ato de vontade**"],
+                    ["**Não exige registro**", "**exige registro** no RI"],
+                    ["Proteção por impenhorabilidade", "impenhorabilidade + regime especial de afetação"]
+                  ]
+                },
+                {
+                  "tipo": "lista",
+                  "titulo": "Exceções mais cobradas (art. 3º)",
+                  "itens": [
+                    "**Financiamento do próprio imóvel** — construção ou aquisição;",
+                    "**Pensão alimentícia**;",
+                    "**IPTU e taxas** do próprio imóvel; **cotas condominiais**;",
+                    "**Fiança em contrato de locação**;",
+                    "Execução de **hipoteca** oferecida pelo casal ou pela entidade familiar em garantia de dívida própria."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Devedor com dois imóveis",
+                "caso": "Executado é dono de dois imóveis: mora em um e aluga o outro. Sustenta que ambos são impenhoráveis; o credor responde que a proteção só alcança quem tem imóvel único.",
+                "solucao": "A proteção da Lei 8.009/90 **não depende** de ser o único imóvel — o elemento central é a **destinação residencial familiar** (entendimento consolidado do STJ). Protegido está o imóvel onde a família **reside**; havendo vários residenciais, a lei manda proteger o de **menor valor** (art. 5º, p.ú.). O imóvel locado a terceiro, em regra, não é a sede da moradia — mas a jurisprudência protege o único imóvel cuja renda de aluguel sustenta a moradia da família."
+              },
+              "citacoes": [
+                {"ref": "Lei 8.009/90, art. 1º", "literal": false, "texto": "O imóvel residencial próprio do casal, ou da entidade familiar, é impenhorável e não responderá por qualquer tipo de dívida civil, comercial, fiscal, previdenciária ou de outra natureza, salvo nas hipóteses do art. 3º."},
+                {"ref": "Lei 8.009/90, art. 1º, p.ú.", "literal": false, "texto": "A impenhorabilidade compreende o imóvel, construções, plantações, benfeitorias e os móveis que guarnecem a casa, desde que quitados."},
+                {"ref": "Súmula 364/STJ", "literal": true, "texto": "O conceito de impenhorabilidade de bem de família abrange também o imóvel pertencente a pessoas solteiras, separadas e viúvas."},
+                {"ref": "Lei 8.009/90, art. 5º, p.ú.", "literal": false, "texto": "Havendo vários imóveis utilizados como residência, a impenhorabilidade recai sobre o de menor valor, salvo se outro tiver sido registrado como bem de família voluntário."}
+              ],
+              "pegadinhas": [
+                {"errado": "O bem de família legal precisa de registro.", "certo": "É **automático** — registro é do **voluntário**."},
+                {"errado": "A proteção exige que seja o único imóvel.", "certo": "Não exige; o critério é a **destinação residencial** (STJ)."},
+                {"errado": "Só famílias formadas por casamento são protegidas.", "certo": "Alcança companheiros, famílias monoparentais, viúvos, separados e **pessoas solteiras** (Súmula 364/STJ)."},
+                {"errado": "A impenhorabilidade é absoluta.", "certo": "Cede nas hipóteses do **art. 3º** — alimentos, IPTU, condomínio, financiamento do próprio imóvel, fiança locatícia."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Não se averba** bem de família legal: ele não depende de publicidade registral. O que entra na matrícula é a **instituição voluntária** (registro, LRP 167, I, 1).",
+                  "A distinção aparece na **penhora**: o oficial registra a penhora normalmente — discutir impenhorabilidade é matéria do juízo da execução, não da qualificação.",
+                  "**Não confundir** com a impenhorabilidade da **pequena propriedade rural** (CF, art. 5º, XXVI): são institutos distintos, com requisitos próprios."
+                ]
+              }
+            },
+            {
+              "id": "civil-bem-familia-voluntario",
+              "titulo": "Bem de família voluntário e a qualificação registral",
+              "edital": "2.2 · 1.3",
+              "fontes": ["Civil 07 - Bem de Família"],
+              "regra": "O bem de família **voluntário** é o que interessa diretamente ao Registro de Imóveis: **a proteção não decorre da escritura, decorre do REGISTRO**. É um patrimônio de **afetação** — não cria propriedade nova, submete o imóvel a regime especial. Limite: **1/3 do patrimônio líquido** existente **ao tempo da instituição** (CC 1.711).",
+              "blocos": [
+                {
+                  "tipo": "lista",
+                  "titulo": "Roteiro de qualificação",
+                  "itens": [
+                    "**Legitimidade (CC 1.711):** cônjuges, entidade familiar, ou **terceiro** por testamento ou doação (neste caso, com aceitação expressa de ambos os cônjuges beneficiados).",
+                    "**Disponibilidade:** o valor do imóvel não pode ultrapassar **1/3 do patrimônio líquido** no momento da instituição. Valorização posterior **não invalida**.",
+                    "**Especialidade objetiva:** o imóvel deve estar perfeitamente individualizado — não se institui \"uma parte da fazenda\" sem prévia individualização.",
+                    "**Continuidade:** o instituidor precisa ser o **titular registral**. Comprou por contrato particular e não registrou? Registra-se primeiro a aquisição, depois a instituição.",
+                    "**Fração ideal:** em regra não se institui sobre mera fração ideal (incompatível com a finalidade); **unidade autônoma** de condomínio edilício, sim.",
+                    "**Cancelamento:** não é livre — exige, em regra, **autorização judicial com participação do MP** (CC 1.719)."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Instituição que consome 90% do patrimônio",
+                "caso": "Escritura pública de instituição de bem de família sobre imóvel matriculado em nome do próprio instituidor, mas cujo valor representa 90% do patrimônio líquido declarado.",
+                "solucao": "**Registro negado.** Há afronta direta ao art. 1.711: o limite é **1/3 do patrimônio líquido** ao tempo da instituição. O registrador não audita todo o patrimônio — admite-se declaração dos interessados e documentos complementares —, mas, havendo indício evidente de desproporção ou fraude, o título é **qualificado negativamente**. Se o instituidor tem R$ 3.000.000 de patrimônio líquido, o teto é R$ 1.000.000."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 1.711", "literal": false, "texto": "Podem os cônjuges, ou a entidade familiar, mediante escritura pública ou testamento, destinar parte de seu patrimônio para instituir bem de família, desde que não ultrapasse um terço do patrimônio líquido existente ao tempo da instituição."},
+                {"ref": "CC, art. 1.714", "literal": false, "texto": "O bem de família, quer instituído pelos cônjuges ou por terceiro, constitui-se pelo registro de seu título no Registro de Imóveis."},
+                {"ref": "CC, art. 1.719", "literal": false, "texto": "Comprovada a impossibilidade da manutenção do bem de família nas condições em que foi instituído, poderá o juiz, a requerimento dos interessados, extingui-lo ou autorizar a sub-rogação dos bens que o constituem em outros, ouvidos o instituidor e o Ministério Público."},
+                {"ref": "LRP, art. 167, I, 1", "literal": false, "texto": "No Livro 2 — Registro Geral — será feito o registro da instituição de bem de família."}
+              ],
+              "pegadinhas": [
+                {"errado": "A instituição de bem de família entra por averbação.", "certo": "É **REGISTRO** (LRP 167, I, 1)."},
+                {"errado": "O limite de 1/3 se afere pelo valor atual do imóvel.", "certo": "**Ao tempo da instituição** (CC 1.711). Valorização posterior não gera invalidade superveniente."},
+                {"errado": "O instituidor pode cancelar livremente.", "certo": "Em regra depende de **autorização judicial**, com participação do **MP** (CC 1.719) — a proteção é dos beneficiários, não só do proprietário."},
+                {"errado": "Testamento basta para registrar a instituição.", "certo": "O registro depende de **abertura da sucessão** + formal de partilha ou carta de adjudicação + ingresso no RI."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Ponte direta com o Registro de Imóveis",
+                "itens": [
+                  "Aqui a ponte é o próprio instituto: o bem de família voluntário é **um ato registral típico**, que testa de uma vez **disponibilidade, especialidade objetiva, continuidade e publicidade**.",
+                  "**Sub-rogação:** vendido o imóvel afetado, o regime pode ser transferido ao novo imóvel — com autorização judicial (CC 1.719).",
+                  "**Fraude contra credores:** devedor com R$ 1 milhão de patrimônio e R$ 900 mil de dívidas que institui bem de família expõe-se a ação pauliana e desconstituição judicial.",
+                  "**Nível avançado (concursos de cartório):** instituição sobre **nua-propriedade**, usufruto, direito real de habitação, propriedade resolúvel, multipropriedade e direito aquisitivo — o ponto em que a banca mistura Civil e técnica registral."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "civil-contratos-sucessoes",
+      "nome": "Contratos e Sucessões",
+      "grupos": [
+        {
+          "nome": "Garantias do contrato",
+          "cards": [
+            {
+              "id": "civil-eviccao",
+              "titulo": "Evicção × vícios redibitórios",
+              "edital": "2.3",
+              "fontes": ["Civil 05 - Evicção e Vícios Redibitórios"],
+              "regra": "**Evicção** = problema de **direito de terceiro** sobre a coisa (perda por decisão judicial ou administrativa). **Vício redibitório** = **defeito oculto** da própria coisa. Ambas são garantias **da natureza** do contrato oneroso — existem independentemente de cláusula.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Distinção essencial",
+                  "colunas": ["", "Evicção", "Vício redibitório"],
+                  "linhas": [
+                    ["Problema", "direito de **terceiro** sobre a coisa", "**defeito oculto** que a torna imprópria ou lhe diminui o valor"],
+                    ["Base", "arts. 447–457", "arts. 441–446"],
+                    ["Remédio", "restituição integral do preço + frutos + despesas + perdas e danos (art. 450)", "**redibitória** (desfazer) ou **estimatória / quanti minoris** (abatimento)"],
+                    ["Prazo", "enquanto houver risco de perda; a garantia subsiste mesmo em hasta pública", "**30 dias** (móvel) / **1 ano** (imóvel) da tradição (art. 445)"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Imóvel arrematado e depois perdido",
+                "caso": "Comprador arremata imóvel em hasta pública. Anos depois, terceiro obtém sentença reconhecendo que era o verdadeiro proprietário e o comprador perde o bem. O alienante alega que, por ser aquisição em hasta pública e por haver cláusula de exclusão de garantia, nada deve.",
+                "solucao": "A garantia da evicção **subsiste ainda que a aquisição se tenha realizado em hasta pública** (CC 447) e independe de cláusula. As partes podem reforçar, diminuir ou excluir a garantia (448); mas, mesmo com **cláusula de exclusão**, se o evicto **não sabia do risco**, tem direito a **receber o preço** que pagou (449). Hoje não se perde o direito material por falta de denunciação da lide."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 447", "literal": false, "texto": "Nos contratos onerosos, o alienante responde pela evicção; subsiste esta garantia ainda que a aquisição se tenha realizado em hasta pública."},
+                {"ref": "CC, art. 449", "literal": false, "texto": "Não obstante a cláusula que exclui a garantia contra a evicção, se esta se der, tem direito o evicto a receber o preço que pagou pela coisa evicta, se não soube do risco da evicção, ou, dele informado, não o assumiu."},
+                {"ref": "CC, art. 450", "literal": false, "texto": "Salvo estipulação em contrário, tem direito o evicto à restituição integral do preço, à indenização dos frutos restituídos, às despesas dos contratos e prejuízos, e às custas judiciais."},
+                {"ref": "CC, art. 445", "literal": false, "texto": "O adquirente decai do direito de obter a redibição ou abatimento de preço em 30 dias se a coisa for móvel, e em 1 ano se for imóvel, contado da entrega efetiva."}
+              ],
+              "pegadinhas": [
+                {"errado": "A garantia da evicção depende de cláusula expressa.", "certo": "É **da natureza** do contrato oneroso (447) — a cláusula serve para reforçar, diminuir ou excluir."},
+                {"errado": "Em hasta pública não há garantia contra a evicção.", "certo": "**Subsiste** (447), exatamente a ressalva do artigo."},
+                {"errado": "Com cláusula de exclusão o evicto nada recebe.", "certo": "Se **não sabia do risco**, recebe o **preço** (449)."},
+                {"errado": "Sem denunciação da lide perde-se o direito de regresso.", "certo": "O direito material subsiste — o art. 456 foi revogado pelo CPC/2015."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Evicção é o risco que o registro existe para reduzir.** Continuidade e disponibilidade são a tradução registral da pergunta \"quem transmite é dono?\".",
+                  "Na **escritura**, o tabelião faz constar as cláusulas de garantia, a apresentação das certidões e a advertência sobre riscos — inclusive quando as partes dispensam certidões.",
+                  "Na aquisição **originária** (usucapião), não há evicção do antecessor: a cadeia anterior se rompe — outra razão para o oficial distinguir aquisição originária de derivada."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "nome": "Sucessões",
+          "cards": [
+            {
+              "id": "civil-sucessao-conjuge",
+              "titulo": "Sucessão do cônjuge — concorrência por regime de bens",
+              "edital": "2.2",
+              "fontes": ["Civil 04 - Sucessão do Cônjuge"],
+              "regra": "Ordem de vocação (CC 1.829): descendentes (em concorrência com o cônjuge, **salvo** alguns regimes) → ascendentes (em concorrência **sempre**) → cônjuge → colaterais até 4º grau. Com **descendentes**, a concorrência depende do **regime de bens**; com **ascendentes**, independe do regime.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Concorrência com descendentes (CC 1.829, I)",
+                  "colunas": ["Regime", "Concorre?"],
+                  "linhas": [
+                    ["Comunhão **universal**", "**NÃO** — já tem meação sobre tudo"],
+                    ["Separação **obrigatória** (legal)", "**NÃO**"],
+                    ["Comunhão **parcial** *com* bens particulares", "**SIM — só sobre os PARTICULARES**"],
+                    ["Comunhão **parcial** *sem* bens particulares", "**NÃO**"],
+                    ["Separação **convencional** (absoluta)", "**SIM** (STJ)"],
+                    ["Participação final nos aquestos", "**SIM**, sobre os particulares"]
+                  ]
+                },
+                {
+                  "tipo": "lista",
+                  "titulo": "Regras de quinhão",
+                  "itens": [
+                    "**Reserva de 1/4** (CC 1.832): concorrendo com descendentes **que também são seus**, o cônjuge tem no mínimo 1/4 da herança. Se concorre só com descendentes **exclusivos do falecido**, **não há** reserva — quinhão igual.",
+                    "**Com ascendentes** (CC 1.829, II e 1.837): concorre **sempre**, qualquer regime — com sogro **e** sogra, 1/3; com um só ascendente ou de grau maior, 1/2.",
+                    "**Direito real de habitação** (CC 1.831): ao cônjuge sobrevivente, sobre o imóvel destinado à residência da família, qualquer que seja o regime, desde que seja o único daquela natureza a inventariar."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Inventário extrajudicial em comunhão parcial",
+                "caso": "Falecido casado em comunhão parcial deixa dois filhos comuns, um apartamento adquirido na constância do casamento e um terreno recebido por herança antes do casamento.",
+                "solucao": "O **apartamento** é bem comum: a viúva tem **meação** e **não concorre** com os filhos sobre ele. O **terreno** é bem **particular**: sobre ele a viúva **concorre** com os dois filhos (CC 1.829, I), respeitada a **reserva de 1/4** — os descendentes são também dela (CC 1.832). Além disso, tem **direito real de habitação** sobre o imóvel residencial (CC 1.831), que se averba na matrícula. A escritura de inventário e partilha é lavrada no tabelionato (Res. CNJ 35/2007) e leva-se o título a registro."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 1.829", "literal": false, "texto": "Ordem de vocação hereditária: descendentes em concorrência com o cônjuge (salvo comunhão universal, separação obrigatória e comunhão parcial sem bens particulares); ascendentes em concorrência com o cônjuge; cônjuge sobrevivente; colaterais."},
+                {"ref": "CC, art. 1.832", "literal": false, "texto": "Em concorrência com os descendentes, caberá ao cônjuge quinhão igual ao dos que sucederem por cabeça, não podendo sua quota ser inferior à quarta parte da herança, se for ascendente dos herdeiros com que concorrer."},
+                {"ref": "CC, art. 1.831", "literal": false, "texto": "Ao cônjuge sobrevivente será assegurado, sem prejuízo da participação na herança, o direito real de habitação relativamente ao imóvel destinado à residência da família, desde que seja o único daquela natureza a inventariar."},
+                {"ref": "CC, art. 1.837", "literal": false, "texto": "Concorrendo com ascendente em primeiro grau, ao cônjuge tocará um terço da herança; caber-lhe-á a metade desta se houver um só ascendente, ou se maior for aquele grau."}
+              ],
+              "pegadinhas": [
+                {"errado": "Na comunhão parcial o cônjuge concorre sobre os bens comuns.", "certo": "Concorre sobre os **particulares**; nos comuns já tem **meação**."},
+                {"errado": "A reserva de 1/4 vale sempre que houver descendentes.", "certo": "Só quando o cônjuge é **ascendente dos herdeiros** com que concorre (CC 1.832)."},
+                {"errado": "Com ascendentes a concorrência depende do regime.", "certo": "**Independe** do regime (1.829, II)."}
+              ],
+              "ponte": {
+                "titulo": "🏛️ Onde isso aparece no cartório",
+                "itens": [
+                  "**Inventário e partilha extrajudiciais** por escritura pública (Res. CNJ 35/2007) — o tabelião precisa montar a partilha conforme o regime de bens; erro de concorrência é erro de título.",
+                  "**No RI:** o formal de partilha ou a escritura de inventário é o título que restabelece a **continuidade** da cadeia dominial — sem ele, o herdeiro não pode vender (registro *per saltum* é vedado).",
+                  "**Direito real de habitação** do cônjuge (CC 1.831) ingressa na matrícula por **averbação**, e passa a ser ônus oponível a terceiros.",
+                  "**Regime de bens** é dado de qualificação em toda escritura: define quem precisa comparecer, quem dá outorga e o que cada um transmite."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

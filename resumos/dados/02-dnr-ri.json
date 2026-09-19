@@ -1,0 +1,1339 @@
+{
+  "materia": {
+    "id": "dnr",
+    "nome": "Direito Notarial e Registral",
+    "icone": "🏛️",
+    "peso": "28 questões (28%)",
+    "ordem": 2,
+    "nota": "Núcleo do concurso. Nesta rodada está carregado o Registro de Imóveis; TN, RCPN, TP e RTD entram na rodada seguinte."
+  },
+  "abas": [
+    {
+      "id": "ri",
+      "nome": "Registro de Imóveis",
+      "grupos": [
+        {
+          "nome": "Princípios, matrícula e atos",
+          "cards": [
+            {
+              "id": "ri-principios",
+              "titulo": "Princípios registrais",
+              "edital": "1.3",
+              "fontes": ["Principios Registrais e Matricula", "Princípios e Prioridade"],
+              "regra": "Cinco princípios respondem quase toda questão de qualificação: **continuidade** (cadeia sem saltos), **prioridade** (a ordem do protocolo), **especialidade** (objetiva e subjetiva), **legalidade** (forma e conteúdo do título) e **instância/rogação** (o oficial age provocado).",
+              "blocos": [
+                {
+                  "tipo": "lista",
+                  "titulo": "O que cada um exige",
+                  "itens": [
+                    "**Continuidade (LRP 195, 222 e 237):** nenhum registro se faz sem que o imóvel esteja matriculado em nome de quem transmite. Quebram a continuidade: vendedor ≠ titular registral, inventário não registrado, nome divergente sem prova de identidade. Saneamento: registrar o **elo faltante** antes do ato translativo — o registro **encadeado** é permitido; o vedado é o registro ***per saltum***.",
+                    "**Prioridade (LRP 182, 186 e 190):** *prior tempore, potior jure*. A ordem é dada pelo **número de ordem do protocolo (Livro 1)** — a data do contrato é irrelevante.",
+                    "**Especialidade objetiva:** o imóvel descrito com precisão (área, limites, confrontações). Divergência de área → retificação (LRP 213), com anuência dos confrontantes se a área aumentar.",
+                    "**Especialidade subjetiva:** partes qualificadas com precisão. Nome divergente com **CPF coincidente** → erro material → retificação ou ressalva na qualificação.",
+                    "**Legalidade:** o título deve ser formalmente hábil — é onde entra o art. 108 do CC (escritura pública acima de 30 salários mínimos).",
+                    "**Instância / rogação (LRP 13):** o oficial age mediante provocação da parte, do juiz ou do MP."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Caso de balcão: quatro princípios de uma vez",
+                "caso": "Apresenta-se escritura em que o vendedor figura como \"José Antônio Silva\", enquanto a transcrição de 1968 está em nome de \"José Antônio da Silva Pereira\". A escritura descreve 520 m²; a transcrição, 498 m². Há ordem de indisponibilidade inserida na CNIB **antes** da prenotação.",
+                "solucao": "Nota de exigência que aponta: (1) **continuidade** — o imóvel só tem transcrição, é preciso **abrir matrícula** antes de qualquer ato translativo (LRP 228); (2) **especialidade subjetiva** — confirmar a identidade pelo CPF; sendo erro material, retificar; (3) **especialidade objetiva** — divergência de área, retificação do art. 213; (4) **CNIB anterior à prenotação impede o registro**. A abertura de matrícula é etapa **autônoma**, não é consequência automática do registro da venda."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 195", "literal": false, "texto": "Se o imóvel não estiver matriculado ou registrado em nome do outorgante, o oficial exigirá a prévia matrícula e o registro do título anterior, qualquer que seja a sua natureza."},
+                {"ref": "LRP, art. 182", "literal": false, "texto": "Todos os títulos serão protocolados no Livro 1, no ato de sua apresentação, com o número de ordem que seguir imediatamente ao anterior."},
+                {"ref": "LRP, art. 228", "literal": false, "texto": "A matrícula será efetuada por ocasião do primeiro registro a ser lançado na vigência desta Lei."},
+                {"ref": "CC, art. 108", "literal": false, "texto": "Não dispondo a lei em contrário, a escritura pública é essencial à validade dos negócios jurídicos que visem à constituição, transferência, modificação ou renúncia de direitos reais sobre imóveis de valor superior a trinta vezes o maior salário mínimo vigente no País."}
+              ],
+              "pegadinhas": [
+                {"errado": "O contrato assinado há mais tempo tem prioridade.", "certo": "A prioridade é da **data e hora da prenotação**, não do negócio."},
+                {"errado": "Falta um elo na cadeia: o registro é impossível.", "certo": "Registra-se **encadeado** (os títulos sucessivos, em ordem). Vedado é o registro *per saltum*."},
+                {"errado": "Registrada a venda, a matrícula se abre sozinha.", "certo": "A **abertura de matrícula é etapa autônoma** e obrigatória para imóvel que só tem transcrição."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A continuidade é a face registral do art. **1.245** do CC: ninguém transfere o que não tem registrado em seu nome.",
+                  "A legalidade dialoga com o art. **166, IV** (forma prescrita não observada = nulidade) e com o art. **108** (30 salários mínimos).",
+                  "A preferência do condômino (CC **504**) e a exigência de outorga de todos os coproprietários (CC **1.314**) aparecem como vício de **legitimação** na qualificação: condômino não aliena sozinho a totalidade do bem, e a fração ideal deve antes ser oferecida ao outro condômino — preterido, ele pode depositar o preço e **reaver a fração em 180 dias** do registro."
+                ]
+              }
+            },
+            {
+              "id": "ri-prenotacao",
+              "titulo": "Prenotação, qualificação e dúvida",
+              "edital": "1.3",
+              "fontes": ["Princípios e Prioridade", "RI Registro Eletronico SREI ONR e SERP"],
+              "regra": "O protocolo gera a **prioridade**. A qualificação termina em registro ou em **nota de devolução fundamentada**; discordando, o interessado pode suscitar **dúvida**, que **suspende** o prazo da prenotação.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Prazos vigentes (Lei 14.382/2022)",
+                  "colunas": ["Ato", "Prazo"],
+                  "linhas": [
+                    ["Qualificação — registro ou nota devolutiva (LRP 188)", "**10 dias úteis** (regra)"],
+                    ["Qualificação reduzida (LRP 188)", "**5 dias úteis** — compra e venda sem cláusulas especiais, averbação de construção, cancelamento de garantia, **documentos via SERP**, reingresso com exigências cumpridas"],
+                    ["Prenotação (LRP 205)", "**20 dias úteis** · **40 dias úteis** na REURB-S"],
+                    ["Cumprimento de exigências", "dentro da vigência da prenotação — depois disso, novo protocolo e **perda da prioridade**"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Procedimento de dúvida (LRP 198 e ss.)",
+                  "colunas": ["Situação", "Efeito jurídico"],
+                  "linhas": [
+                    ["Protocolo da dúvida", "**prorroga/suspende** o prazo da prenotação"],
+                    ["Dúvida **improcedente**", "o oficial estava errado → registra-se o título **mantendo a prioridade original**"],
+                    ["Dúvida **procedente**", "o oficial estava certo → **cancela-se a prenotação** (LRP 203, II)"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Exigência cumprida no 25º dia útil",
+                "caso": "Título prenotado, devolvido com exigências. O interessado retorna com a documentação corrigida no 25º dia útil contado do protocolo. No intervalo, outro título sobre o mesmo imóvel foi prenotado.",
+                "solucao": "A prenotação já **cessou** (20 dias úteis — LRP 205). É preciso **novo protocolo**, e o título **perde a prioridade** para o que foi prenotado no intervalo. Se, em vez de cumprir a exigência, o interessado tivesse suscitado **dúvida** dentro do prazo, a prenotação ficaria **suspensa** até a decisão — e, julgada improcedente, o registro se faria com a prioridade original."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 205", "literal": false, "texto": "Cessarão automaticamente os efeitos da prenotação se, decorridos 20 dias úteis do seu lançamento no protocolo, o título não tiver sido registrado por omissão do interessado em atender às exigências legais."},
+                {"ref": "LRP, art. 188", "literal": false, "texto": "Protocolizado o título, será efetuado o registro ou emitida a nota devolutiva no prazo de 10 dias úteis, salvo nas hipóteses de prazo reduzido de 5 dias úteis."},
+                {"ref": "LRP, art. 198", "literal": false, "texto": "Havendo exigência a ser satisfeita, o oficial a indicará por escrito; não se conformando o apresentante, poderá requerer que o título e a declaração de dúvida sejam remetidos ao juízo competente."},
+                {"ref": "LRP, art. 203, II", "literal": false, "texto": "Julgada procedente a dúvida, cancela-se a prenotação."}
+              ],
+              "pegadinhas": [
+                {"errado": "Título devolvido por defeito perde a prioridade imediatamente.", "certo": "A prenotação **mantém** a prioridade durante sua vigência; só caduca se as exigências não forem cumpridas no prazo."},
+                {"errado": "A dúvida é suscitada pelo interessado diretamente ao juiz.", "certo": "É **requerida ao oficial**, que a encaminha ao juízo competente."},
+                {"errado": "Procedente a dúvida, o título continua na fila.", "certo": "**Cancela-se a prenotação** e os títulos posteriores ganham a preferência imediatamente."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "Prenotação é **prazo de caducidade** — decadência, não prescrição: não se suspende nem se interrompe, salvo previsão legal (a dúvida é a exceção expressa).",
+                  "A perda da prioridade resolve o conflito da **dupla venda**: entre dois compradores de boa-fé, a propriedade é de quem **registrou primeiro** (CC 1.245), e não de quem contratou primeiro."
+                ]
+              }
+            },
+            {
+              "id": "ri-registro-averbacao",
+              "titulo": "Registro × averbação × anotação e atos inscritíveis",
+              "edital": "1.3",
+              "fontes": ["Atos Titulos e Livros"],
+              "regra": "**Registro** (LRP 167, I) constitui, transfere ou declara direito real. **Averbação** (167, II) altera, complementa ou extingue registro, ou anota fato. **Anotação** é nota remissiva de conexão entre assentos. Regra mental: a garantia **nasce por registro**; o que **modifica** o que já está registrado entra por **averbação**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Exemplos que a banca troca",
+                  "colunas": ["Ato", "Via", "Base"],
+                  "linhas": [
+                    ["Compra e venda, doação, hipoteca, usufruto, servidão", "**REGISTRO**", "167, I"],
+                    ["**Alienação fiduciária** de imóvel", "**REGISTRO**", "167, I, 35"],
+                    ["**Bem de família** (instituição voluntária)", "**REGISTRO**", "167, I, 1"],
+                    ["**Locação com cláusula de vigência**", "**REGISTRO**", "167, I, 3"],
+                    ["Locação para efeito de **direito de preferência**", "**AVERBAÇÃO**", "167, II, 16"],
+                    ["**Construção concluída** / demolição", "**AVERBAÇÃO** (não abre matrícula nova)", "167, II, 4"],
+                    ["Cláusulas de **inalienabilidade, impenhorabilidade e incomunicabilidade**", "**AVERBAÇÃO**", "167, II, 11"],
+                    ["**Extensão** de garantia · **substituição** do agente de garantia", "**AVERBAÇÃO**", "167, II"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Inscritível × não inscritível",
+                  "colunas": ["Inscritível", "NÃO inscritível"],
+                  "linhas": [
+                    ["Direitos reais **típicos** (CC 1.225)", "**Direito real atípico** criado por contrato (*numerus clausus*)"],
+                    ["Promessa **irretratável** de compra e venda", "Direito **pessoal puro**, sem previsão legal de ingresso"],
+                    ["Locação com cláusula de vigência (registro) ou preferência (averbação)", "Locação verbal / contrato obrigacional comum"],
+                    ["Gravames (inalienabilidade etc.), por averbação", "—"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Doação com cláusula de inalienabilidade e imóvel locado",
+                "caso": "Chega ao balcão: (a) escritura de doação com cláusula de inalienabilidade vitalícia; (b) contrato de locação de 5 anos com cláusula de vigência em caso de alienação; (c) requerimento para registrar a construção recém-concluída.",
+                "solucao": "(a) A cláusula é **válida** (CC 1.848/1.911) — restringe, não invalida a propriedade — e entra por **averbação** (167, II, 11), nunca como registro autônomo. (b) Locação com **cláusula de vigência** é **REGISTRO** (167, I, 3): é direito **pessoal com eficácia real**, não direito real do art. 1.225 nem direito de habitação. (c) Construção concluída é **AVERBAÇÃO** na própria matrícula (167, II, 4) — **não** se abre matrícula nova."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 167, I", "literal": false, "texto": "No Registro de Imóveis, além da matrícula, serão feitos o registro dos atos ali enumerados — entre eles a instituição de bem de família (1), a locação com cláusula de vigência (3), a hipoteca (2) e a alienação fiduciária em garantia de coisa imóvel (35)."},
+                {"ref": "LRP, art. 167, II", "literal": false, "texto": "Serão averbados, entre outros, a construção e a demolição (4), as cláusulas de inalienabilidade, impenhorabilidade e incomunicabilidade (11) e o contrato de locação para efeito de direito de preferência (16)."},
+                {"ref": "CC, art. 1.417", "literal": false, "texto": "Mediante promessa de compra e venda, em que se não pactuou arrependimento, celebrada por instrumento público ou particular e registrada no Registro de Imóveis, adquire o promitente comprador direito real à aquisição do imóvel."},
+                {"ref": "Súmula 239/STJ", "literal": true, "texto": "O direito à adjudicação compulsória não se condiciona ao registro do compromisso de compra e venda no cartório de imóveis."}
+              ],
+              "pegadinhas": [
+                {"errado": "Locação com cláusula de vigência entra por averbação.", "certo": "**Registro** (167, I, 3). Averbação é para a **preferência** (167, II, 16)."},
+                {"errado": "Bem de família voluntário se averba.", "certo": "**Registro** (167, I, 1)."},
+                {"errado": "Cláusula de inalienabilidade é incompatível com a propriedade e não ingressa.", "certo": "É **válida** e **averba-se** (167, II, 11)."},
+                {"errado": "Averbada a construção, abre-se nova matrícula.", "certo": "A construção se averba **na própria matrícula**."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A lista do art. 167, I é o espelho do **rol taxativo** do art. 1.225 do CC, acrescida de figuras com **eficácia real** criadas por lei especial (locação com cláusula de vigência, alienação fiduciária).",
+                  "O **direito real do promitente comprador** (CC 1.417) nasce do registro da promessa **irretratável** — cláusula de arrependimento afasta a adjudicação compulsória.",
+                  "A **Súmula 239/STJ** dispensa o registro para a adjudicação **entre as partes**; o registro garante a **oponibilidade erga omnes**."
+                ]
+              }
+            },
+            {
+              "id": "ri-titulos",
+              "titulo": "Títulos formais e a regra dos 30 salários mínimos",
+              "edital": "1.3",
+              "fontes": ["Atos Titulos e Livros"],
+              "regra": "São títulos hábeis (LRP 221): **escritura pública**, **escrito particular autorizado em lei**, **atos autênticos de país estrangeiro** (legalizados/apostilados + tradução) e **títulos judiciais**. O art. 108 do CC exige escritura pública acima de **30 salários mínimos** — mas só para os negócios **comuns**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Qual forma o negócio exige",
+                  "colunas": ["Negócio", "Forma"],
+                  "linhas": [
+                    ["Negócio comum sobre imóvel **acima de 30 SM**", "**escritura pública obrigatória** — instrumento particular comum **não** é título hábil"],
+                    ["Negócio comum **até 30 SM**", "instrumento particular admitido"],
+                    ["**Instrumentos particulares autorizados em lei** (alienação fiduciária, SFH/SFI, CCI, cédulas)", "ingressam **independentemente do valor**"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Instrumento particular de R$ 200.000",
+                "caso": "Apresenta-se instrumento particular de compra e venda de imóvel por R$ 200.000, firmado entre particulares, com reconhecimento de firmas.",
+                "solucao": "**Título inábil.** O valor supera 30 salários mínimos e o negócio é comum — exige **escritura pública** (CC 108). O reconhecimento de firma não supre a forma. Nota devolutiva. Diferente seria um contrato de **alienação fiduciária** no âmbito do SFI: instrumento particular **autorizado em lei**, que entra independentemente do valor."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 221", "literal": false, "texto": "Somente são admitidos a registro: escrituras públicas, inclusive as lavradas em consulados brasileiros; escritos particulares autorizados em lei, assinados pelas partes e testemunhas; atos autênticos de países estrangeiros, com força de instrumento público, legalizados e traduzidos; cartas de sentença, formais de partilha, certidões e mandados extraídos de autos do processo."},
+                {"ref": "CC, art. 108", "literal": false, "texto": "Escritura pública é essencial à validade dos negócios que visem a direitos reais sobre imóveis de valor superior a 30 vezes o maior salário mínimo vigente no País."},
+                {"ref": "CC, art. 166, IV", "literal": false, "texto": "É nulo o negócio jurídico quando não revestir a forma prescrita em lei."}
+              ],
+              "pegadinhas": [
+                {"errado": "Todo instrumento particular acima de 30 SM é inábil.", "certo": "Os **autorizados em lei** (alienação fiduciária, SFH/SFI, cédulas) ingressam **independentemente do valor**."},
+                {"errado": "O valor de referência é o do IPTU ou da avaliação fiscal.", "certo": "É o **valor do negócio**, comparado a 30 salários mínimos."},
+                {"errado": "Documento estrangeiro entra com simples tradução livre.", "certo": "Exige **legalização ou apostilamento** e **tradução juramentada**."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "Art. 108 do CC é regra de **forma** — descumprida, o negócio é **nulo** (CC 166, IV), e não apenas irregistrável.",
+                  "Na qualificação notarial, a mesma regra manda o tabelião exigir **procuração pública** para o ato que exige escritura (CC 657; CNNR-RS, art. 857)."
+                ]
+              }
+            },
+            {
+              "id": "ri-livros",
+              "titulo": "Os cinco livros do Registro de Imóveis",
+              "edital": "1.3",
+              "fontes": ["Atos Titulos e Livros"],
+              "regra": "Livro 1 **Protocolo** · Livro 2 **Registro Geral** · Livro 3 **Registro Auxiliar** · Livro 4 **Indicador Real** · Livro 5 **Indicador Pessoal** (LRP 173).",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "O que vai em cada livro",
+                  "colunas": ["Livro", "Nome", "Conteúdo"],
+                  "linhas": [
+                    ["**1**", "Protocolo", "prenotação de **todos** os títulos → prioridade (LRP 182)"],
+                    ["**2**", "Registro Geral", "**matrículas, registros e averbações**; abre matrícula por unidade autônoma na instituição de condomínio"],
+                    ["**3**", "Registro Auxiliar", "atos que **não** recaem diretamente sobre imóvel matriculado: **convenção de condomínio**, cédulas de crédito, penhor, **pacto antenupcial**, emissão de debêntures"],
+                    ["**4**", "Indicador Real", "repertório dos **imóveis**"],
+                    ["**5**", "Indicador Pessoal", "repertório **alfabético das pessoas**"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Condomínio edilício: dois atos, dois livros",
+                "caso": "O incorporador apresenta, no mesmo dia, a **instituição e especificação** do condomínio e a **convenção** aprovada pelos condôminos.",
+                "solucao": "**Instituição/especificação → Livro 2**: cria as unidades autônomas e **abre matrícula para cada uma**. **Convenção → Livro 3** (Registro Auxiliar): regula a vida condominial e, registrada, torna-se **oponível a terceiros**. Trocar os dois é a pegadinha clássica — e o **pacto antenupcial** segue a mesma lógica da convenção: Livro 3."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 173", "literal": false, "texto": "Haverá, no Registro de Imóveis, os seguintes livros: Livro 1 — Protocolo; Livro 2 — Registro Geral; Livro 3 — Registro Auxiliar; Livro 4 — Indicador Real; Livro 5 — Indicador Pessoal."},
+                {"ref": "LRP, art. 178", "literal": false, "texto": "No Livro 3 — Registro Auxiliar — serão registrados os atos que, sendo atribuídos ao Registro de Imóveis por lei, não digam respeito diretamente a imóvel matriculado, entre eles a convenção de condomínio e o pacto antenupcial."},
+                {"ref": "CC, art. 1.333", "literal": false, "texto": "A convenção que constitui o condomínio edilício torna-se, desde logo, obrigatória para os titulares de direito sobre as unidades; para ser oponível contra terceiros, deverá ser registrada no Cartório de Registro de Imóveis."}
+              ],
+              "pegadinhas": [
+                {"errado": "Convenção de condomínio no Livro 2.", "certo": "**Livro 3**."},
+                {"errado": "Instituição do condomínio no Livro 3.", "certo": "**Livro 2** — abre as matrículas das unidades."},
+                {"errado": "O Livro 1 contém as matrículas.", "certo": "Livro 1 é o **protocolo**; matrícula é Livro 2."},
+                {"errado": "O Indicador Real é repertório de pessoas.", "certo": "É de **imóveis**; pessoas ficam no Indicador Pessoal."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "O **pacto antenupcial** (CC 1.653 e ss.) nasce por escritura pública e precisa do registro no **Livro 3** do domicílio dos cônjuges para produzir efeitos perante terceiros — é o ponto de contato entre regime de bens e publicidade registral."
+                ]
+              }
+            },
+            {
+              "id": "ri-matricula-unicidade",
+              "titulo": "Unicidade da matrícula e saneamento registral",
+              "edital": "1.3",
+              "fontes": ["CNM - Código Nacional de Matrícula"],
+              "regra": "A cada imóvel corresponde **uma única matrícula**: um imóvel não pode ser matriculado mais de uma vez, e uma matrícula não pode se referir a mais de um imóvel.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Anomalias e soluções",
+                  "colunas": ["Situação", "Solução"],
+                  "linhas": [
+                    ["**Duplicidade** de matrículas (mesmo imóvel em duas)", "oficial **representa ao juiz** propondo o **bloqueio** de todas as envolvidas; a nova matrícula saneadora depende de **retificação**"],
+                    ["Imóvel **descrito por partes** em matrículas/transcrições diversas", "descrição unificada por **retificação** (LRP 213)"],
+                    ["**Pluralidade de imóveis** na mesma matrícula", "**destacar/desmembrar**, abrindo matrícula própria para cada um; havendo deficiência de especialidade, propor bloqueio ao juiz"],
+                    ["Matrículas **desdobradas com letras** (1A, 1B)", "prática **banida pelo CNJ** → encerrar de ofício e abrir nova com numeração corrente e **remissões recíprocas**"],
+                    ["**Salto na numeração**", "inserir ficha com **averbação** consignando os números omitidos + procedimento administrativo interno"],
+                    ["**Acervo de cartório extinto** com numeração conflitante", "**renumerar** seguindo a sequência própria, com remissões nos Indicadores Real e Pessoal"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Transposição de livros encadernados para fichas",
+                "caso": "Serventia antiga migra o acervo de livros encadernados para fichas soltas e pergunta se precisa transportar todos os atos da matrícula anterior.",
+                "solucao": "Duas opções legítimas: **transportar todos os atos** ou realizar **saneamento**, trazendo apenas os **ônus válidos e eficazes**. Optando pelo saneamento, o registrador insere nota atestando que a matrícula foi atualizada com base nos atos vigentes — e **assume responsabilidade pela exatidão** do que transportou."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 176", "literal": false, "texto": "O Livro 2 — Registro Geral — será destinado à matrícula dos imóveis e ao registro ou averbação dos atos relacionados no art. 167 e não atribuídos ao Livro 3; cada imóvel terá matrícula própria, aberta por ocasião do primeiro registro."},
+                {"ref": "LRP, art. 213", "literal": false, "texto": "O oficial retificará o registro ou a averbação de ofício ou a requerimento do interessado, nas hipóteses de inexatidão e de alteração de descrição, observada a anuência dos confrontantes quando houver aumento de área."},
+                {"ref": "LRP, art. 214, § 3º", "literal": false, "texto": "Se o juiz entender que a superveniência de novos registros poderá causar danos de difícil reparação, poderá determinar de ofício, a qualquer momento, o bloqueio da matrícula."}
+              ],
+              "pegadinhas": [
+                {"errado": "Duplicidade de matrícula o oficial resolve sempre de ofício.", "certo": "Só quando **mesmo dono e mesma cadeia dominial**. Com donos diferentes e cadeias contraditórias, vai a **autotutela registral** e, falhando, ao juiz corregedor."},
+                {"errado": "Matrículas 1A e 1B continuam válidas por serem antigas.", "certo": "Prática **banida** — encerram-se de ofício, com nova numeração e remissões recíprocas."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A unicidade materializa a **especialidade objetiva**: o objeto do direito real precisa ser **individualizado** para existir juridicamente.",
+                  "Matrícula duplicada põe em risco a **fé pública registral** e a boa-fé de terceiros adquirentes — daí o bloqueio, que é medida cautelar do sistema."
+                ]
+              }
+            },
+            {
+              "id": "ri-abertura-matricula",
+              "titulo": "Abertura de matrícula e imóvel em duas circunscrições",
+              "edital": "1.3",
+              "fontes": ["Abertura de Matrícula e Imóveis em Múltiplas Circunscrições (RI)", "Desmembramento Imobiliário"],
+              "regra": "Imóvel que cruza a divisa de duas circunscrições: abrem-se matrículas **em ambas**, com **remissões recíprocas** — mas os atos **com conteúdo financeiro** são praticados onde está a **maior área**; na outra, **averbação de notícia**. Áreas iguais: **o interessado escolhe**. Para **loteamentos e condomínios edilícios** a regra muda: cada unidade tem matrícula **exclusiva onde está fisicamente situada**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Como abrir uma matrícula",
+                  "colunas": ["Forma", "Quem inicia", "Emolumentos"],
+                  "linhas": [
+                    ["Por ocasião do **1º registro** (transcrição → matrícula)", "oficial, ao praticar o ato", "inclusos no ato"],
+                    ["A **requerimento** do proprietário", "interessado, a qualquer tempo", "**paga**"],
+                    ["**De ofício** (conveniência do serviço)", "oficial, por iniciativa própria", "**vedado repassar** ao proprietário (LRP 237-A, § 5º)"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Especialidade objetiva: o que deve constar",
+                  "colunas": ["Imóvel urbano", "Imóvel rural"],
+                  "linhas": [
+                    ["características e confrontações", "denominação e **CCIR**"],
+                    ["logradouro, número e localização", "confrontações e localização"],
+                    ["área em **m²**", "área em **hectares**"],
+                    ["CIF ou CIB", "CCIR, NIRF e **CAR**"],
+                    ["Código Nacional de Matrícula (CNM)", "**georreferenciamento** (INCRA)"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Gleba rural de 120 ha em dois municípios",
+                "caso": "Compra de gleba rural: 70 ha em Campinas e 50 ha em Jundiaí. O imóvel só tem transcrição de 1968; a escritura veio sem CCIR e sem CAR. O oficial de Jundiaí sustenta que o registro cabe a ele porque o proprietário mora lá.",
+                "solucao": "Os atos são praticados em **Campinas** (maior área) — o **domicílio do proprietário é irrelevante**. Abrem-se matrículas **nas duas** serventias, com remissões recíprocas; em Campinas a matrícula nasce automaticamente ao praticar o primeiro ato (transcrição → matrícula). **CCIR e CAR ausentes → nota de exigência**, pois bloqueiam o registro. A escritura ainda deve descrever **separadamente** as duas porções, por circunscrição."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 169, § 1º", "literal": false, "texto": "As unidades de loteamento e de condomínio edilício serão registradas no cartório da circunscrição em que estiverem fisicamente situadas."},
+                {"ref": "LRP, art. 169, § 3º", "literal": false, "texto": "Tratando-se de imóvel situado em mais de uma circunscrição, a matrícula será aberta em todas elas, com remissões recíprocas, praticando-se os atos na circunscrição em que se situe a maior parte do imóvel."},
+                {"ref": "LRP, art. 237-A, § 5º", "literal": false, "texto": "É vedado repassar ao proprietário os custos da abertura de matrícula realizada de ofício, no interesse do serviço."},
+                {"ref": "LRP, art. 213, § 2º", "literal": false, "texto": "Exige-se o CCIR para o registro de atos relativos a imóvel rural."}
+              ],
+              "pegadinhas": [
+                {"errado": "Loteamento em duas circunscrições registra-se onde está a maior área do loteamento.", "certo": "Cada **lote** se registra onde está **fisicamente** (169, § 1º)."},
+                {"errado": "O oficial pode cobrar a abertura de ofício.", "certo": "**Vedado** repassar o custo (237-A, § 5º)."},
+                {"errado": "Áreas iguais nas duas circunscrições: o oficial decide.", "certo": "**O interessado escolhe**."},
+                {"errado": "Área de imóvel rural expressa em m².", "certo": "Obrigatoriamente em **hectares**."},
+                {"errado": "Imóvel público sem registro exige ação judicial.", "certo": "Abertura **extrajudicial** — requerimento, planta e confrontantes (LRP 195-A e 195-B)."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "É a **especialidade objetiva** do CC aplicada à competência: a coisa precisa estar descrita e localizada para o direito real existir e ser oponível.",
+                  "**Desmembramento de circunscrição:** criada nova serventia, o cartório novo abre a matrícula e **comunica de ofício** o de origem (sistema eletrônico ou carta AR), que **averba a baixa** da matrícula originária — proteção da unicidade e contra fraude."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "nome": "Procedimentos extrajudiciais",
+          "cards": [
+            {
+              "id": "ri-usucapiao-procedimento",
+              "titulo": "Usucapião extrajudicial — procedimento (LRP 216-A)",
+              "edital": "1.3 · 1.4",
+              "fontes": ["Usucapião Extrajudicial-", "Usucapião Extrajudicial — Procedimento e Pegadinhas FGV (RI)", "Usucapião Extrajudicial", "Competência e Natureza da Usucapião"],
+              "regra": "O procedimento é conduzido **integralmente pelo Oficial do RI**. O requerente entra com o pedido instruído, **representado por advogado**; quem notifica, publica edital, dá ciência aos entes públicos e remete ao juízo é **o Oficial**. A prenotação fica **prorrogada** durante toda a tramitação.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Documentos obrigatórios",
+                  "colunas": ["Documento", "Observações"],
+                  "linhas": [
+                    ["**Ata notarial**", "lavrada pelo tabelião de notas da comarca do imóvel; atesta o tempo de posse **do requerente e de seus antecessores** e as **características** da posse"],
+                    ["**Planta e memorial descritivo**", "assinados por profissional habilitado (ART/RRT) + anuência dos confrontantes que concordarem"],
+                    ["**Certidões dos distribuidores cíveis**", "da comarca do imóvel **e** da do domicílio do requerente"],
+                    ["**Comprovantes de tributos**", "IPTU (urbano) ou ITR (rural)"],
+                    ["**Documentos de posse**", "contas de consumo, contratos, declarações, fotos — exige-se prova **suficiente**, não cota mínima por ano"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Quem faz o quê",
+                  "colunas": ["Ato", "Responsável"],
+                  "linhas": [
+                    ["Lavrar a ata notarial", "**Tabelião de Notas**"],
+                    ["Instruir o requerimento e contratar advogado", "**Requerente**"],
+                    ["Autuação e prorrogação da prenotação", "**Oficial de RI**"],
+                    ["Notificação dos titulares e confrontantes", "**Oficial de RI**"],
+                    ["Publicação de edital", "**Oficial de RI**"],
+                    ["Ciência aos entes públicos (via RTD ou correio com AR)", "**Oficial de RI**"],
+                    ["Remessa ao juízo (impugnação fundamentada)", "**Oficial de RI**"]
+                  ]
+                },
+                {
+                  "tipo": "timeline",
+                  "titulo": "Fluxo",
+                  "itens": [
+                    "Requerimento protocolado no RI → qualificação dos documentos",
+                    "Oficial notifica: proprietário registrado + confrontantes que não assinaram a planta",
+                    "**15 dias** — silêncio = **concordância**",
+                    "Impugnação **infundada** → oficial desconsidera e prossegue",
+                    "Impugnação **fundamentada** → paralisa e **remete ao juízo** (jurisdição voluntária)",
+                    "Sem impugnação fundamentada → **registro da usucapião**"
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Apartamento em condomínio edilício com duas impugnações",
+                "caso": "Usucapião de apartamento em condomínio edilício registrado. O síndico assina como confrontante da área comum, mas impugna alegando que a unidade pertence ao fundo de reserva do condomínio, conforme ata de 2001. A vizinha do 401 impugna dizendo que a requerente faz barulho.",
+                "solucao": "O **§ 11** se aplica (condomínio edilício registrado): dispensa-se o consentimento dos titulares das demais unidades e **basta notificar o síndico**. Mas a dispensa alcança a **anuência formal**, não imuniza o processo contra disputa de propriedade: a impugnação do síndico é **fundamentada** (argumento jurídico com base documental) → o Oficial **paralisa e remete ao juízo** (§ 10). A impugnação da vizinha é **infundada** → o Oficial **desconsidera**. Em **vila** ou condomínio de fato, o § 11 **não se aplica**."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 216-A, caput", "literal": false, "texto": "Sem prejuízo da via jurisdicional, é admitido o pedido de reconhecimento extrajudicial de usucapião, processado diretamente no registro de imóveis da comarca em que estiver situado o imóvel, a requerimento do interessado, representado por advogado."},
+                {"ref": "LRP, art. 216-A, § 2º", "literal": false, "texto": "Se a planta não estiver assinada por qualquer titular de direito registrado, este será notificado pelo oficial para manifestar consentimento em 15 dias, interpretado o silêncio como concordância."},
+                {"ref": "LRP, art. 216-A, § 3º", "literal": false, "texto": "O oficial dará ciência à União, ao Estado, ao Distrito Federal e ao Município, pessoalmente, por intermédio do oficial de registro de títulos e documentos, ou pelo correio com aviso de recebimento, para manifestação em 15 dias."},
+                {"ref": "LRP, art. 216-A, § 10", "literal": false, "texto": "Em caso de impugnação do pedido, o oficial remeterá os autos ao juízo competente da comarca da situação do imóvel."},
+                {"ref": "LRP, art. 216-A, § 11", "literal": true, "texto": "No caso de o imóvel usucapiendo ser unidade autônoma de condomínio edilício, fica dispensado consentimento dos titulares de direitos reais e outros direitos registrados ou averbados na matrícula dos imóveis confinantes e bastará a notificação do síndico para se manifestar na forma do §2º deste artigo."}
+              ],
+              "pegadinhas": [
+                {"errado": "Prazo de 30 dias para o titular se manifestar.", "certo": "**15 dias** (§ 2º)."},
+                {"errado": "Silêncio do notificado significa discordância.", "certo": "Significa **concordância**."},
+                {"errado": "Qualquer impugnação manda os autos ao juízo.", "certo": "Só a **fundamentada** — e o rito lá é de **jurisdição voluntária**, não procedimento comum."},
+                {"errado": "A ata notarial atesta apenas o tempo de posse.", "certo": "Tempo **do requerente e dos antecessores** + **características** da posse (art. 216-A, I)."},
+                {"errado": "O requerente comunica as fazendas públicas.", "certo": "É o **Oficial** (§ 3º)."},
+                {"errado": "Exige-se maior, capaz e sem filhos incapazes.", "certo": "Isso é requisito de **divórcio/inventário extrajudicial** (Res. CNJ 35/2007). Aqui só se exige **advogado**."},
+                {"errado": "Rejeitado o pedido extrajudicial, não cabe ação judicial.", "certo": "A rejeição **não impede** o ajuizamento."},
+                {"errado": "O § 14 é o que dispensa o síndico.", "certo": "O § 14 trata de **edital eletrônico**. A regra do síndico está nos §§ 11 e 12."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "Usucapião é **aquisição originária**: rompe a continuidade subjetiva e, em regra, **extingue ônus reais anteriores** (hipotecas, penhoras). Não há incidência de ITBI, por não haver transmissão voluntária.",
+                  "Ainda assim, o Oficial busca identificar a **origem** do imóvel para fins de **especialidade objetiva** e de notificação dos titulares de direitos reais — aquisição originária não dispensa a técnica registral.",
+                  "**Imóvel público é insuscetível de usucapião** (CF, arts. 183, § 3º, e 191, p.ú.).",
+                  "A **ata notarial** é o ponto de contato com o Tabelionato de Notas: é ela que documenta os fatos da posse."
+                ]
+              }
+            },
+            {
+              "id": "ri-usucapiao-notificacao",
+              "titulo": "Usucapião — titular falecido, saisine e legitimidade do herdeiro",
+              "edital": "1.3",
+              "fontes": ["Usucapião Extrajudicial — Notificação e Legitimidade do Herdeiro (RI)"],
+              "regra": "O falecimento do titular registral **não cria vacância jurídica** nem dispensa a notificação: pela **saisine**, os herdeiros são titulares do interesse desde a abertura da sucessão. O **edital é subsidiário** — só depois de comprovado o esgotamento dos meios de localização, e o ônus é do **interessado**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Titular falecido — conduta correta",
+                  "colunas": ["Situação", "Conduta"],
+                  "linhas": [
+                    ["Herdeiros **não identificados**", "esgotar os meios de localização → só então admitir **edital**"],
+                    ["Herdeiros identificados, **sem cessão**", "**notificação pessoal** de cada herdeiro"],
+                    ["Herdeiros identificados, **todos cederam** os direitos", "**legitimidade direta** do cessionário — sem espólio nem inventário"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Cessão de direitos por todos os herdeiros",
+                "caso": "A requerente possuía o apartamento junto com o pai, já falecido, e apresenta instrumento de cessão de direitos firmado por **todos** os herdeiros. O oficial exige que o pedido seja feito pelo espólio, que a ata notarial seja aditada e apresenta exigência de número mínimo de documentos por ano de posse.",
+                "solucao": "As exigências não se sustentam. A **cessão unânime** confere legitimidade ativa **direta** ao cessionário — não se exige espólio, inventário ou partilha prévia. A ausência de reconhecimento de firma, por si, não invalida o instrumento. E **não existe cota mínima** de documentos por ano: exige-se prova **suficiente** da posse, qualidade e não quantidade arbitrada. (Decisão da 1ª VRPSP em 29/01/2026, dúvida julgada improcedente.)"
+              },
+              "citacoes": [
+                {"ref": "CC, art. 1.784", "literal": false, "texto": "Aberta a sucessão, a herança transmite-se, desde logo, aos herdeiros legítimos e testamentários."},
+                {"ref": "Prov. CNJ 149/2023, art. 409", "literal": false, "texto": "Falecido o titular de domínio, a notificação será dirigida aos herdeiros; a notificação por edital pressupõe o esgotamento dos meios de localização."},
+                {"ref": "Prov. CNJ 149/2023, art. 410", "literal": false, "texto": "Dispensa-se a notificação quando houver instrumento com anuência do titular de direito registrado."},
+                {"ref": "LRP, art. 216-A, § 13", "literal": false, "texto": "Não encontrado o notificando, a notificação far-se-á por edital."}
+              ],
+              "pegadinhas": [
+                {"errado": "Titular morto há décadas → edital direto.", "certo": "A **saisine** transmite o interesse aos herdeiros; edital só após esgotamento comprovado."},
+                {"errado": "O ônus de localizar herdeiros é do Oficial.", "certo": "É do **interessado** (usucapiente)."},
+                {"errado": "Com cessão unânime ainda é preciso abrir inventário.", "certo": "A cessão confere **legitimidade direta** — sem espólio."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "**Saisine** (CC 1.784) é a regra civil que sustenta toda a solução: morto o titular, não há bem sem dono — há herdeiros.",
+                  "A **cessão de direitos hereditários** (CC 1.793) é o instrumento que transfere a posição do herdeiro e, aqui, a legitimidade para requerer a usucapião."
+                ]
+              }
+            },
+            {
+              "id": "ri-adjudicacao",
+              "titulo": "Adjudicação compulsória extrajudicial (LRP 216-B)",
+              "edital": "1.3",
+              "fontes": ["Adjudicação Compulsória Extrajudicial", "Adjudicacao CNIB Busca Apreensao"],
+              "regra": "Procedimento no RI para transferir a propriedade ao promitente comprador que **quitou o preço** quando o vendedor recusa, falece ou desaparece. É aquisição **derivada** — substitui a vontade do vendedor. **Dispensa o registro prévio** da promessa na matrícula (216-B, § 1º): o \"contrato de gaveta\" instrui o pedido.",
+              "blocos": [
+                {
+                  "tipo": "lista",
+                  "titulo": "Requisitos",
+                  "itens": [
+                    "**Instrumento contratual** — promessa de compra e venda ou cessão, pública ou particular;",
+                    "**Prova de quitação** — recibos, extratos, declaração de IR;",
+                    "**Mora do vendedor** comprovada por notificação extrajudicial (15 dias); em local incerto, por **edital**;",
+                    "**Ata notarial** do tabelião atestando os fatos e a quitação;",
+                    "**ITBI** recolhido."
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Pontos que a banca cobra",
+                  "colunas": ["Ponto", "Regra"],
+                  "linhas": [
+                    ["Registro prévio da promessa", "**dispensado** (§ 1º)"],
+                    ["Regularidade fiscal do vendedor", "**dispensada** — sem CND"],
+                    ["Cláusula de arrependimento", "em regra **impede** — exceto loteamento ou incorporação com carência decorrida"],
+                    ["**Ação judicial em curso**", "**ativa impede**; **suspensa há ≥ 90 dias úteis** (certidão do juízo) **permite** a via extrajudicial"],
+                    ["Notificação do requerido", "**15 dias úteis** para anuir ou impugnar; silêncio → presunção de veracidade do inadimplemento"],
+                    ["Vendedor falecido sem inventário", "notificam-se diretamente os **herdeiros**"],
+                    ["Decisão do oficial após as manifestações", "**10 dias úteis**"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Ação suspensa há 110 dias úteis",
+                "caso": "O oficial recusa o requerimento de adjudicação extrajudicial alegando que qualquer ação judicial em curso impede a via administrativa. O interessado comprova, por certidão, que o processo está suspenso há 110 dias úteis.",
+                "solucao": "**O oficial errou.** Processo **ativo** impede; processo **suspenso por 90 dias úteis ou mais**, comprovado por certidão do juízo, **permite** a adjudicação compulsória extrajudicial. Note o contraste com a **busca e apreensão extrajudicial de bem móvel** (Prov. CNJ 196/2023, no RTD): ali a judicialização prévia **obsta** a via extrajudicial, e só a **desistência homologada** reabre o caminho — não basta suspender."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 216-B", "literal": false, "texto": "Sem prejuízo da via jurisdicional, é admitido o pedido de adjudicação compulsória de imóvel objeto de promessa de venda ou de cessão, processado diretamente perante o registro de imóveis da situação do imóvel."},
+                {"ref": "LRP, art. 216-B, § 1º", "literal": false, "texto": "O pedido independe do prévio registro do instrumento de promessa e da comprovação da regularidade fiscal do promitente vendedor."},
+                {"ref": "Súmula 239/STJ", "literal": true, "texto": "O direito à adjudicação compulsória não se condiciona ao registro do compromisso de compra e venda no cartório de imóveis."},
+                {"ref": "Prov. CNJ 149/2023, arts. 440-A e ss.", "literal": false, "texto": "Disciplinam o procedimento da adjudicação compulsória extrajudicial, inclusive prazos de notificação e de decisão do oficial."}
+              ],
+              "pegadinhas": [
+                {"errado": "É preciso registrar antes a promessa na matrícula.", "certo": "**Dispensado** (§ 1º) — inclusive o contrato de gaveta serve."},
+                {"errado": "Exige-se CND do vendedor.", "certo": "A regularidade fiscal do transmitente **não condiciona** a adjudicação extrajudicial."},
+                {"errado": "Qualquer ação judicial em curso impede.", "certo": "Suspensa há **≥ 90 dias úteis**, a via extrajudicial é cabível."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "O fundamento é o **direito real do promitente comprador** (CC 1.417–1.418): promessa **sem cláusula de arrependimento**, quitada, gera direito à **adjudicação**.",
+                  "**Usucapião × adjudicação:** a primeira olha a **posse pelo tempo** e é aquisição **originária**; a segunda olha a **quitação do preço** e é aquisição **derivada**, que substitui a vontade do vendedor."
+                ]
+              }
+            },
+            {
+              "id": "ri-cnib",
+              "titulo": "CNIB, indisponibilidade e prioridade",
+              "edital": "1.3",
+              "fontes": ["CNIB e Prioridade Registral", "Adjudicacao CNIB Busca Apreensao"],
+              "regra": "O magistrado insere a ordem **diretamente no CNIB** (integrado ao ONR), e ela irradia para todas as serventias — sem ofícios individuais. O marco temporal é sempre a **inserção no sistema** × a **prenotação no Livro 1**. Regra atual (Prov. CNJ 190/2025): a CNIB **superveniente não impede** o registro de título anteriormente prenotado, salvo ordem judicial expressa em contrário.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Linha do tempo normativa — a banca cobra o histórico",
+                  "colunas": ["Norma", "Regra do § 3º do art. 320-I", "CNIB bloqueia prenotado?"],
+                  "linhas": [
+                    ["Antes do Prov. 188", "a prenotação prevalecia", "Não"],
+                    ["**Prov. 188 (dez/2024)**", "CNIB bloqueia títulos prenotados, salvo ordem judicial em contrário", "**Sim**"],
+                    ["**Prov. 190 (abr/2025)**", "CNIB não impede o registro de título anteriormente prenotado, salvo ordem judicial em contrário", "**Não**"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Conflito CNIB × prenotação",
+                  "colunas": ["Situação", "Resultado"],
+                  "linhas": [
+                    ["Prenotação **anterior** à inserção na CNIB", "título tem **prioridade** → registro deve ser efetivado (oficial comunica o juízo)"],
+                    ["Prenotação **posterior** à inserção na CNIB", "indisponibilidade **impede** o ato de disposição"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Formal de partilha prenotado dois dias antes",
+                "caso": "Em 03/07 a interessada prenota o formal de partilha. Em 05/07 chega ao RI, pela CNIB, ordem de indisponibilidade dos bens do ex-cônjuge, expedida naquela mesma data.",
+                "solucao": "O que vale para o direito registral é a **data de ingresso**: mesmo que o juiz tivesse assinado a ordem antes da prenotação, se ela chegou depois, é **superveniente**. Pela regra atual (Prov. 190/2025), a superveniência **não impede** o registro do título prenotado — o oficial **registra e comunica ao juiz**. Atenção ao histórico: sob o Prov. 188 (vigente no ENAC 2025.1) a resposta seria a oposta."
+              },
+              "citacoes": [
+                {"ref": "Prov. CNJ 149/2023, art. 320-I, § 3º (red. Prov. 190/2025)", "literal": false, "texto": "A indisponibilidade superveniente não impede o registro de título anteriormente prenotado, salvo determinação judicial expressa em sentido contrário."},
+                {"ref": "LRP, art. 186", "literal": false, "texto": "O número de ordem determinará a prioridade do título, e esta a preferência dos direitos reais, ainda que apresentados pela mesma pessoa mais de um título simultaneamente."}
+              ],
+              "pegadinhas": [
+                {"errado": "O juiz oficia cada cartório individualmente.", "certo": "A **CNIB centraliza** e irradia a ordem, integrada ao ONR."},
+                {"errado": "A indisponibilidade retroage à data da decisão.", "certo": "Produz efeito a partir da **inserção no sistema**."},
+                {"errado": "A CNIB é restrita a execuções cíveis.", "certo": "Abrange **qualquer ordem judicial** de indisponibilidade."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "Indisponibilidade não retira a propriedade: retira a **disponibilidade** (poder de dispor) — é restrição ao art. 1.228 do CC, oponível a partir da publicidade.",
+                  "O conflito CNIB × prenotação é, no fundo, disputa de **prioridade** entre direito do credor e direito do adquirente de boa-fé."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "nome": "Garantias imobiliárias",
+          "cards": [
+            {
+              "id": "ri-af-constituicao",
+              "titulo": "Alienação fiduciária — constituição, intimação e consolidação",
+              "edital": "1.3 · 2.4",
+              "fontes": ["Alienação Fiduciária", "Alienação Fiduciária 1"],
+              "regra": "A alienação fiduciária de imóvel (Lei 9.514/1997) se constitui por **REGISTRO** (LRP 167, I, 35) e se executa **extrajudicialmente pelo Oficial do RI**: intimação para purgar a mora em **15 dias** → certidão de decurso → pagamento do ITBI pelo credor → **averbação da consolidação** da propriedade no Livro 2.",
+              "blocos": [
+                {
+                  "tipo": "lista",
+                  "titulo": "O rito da intimação (art. 26)",
+                  "itens": [
+                    "**Competência:** RI da situação do imóvel; forma preferencialmente **pessoal**.",
+                    "**Hora certa** (§ 3º-A): exige **2 tentativas** + suspeita de ocultação. Em condomínios, pode ser entregue ao **porteiro** (§ 3º-B).",
+                    "**Edital** (§ 4º): lugar ignorado, incerto ou **inacessível**; publicação por **3 dias**. A recusa do funcionário da portaria em receber o intimador torna o endereço **imediatamente inacessível** — vai-se direto ao edital.",
+                    "**Forma do contrato:** instrumento particular é admitido para as entidades do **SFI**; para particulares, desde junho/2024, exige-se **escritura pública**."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Porteiro recusa receber o intimador",
+                "caso": "O intimador vai ao endereço do devedor e o porteiro do condomínio se recusa a receber a intimação. O credor pergunta se é preciso tentar intimação com hora certa antes do edital.",
+                "solucao": "**Não.** A recusa do funcionário da portaria torna o endereço **imediatamente inacessível**, hipótese que autoriza ir direto ao **edital**, publicado por no mínimo **3 dias** — regra expressa introduzida pela Lei 14.711/2023. A hora certa (2 tentativas + suspeita de ocultação) é para o caso de **ocultação**, não de recusa institucional de acesso."
+              },
+              "citacoes": [
+                {"ref": "Lei 9.514/97, art. 26", "literal": false, "texto": "Vencida e não paga a dívida, no todo ou em parte, e constituído em mora o fiduciante, consolidar-se-á a propriedade do imóvel em nome do fiduciário; a intimação para purgação da mora é feita a requerimento do fiduciário, pelo oficial do registro de imóveis, no prazo de 15 dias."},
+                {"ref": "LRP, art. 167, I, 35", "literal": false, "texto": "No Livro 2 registra-se a alienação fiduciária em garantia de coisa imóvel."},
+                {"ref": "CC, art. 1.359", "literal": false, "texto": "Resolvida a propriedade pelo implemento da condição ou pelo advento do termo, entendem-se também resolvidos os direitos reais concedidos na sua pendência."}
+              ],
+              "pegadinhas": [
+                {"errado": "Confundir o art. 26 da LRP (registro civil) com o art. 26 da Lei 9.514/97.", "certo": "Na alienação fiduciária, o rito da intimação é do **art. 26 da Lei 9.514/97**."},
+                {"errado": "A consolidação se registra.", "certo": "A consolidação da propriedade entra por **averbação** no Livro 2 — o que se **registra** é a constituição da garantia."},
+                {"errado": "Particular pode contratar AF por instrumento particular.", "certo": "O instrumento particular é prerrogativa das entidades do **SFI**; particular exige **escritura pública** (desde jun/2024)."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A estrutura é a **propriedade resolúvel** (CC 1.359–1.360): o fiduciário tem propriedade sujeita a condição resolutiva — pago o débito, resolve-se em favor do fiduciante e cancela-se a garantia.",
+                  "Resolvida a propriedade, **resolvem-se também os direitos reais concedidos na pendência** — é o que explica o cancelamento dos ônus constituídos pelo fiduciante depois da AF."
+                ]
+              }
+            },
+            {
+              "id": "ri-af-leiloes",
+              "titulo": "Alienação fiduciária — leilões, saldo remanescente e cross default",
+              "edital": "1.3 · 2.4",
+              "fontes": ["AF - Consolidação e Leilões", "Alienação Fiduciária"],
+              "regra": "Consolidada a propriedade, o credor é **obrigado** a levar o imóvel a leilão. **1º leilão: 60 dias** (prazo elevado de 30 para 60 pela Lei 14.711/2023), lance mínimo = **valor de avaliação**. **2º leilão: 15 dias após**, lance mínimo = **valor da dívida + despesas**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Frustrado o 2º leilão — o destino da dívida",
+                  "colunas": ["Natureza do contrato", "Resultado"],
+                  "linhas": [
+                    ["**Financiamento habitacional** (aquisição ou construção de imóvel residencial do próprio devedor)", "dívida **EXTINTA**; credor dá quitação em 5 dias; o devedor não recebe \"troco\" nem indenização por benfeitorias"],
+                    ["**Demais créditos** (home equity, capital de giro, crédito comercial)", "o **saldo remanescente persiste** e pode ser executado judicialmente (art. 27, § 5º-A)"]
+                  ]
+                },
+                {
+                  "tipo": "lista",
+                  "titulo": "Três regras que a FGV cobra direto",
+                  "itens": [
+                    "**Direito de preferência (§ 2º-B):** até a data do **2º leilão**, o devedor pode adquirir o imóvel por preço correspondente à dívida + despesas.",
+                    "**Alienação fiduciária sucessiva (2º grau):** é permitida; o credor posterior **sub-roga-se no saldo do preço** depois de satisfeito o credor anterior — se não sobra nada, a garantia é cancelada e ele vira **quirografário**.",
+                    "**Cross default:** o vencimento antecipado das demais obrigações deve ser declarado **na intimação para purgação da mora** — o Oficial faz constar na própria intimação. Não informado ali, **não pode ser declarado depois** no mesmo procedimento."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Segundo leilão com lance insuficiente e credor de 2º grau",
+                "caso": "Imóvel com R-1 (Banco Alfa, R$ 400 mil) e R-2 (Banco Beta, R$ 180 mil, 2º grau). Inadimplência no Banco Alfa, dívida total de R$ 440 mil; no 2º leilão aceita-se lance de R$ 390 mil. O crédito era de capital de giro.",
+                "solucao": "Como **não é financiamento habitacional residencial próprio**, o saldo de R$ 50 mil **continua devido** e pode ser cobrado judicialmente (art. 27, § 5º-A). O Banco Beta **sub-roga-se no saldo do preço** após a satisfação do Banco Alfa — como não sobrou nada, sua garantia é **cancelada** e ele se torna **credor quirografário**. Se o contrato fosse de financiamento habitacional do próprio devedor, a dívida estaria **extinta**, com quitação em 5 dias."
+              },
+              "citacoes": [
+                {"ref": "Lei 9.514/97, art. 27", "literal": false, "texto": "Consolidada a propriedade, o fiduciário promoverá público leilão para a alienação do imóvel; no primeiro leilão o lance mínimo é o valor do imóvel e, no segundo, o valor da dívida acrescido das despesas."},
+                {"ref": "Lei 9.514/97, art. 27, § 5º-A", "literal": false, "texto": "Nas operações que não sejam de financiamento para aquisição ou construção de imóvel residencial do próprio devedor, o saldo devedor remanescente subsiste após os leilões."},
+                {"ref": "Lei 9.514/97, art. 27, § 2º-B", "literal": false, "texto": "Até a data da realização do segundo leilão, é assegurado ao devedor fiduciante o direito de preferência para adquirir o imóvel por preço correspondente ao valor da dívida e das despesas."}
+              ],
+              "pegadinhas": [
+                {"errado": "O prazo para o 1º leilão é de 30 dias.", "certo": "**60 dias** desde a Lei 14.711/2023."},
+                {"errado": "Frustrado o 2º leilão, a dívida sempre se extingue.", "certo": "Só no **financiamento habitacional residencial do próprio devedor**."},
+                {"errado": "Alienação fiduciária de 2º grau é vedada.", "certo": "É **permitida**; o credor posterior sub-roga-se no **saldo do preço**."},
+                {"errado": "O cross default pode ser declarado a qualquer tempo.", "certo": "Deve constar **da intimação** para purgação da mora, sob pena de preclusão naquele procedimento."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A extinção da dívida no financiamento habitacional é exceção legal ao princípio da **responsabilidade patrimonial** (CC 391): o patrimônio do devedor responde pelas obrigações — aqui, a lei limita essa responsabilidade ao bem dado em garantia.",
+                  "A sub-rogação do credor de 2º grau no saldo do preço é aplicação da **sub-rogação real** e da ordem de **preferência** entre credores com garantia."
+                ]
+              }
+            },
+            {
+              "id": "ri-agente-garantia",
+              "titulo": "Agente de garantia (Lei 14.711/2023)",
+              "edital": "1.3",
+              "fontes": ["Agente de Garantia (Administracao Fiduciaria)"],
+              "regra": "Em vez de vários credores figurarem na matrícula, **um único agente** titulariza e administra a garantia **em nome próprio, mas em benefício dos credores**, com **dever fiduciário**. Criado para crédito de grande porte: empréstimos sindicalizados, debêntures, *project finance*.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Natureza e funções",
+                  "colunas": ["Ponto", "Regra"],
+                  "linhas": [
+                    ["Quem designa", "os **credores** da obrigação"],
+                    ["Como atua", "**em nome próprio, em benefício dos credores** — aparece na matrícula como titular"],
+                    ["Funções", "constituir, **registrar**, gerir e **executar** a garantia, inclusive o leilão extrajudicial"],
+                    ["Legitimidade judicial", "ações sobre existência, validade e eficácia do crédito"],
+                    ["Quem pode ser", "pessoa física **ou jurídica** (o usual é PJ)"],
+                    ["**Patrimônio separado**", "o produto da realização da garantia não responde por dívidas do agente por **180 dias** do recebimento"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Extensão da garantia — sempre ao MESMO credor",
+                  "colunas": ["Instituto", "Regra"],
+                  "linhas": [
+                    ["**Hipoteca (CC 1.487-A)**", "estende-se a novas obrigações do mesmo devedor **em favor do MESMO credor**, respeitada a prioridade dos ônus já averbados"],
+                    ["**Alienação fiduciária**", "estende-se a novas operações **com o mesmo credor**, desde que não haja credor diverso garantido pelo mesmo imóvel"],
+                    ["**Execução em concurso**", "vários créditos sobre o mesmo imóvel → o oficial **intima simultaneamente** todos os credores para habilitarem; executa-se o **mais prioritário**"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Financiamento sindicalizado de R$ 500 milhões",
+                "caso": "Incorporadora toma R$ 500 milhões de um pool de seis bancos, com garantia de alienação fiduciária sobre o terreno. Meses depois, dois bancos cedem suas fatias a fundos; em seguida, o pool decide trocar o administrador da garantia.",
+                "solucao": "A matrícula tem **um só titular** — o agente de garantia. Credores entram e saem do pool **sem mexer no registro**. A **substituição do agente** é decidida por **maioria simples** dos créditos em assembleia e sua eficácia depende de publicidade na mesma forma da garantia → **AVERBAÇÃO** no RI. Se a incorporadora quebrar antes do repasse, o produto do leilão já recebido pelo agente é **patrimônio separado** por 180 dias."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 853-A", "literal": false, "texto": "As garantias poderão ser constituídas e registradas por agente de garantia designado pelos credores, que atuará em nome próprio e em benefício deles."},
+                {"ref": "CC, art. 1.487-A", "literal": false, "texto": "A hipoteca poderá ser estendida a novas obrigações contraídas perante o mesmo credor, respeitada a prioridade dos direitos reais averbados ou registrados anteriormente."},
+                {"ref": "LRP, art. 167, I, 2 e 35", "literal": false, "texto": "A constituição de hipoteca e a alienação fiduciária de coisa imóvel entram por REGISTRO."}
+              ],
+              "pegadinhas": [
+                {"errado": "O agente é mandatário comum dos credores.", "certo": "Atua **em nome próprio**, com **dever fiduciário** — não é simples mandato."},
+                {"errado": "A extensão da garantia pode beneficiar credor diverso.", "certo": "Só o **mesmo credor**. A pluralidade de credores surge de garantias distintas (1ª e 2ª hipoteca) ou de **cessão**."},
+                {"errado": "A substituição do agente independe de publicidade.", "certo": "Exige **averbação** no RI."},
+                {"errado": "Na execução em concurso, executa-se em favor de quem primeiro requerer.", "certo": "Intimam-se **todos** e executa-se o crédito **mais prioritário**."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A figura reaproveita a lógica da **propriedade fiduciária** (CC 1.361 e ss.) e do **negócio fiduciário**: titularidade formal em nome próprio, finalidade em benefício alheio.",
+                  "**Regra mental de registro × averbação:** a garantia **nasce por registro** (constitui direito real); o que **modifica** garantia existente (extensão, substituição do agente) entra por **averbação**."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "nome": "Urbanismo, imóvel rural e regularização",
+          "cards": [
+            {
+              "id": "ri-parcelamento",
+              "titulo": "Parcelamento do solo urbano (Lei 6.766/1979)",
+              "edital": "1.3",
+              "fontes": ["Parcelamento do Solo Urbano"],
+              "regra": "O divisor entre **loteamento** e **desmembramento** é a **abertura ou modificação de vias** — não o número de lotes. Loteamento mexe no sistema viário; desmembramento aproveita o existente.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Requisitos urbanísticos (art. 4º) e vedações (art. 3º)",
+                  "colunas": ["Tema", "Regra"],
+                  "linhas": [
+                    ["Lote mínimo", "**125 m²** e frente de **5 m** — pode ser **maior** por lei estadual/municipal e **reduzido** em ZHIS (interesse social)"],
+                    ["Faixa *non aedificandi*", "**15 m de cada lado** ao longo de águas correntes e dormentes e das faixas de domínio de rodovias e ferrovias"],
+                    ["Áreas públicas", "reservar circulação, equipamentos urbanos e comunitários e espaços livres"],
+                    ["Vedações", "alagadiços sem drenagem · aterro com material nocivo · **declividade ≥ 30%** · condições geológicas desaconselháveis · áreas de preservação ecológica"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Registro do loteamento",
+                  "colunas": ["Etapa", "Regra"],
+                  "linhas": [
+                    ["Submissão ao RI (art. 18)", "**180 dias** da aprovação municipal, sob pena de **caducidade** da aprovação"],
+                    ["Instrução", "certidões negativas de tributos, de ações reais (10 anos) e **histórico vintenário** dos títulos"],
+                    ["Impugnação (art. 19)", "o oficial publica **edital**; terceiros impugnam em **15 dias** da última publicação"],
+                    ["Áreas públicas (art. 22)", "**desde o registro**, vias, praças, espaços livres e áreas de equipamentos passam ao **domínio do Município** — automaticamente, **sem escritura**"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Subdivisão com duas ruas novas",
+                "caso": "Proprietário subdivide gleba em 18 lotes, prolongando uma via existente e abrindo duas ruas novas. Sustenta que, por serem menos de 20 lotes, trata-se de simples desmembramento.",
+                "solucao": "É **loteamento**: houve **abertura e prolongamento de vias** — e o número de lotes é irrelevante. Consequências: aprovação municipal e registro em **180 dias** sob pena de caducidade (art. 18); **edital** com impugnação em 15 dias (art. 19); e, **pelo registro**, as vias e áreas verdes passam ao domínio do **Município**, sem necessidade de escritura de doação (art. 22) — ato **irreversível** pelo loteador."
+              },
+              "citacoes": [
+                {"ref": "Lei 6.766/79, art. 2º, §§ 1º e 2º", "literal": false, "texto": "Loteamento é a subdivisão de gleba em lotes destinados a edificação, com abertura de novas vias de circulação, de logradouros públicos ou prolongamento, modificação ou ampliação das vias existentes; desmembramento é a subdivisão com aproveitamento do sistema viário existente."},
+                {"ref": "Lei 6.766/79, art. 18", "literal": false, "texto": "Aprovado o projeto, o loteador deverá submetê-lo ao registro imobiliário dentro de 180 dias, sob pena de caducidade da aprovação."},
+                {"ref": "Lei 6.766/79, art. 22", "literal": false, "texto": "Desde a data de registro do loteamento, passam a integrar o domínio do Município as vias e praças, os espaços livres e as áreas destinadas a edifícios públicos e outros equipamentos urbanos, constantes do projeto e do memorial descritivo."},
+                {"ref": "Lei 6.766/79, art. 4º, III", "literal": false, "texto": "Ao longo das águas correntes e dormentes e das faixas de domínio público das rodovias e ferrovias, será obrigatória a reserva de uma faixa non aedificandi de 15 metros de cada lado, salvo maiores exigências da legislação específica."}
+              ],
+              "pegadinhas": [
+                {"errado": "Mais de 10 lotes caracteriza condomínio.", "certo": "O divisor é a **via**, não a quantidade de lotes."},
+                {"errado": "As áreas públicas passam ao Município por escritura de doação.", "certo": "Passam **pelo registro** (art. 22), automaticamente."},
+                {"errado": "Em ZHIS o lote mínimo sobe.", "certo": "Em ZHIS o mínimo pode ser **reduzido**."},
+                {"errado": "Declividade de 35% é admitida em interesse social.", "certo": "**Vedado** parcelar terreno com declividade ≥ 30% (art. 3º)."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "O compromisso de compra e venda de **lote registrado** é **irretratável por força de lei** e gera **direito real** do adquirente (CC 1.417) — com direito à **adjudicação compulsória**, inclusive extrajudicial (LRP 216-B).",
+                  "A transferência automática das áreas públicas pelo registro é exceção legal ao art. 1.245 do CC: não há título translativo autônomo — o **registro do loteamento** é o modo de aquisição."
+                ]
+              }
+            },
+            {
+              "id": "ri-condominio-lotes",
+              "titulo": "Loteamento × condomínio de lotes × acesso controlado",
+              "edital": "1.3",
+              "fontes": ["Parcelamento do Solo e Condomínios"],
+              "regra": "No **loteamento**, as vias são **públicas**. No **condomínio de lotes** (CC 1.358-A, incluído pela Lei 13.465/2017), as vias internas são **privadas**, em fração ideal dos condôminos. O **loteamento de acesso controlado** (Lei 6.766/79, art. 2º, § 8º) mantém as vias **públicas**, com autorização municipal para controlar o acesso — **não é condomínio**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Comparativo",
+                  "colunas": ["Característica", "Loteamento comum", "Condomínio de lotes"],
+                  "linhas": [
+                    ["Base legal", "Lei 6.766/1979", "CC, art. 1.358-A"],
+                    ["Vias internas", "**públicas**", "**privadas** (fração ideal)"],
+                    ["Manutenção", "Poder Público", "condôminos"],
+                    ["Unidade", "lote (físico)", "unidade autônoma = lote + fração ideal"],
+                    ["Requisito urbanístico", "transferência de áreas ao Município pelo registro", "aprovação municipal como condomínio"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Projeto aprovado como loteamento, pedido de registro como condomínio",
+                "caso": "O empreendedor apresenta projeto aprovado pela prefeitura como **loteamento**, mas requer o registro como **condomínio de lotes**, para manter as vias privadas.",
+                "solucao": "**O oficial não pode registrar como condomínio.** A natureza do parcelamento é definida pela **aprovação urbanística municipal prévia** — registrar de outro modo seria fraude à lei e subtrairia do Município as áreas que o art. 22 lhe transfere. No condomínio de lotes, cada unidade recebe matrícula própria descrevendo área privativa e fração ideal, e a matrícula da **gleba-mãe é encerrada**; aplica-se ainda, no que couber, o regime das **incorporações** para a venda durante a obra."
+              },
+              "citacoes": [
+                {"ref": "CC, art. 1.358-A", "literal": false, "texto": "Pode haver, em terrenos, partes designadas de lotes que são propriedade exclusiva e partes que são propriedade comum dos condôminos; aplica-se, no que couber, o disposto sobre condomínio edilício e a legislação de parcelamento do solo e de incorporações."},
+                {"ref": "Lei 6.766/79, art. 2º, § 8º", "literal": false, "texto": "Constitui loteamento de acesso controlado a modalidade cujo controle de acesso é regulamentado por ato do poder público municipal, vedado o impedimento de acesso a pedestres ou a condutores de veículos residentes ou não."}
+              ],
+              "pegadinhas": [
+                {"errado": "Loteamento de acesso controlado privatiza as vias.", "certo": "As vias **continuam públicas** — o Município apenas autoriza o controle de acesso."},
+                {"errado": "Ao condomínio de lotes não se aplica o regime das incorporações.", "certo": "Aplica-se, **no que couber** (CC 1.358-A, § 2º)."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "Condomínio de lotes é figura **híbrida**: propriedade exclusiva (o lote) + **fração ideal** sobre as partes comuns — a mesma estrutura do condomínio edilício do CC 1.331.",
+                  "Como toda parte comum, as vias internas são **inalienáveis separadamente** da unidade."
+                ]
+              }
+            },
+            {
+              "id": "ri-incorporacao",
+              "titulo": "Incorporação, patrimônio de afetação e condomínio edilício",
+              "edital": "1.3",
+              "fontes": ["Incorporacao Afetacao e Condominio Edilicio"],
+              "regra": "O incorporador só pode **negociar unidades futuras depois de registrar o memorial de incorporação** no RI (Lei 4.591/64, art. 32). O **patrimônio de afetação** é **facultativo**, constitui-se por **averbação** e **não integra a massa falida**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Incorporação",
+                  "colunas": ["Ponto", "Regra"],
+                  "linhas": [
+                    ["**Registro (art. 32)**", "condição **prévia** para negociar unidades — vender \"na planta\" antes é irregular"],
+                    ["**Carência (art. 34)**", "até **180 dias** para o incorporador desistir; decorrido o prazo sem desistência, a incorporação é **definitiva**"],
+                    ["Conclusão da obra", "averba-se a construção e **abre-se matrícula individual** para cada unidade"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Patrimônio de afetação (Lei 4.591/64, arts. 31-A a 31-F)",
+                  "colunas": ["Ponto", "Regra"],
+                  "linhas": [
+                    ["Natureza", "**facultativo**, a critério do incorporador"],
+                    ["Constituição", "por **AVERBAÇÃO** no RI"],
+                    ["Segregação", "responde **apenas** pelas obrigações daquela incorporação"],
+                    ["Falência", "**não integra a massa falida** — adquirentes podem concluir o empreendimento"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Condomínio edilício e figuras próximas",
+                  "colunas": ["Ponto", "Regra"],
+                  "linhas": [
+                    ["Instituição", "ato entre vivos ou testamento, **registrado** — individualiza unidades + fração ideal (**Livro 2**)"],
+                    ["Partes comuns", "**inalienáveis separadamente** da unidade"],
+                    ["**Convenção**", "subscrita por **≥ 2/3 das frações ideais**; oponível a terceiros com registro no **Livro 3**"],
+                    ["**Multipropriedade** (CC 1.358-B e ss.)", "fração de tempo **mínima de 7 dias**; **matrícula própria para cada fração de tempo**, além da matrícula-mãe"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Construtora quebra no meio da obra",
+                "caso": "Incorporadora com duas obras entra em falência. Na obra A houve averbação do patrimônio de afetação; na obra B, não. Credores tributários da empresa pedem a arrecadação dos dois terrenos.",
+                "solucao": "A obra **A** está **blindada**: o terreno e as acessões não integram a **massa falida**, respondem só pelas obrigações daquela incorporação e os adquirentes podem concluir o empreendimento. A obra **B** entra na massa, e os compradores \"na planta\" viram credores concursais. A afetação é **facultativa** e se constitui por **averbação** no RI — não por escritura no tabelionato."
+              },
+              "citacoes": [
+                {"ref": "Lei 4.591/64, art. 32", "literal": false, "texto": "O incorporador somente poderá negociar sobre unidades autônomas após ter arquivado, no cartório competente de Registro de Imóveis, os documentos ali relacionados."},
+                {"ref": "Lei 4.591/64, art. 34", "literal": false, "texto": "O incorporador poderá fixar, para efetivação da incorporação, prazo de carência dentro do qual lhe é lícito desistir do empreendimento, não superior a 180 dias."},
+                {"ref": "Lei 4.591/64, art. 31-A", "literal": false, "texto": "A critério do incorporador, a incorporação poderá ser submetida ao regime da afetação, pelo qual o terreno e as acessões, bem como os demais bens e direitos a ela vinculados, manter-se-ão apartados do patrimônio do incorporador."},
+                {"ref": "CC, art. 1.333", "literal": false, "texto": "A convenção de condomínio deve ser subscrita pelos titulares de, no mínimo, dois terços das frações ideais e torna-se oponível a terceiros com o registro."}
+              ],
+              "pegadinhas": [
+                {"errado": "O patrimônio de afetação é obrigatório.", "certo": "É **facultativo**."},
+                {"errado": "A afetação se constitui por escritura no tabelionato.", "certo": "Por **averbação** no RI."},
+                {"errado": "Carência de 30 dias.", "certo": "Até **180 dias** (art. 34)."},
+                {"errado": "A convenção exige unanimidade.", "certo": "**2/3 das frações ideais**."},
+                {"errado": "Multipropriedade com fração mínima de 30 dias.", "certo": "**7 dias**."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "**Condomínio edilício** é regido pelos arts. 1.331–1.358 do CC — a técnica registral (Livro 2 para a instituição, Livro 3 para a convenção) só operacionaliza o que o Código define.",
+                  "O **patrimônio de afetação** é a mesma ideia do bem de família voluntário e do agente de garantia: **afetação** de bens a uma finalidade, com separação de responsabilidade patrimonial.",
+                  "A proteção do comprador \"na planta\" dialoga com o CDC e com a boa-fé objetiva (CC 422)."
+                ]
+              }
+            },
+            {
+              "id": "ri-rural",
+              "titulo": "Imóveis rurais e georreferenciamento",
+              "edital": "1.3",
+              "fontes": ["Imoveis Rurais e Georreferenciamento"],
+              "regra": "A Lei 10.267/2001 criou o **CNIR** e exigiu identificação do imóvel rural por **memorial descritivo georreferenciado** ao Sistema Geodésico Brasileiro, com **certificação do INCRA** (SIGEF) quanto à não sobreposição. A distinção que resolve as questões de 2026: **georreferenciamento ≠ certificação**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "A virada do Decreto 12.689/2025",
+                  "colunas": ["Conceito", "O que é", "Situação atual"],
+                  "linhas": [
+                    ["**Georreferenciamento**", "ato técnico **privado** (memorial + ART, poligonal)", "**continua exigível** — LRP, arts. 176 e 225"],
+                    ["**Certificação do INCRA**", "ato administrativo (SIGEF, não sobreposição)", "**prorrogada para 21/10/2029**"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "CCIR × CAR — cumulativos e distintos",
+                  "colunas": ["", "CCIR", "CAR"],
+                  "linhas": [
+                    ["Órgão / lei", "INCRA / SNCR (Lei 10.267)", "Código Florestal (Lei 12.651/2012)"],
+                    ["Natureza", "**cadastral / fiscal**", "**ambiental** (reserva legal e APP)"],
+                    ["Uso registral", "exigido na **transmissão** e na abertura de matrícula rural", "recibo **averbado** na matrícula"]
+                  ]
+                },
+                {
+                  "tipo": "lista",
+                  "titulo": "Fração mínima de parcelamento (FMP)",
+                  "itens": [
+                    "**Vedado** desmembrar imóvel rural abaixo da **FMP / módulo rural** — **inclusive em sucessão hereditária** e em regularização.",
+                    "Se a divisão geraria lote inferior à FMP, a solução é o **condomínio em frações ideais** — não se divide fisicamente.",
+                    "**Pequena propriedade** = até **4 módulos fiscais** (respeitada a FMP); o georreferenciamento é isento de custos até 4 módulos fiscais."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Fazenda de 60 ha dividida entre dois herdeiros",
+                "caso": "Fazenda de 60 ha será dividida em 40 ha e 20 ha; a FMP da região é de 15 ha. O interessado sustenta que o Decreto 12.689/2025 dispensou o georreferenciamento até 2029.",
+                "solucao": "**Georreferenciamento obrigatório**: em **desmembramento, parcelamento, remembramento e retificação de área** ele é exigido pela **LRP, arts. 176, § 3º, e 225** — e **decreto não revoga lei**. O que se prorrogou para 21/10/2029 foi a **certificação do INCRA** (posição do IRIB, NT 03/2025, prevalecente e a resposta segura em prova). Quanto à FMP: ambos os quinhões (40 e 20 ha) superam os 15 ha, então o desmembramento é viável. Se um deles ficasse abaixo, a saída seria o **condomínio em frações ideais**."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 176, § 3º", "literal": false, "texto": "Nos casos de desmembramento, parcelamento ou remembramento de imóveis rurais, a identificação será obtida a partir de memorial descritivo assinado por profissional habilitado, com a devida ART, contendo as coordenadas dos vértices definidores dos limites, georreferenciadas ao Sistema Geodésico Brasileiro."},
+                {"ref": "LRP, art. 225", "literal": false, "texto": "Os tabeliães, escrivães e juízes farão com que nas escrituras e nos autos judiciais as partes indiquem, com precisão, os característicos, as confrontações e as localizações dos imóveis."},
+                {"ref": "Decreto 4.449/2002, art. 10 (red. Decreto 12.689/2025)", "literal": false, "texto": "Revogados os incisos I a VII e o § 3º; a identificação passa a ser exigível a partir de 21/10/2029 para imóveis de qualquer área."}
+              ],
+              "pegadinhas": [
+                {"errado": "O Decreto 12.689/2025 dispensou o georreferenciamento até 2029.", "certo": "Prorrogou a **certificação do INCRA**; o **georreferenciamento** permanece exigível (LRP 176/225). Há leitura literal em sentido contrário, criticada como \"porta aberta à grilagem\" — mas em prova vale a posição do **IRIB**."},
+                {"errado": "CAR substitui CCIR.", "certo": "São **cumulativos** — um é ambiental, o outro cadastral."},
+                {"errado": "Herança pode dividir imóvel rural em qualquer proporção.", "certo": "Nunca abaixo da **FMP**; a saída é o **condomínio**."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A FMP é limite legal ao **direito de dividir a coisa comum** (CC 1.320): a lei impõe a indivisibilidade abaixo do módulo, transformando a partilha física em **condomínio**.",
+                  "O georreferenciamento é a **especialidade objetiva** levada ao grau máximo de precisão técnica: sem descrição confiável, não há direito real seguro."
+                ]
+              }
+            },
+            {
+              "id": "ri-reurb",
+              "titulo": "REURB — regularização fundiária urbana (Lei 13.465/2017)",
+              "edital": "1.3",
+              "fontes": ["Regularizacao Fundiaria Urbana e Rural"],
+              "regra": "O protagonista é o **MUNICÍPIO**: classifica a modalidade (ato formal, em até **6 meses**), aprova o procedimento e expede a **CRF**, que é o título levado a registro. União e Estados apoiam e podem requerer — mas não aprovam.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "REURB-S × REURB-E",
+                  "colunas": ["", "REURB-S (interesse social)", "REURB-E (interesse específico)"],
+                  "linhas": [
+                    ["Público", "núcleo predominantemente de **baixa renda**", "demais casos"],
+                    ["Teto de renda", "**5 salários mínimos** (Decreto 9.310/2018) — o Município pode **diminuir**", "—"],
+                    ["Custos de projeto e infraestrutura", "**Poder Público** (independe da dominialidade)", "beneficiários / requerentes"],
+                    ["Emolumentos no 1º registro", "**isento**", "devidos"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Legitimação fundiária × legitimação de posse",
+                  "colunas": ["", "Legitimação FUNDIÁRIA (art. 23)", "Legitimação de POSSE (art. 25)"],
+                  "linhas": [
+                    ["Confere", "**propriedade** (direito real pleno)", "**título de posse**, conversível"],
+                    ["Aquisição", "**ORIGINÁRIA** → livre de ônus anteriores", "reconhecimento de posse"],
+                    ["Bem **público**", "**pode** (sobretudo REURB-S)", "**NÃO se aplica** (art. 25, § 2º)"],
+                    ["Conversão", "já é propriedade", "em propriedade após **5 anos** (art. 26)"]
+                  ]
+                },
+                {
+                  "tipo": "lista",
+                  "titulo": "CRF e atuação do oficial",
+                  "itens": [
+                    "Recebida a CRF, o oficial tem **15 dias** para emitir nota de exigência ou praticar os atos.",
+                    "O memorial é **averbado independentemente** de provocação, retificação, notificação, unificação ou apuração de disponibilidade e remanescente.",
+                    "**Não havendo matrícula, o oficial abre de ofício** — a REURB não trava.",
+                    "**Notificações:** titulares, confinantes e terceiros têm **30 dias** para impugnar; **silêncio = concordância**; não localizado → edital; **dispensadas** se já houve demarcação urbanística.",
+                    "**Isenções na REURB-S:** 1º registro, legitimação fundiária e de posse, conversão, CRF + projeto, **1ª averbação de construção residencial até 70 m²**, 1º direito real, 1º registro de direito real de laje e certidões."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Núcleo informal sobre área pública municipal",
+                "caso": "Município classifica o núcleo como REURB-S e, ao final, expede a CRF com a lista de ocupantes. Parte da área é bem público municipal e não há matrícula aberta para a gleba.",
+                "solucao": "A **legitimação fundiária** pode incidir sobre **bem público** e confere **propriedade originária, livre de ônus** — diferentemente da legitimação de posse, que **não se aplica** a bem público. O oficial **abre a matrícula de ofício** e, na REURB-S de área pública, o registro do projeto e a constituição dos direitos reais podem ser feitos em **ato único**, a critério do Município. Emolumentos: **isentos** no primeiro registro."
+              },
+              "citacoes": [
+                {"ref": "Lei 13.465/2017, art. 13", "literal": false, "texto": "A REURB compreende duas modalidades: REURB-S, aplicável aos núcleos urbanos informais ocupados predominantemente por população de baixa renda; e REURB-E, aplicável aos demais casos."},
+                {"ref": "Lei 13.465/2017, art. 23", "literal": false, "texto": "A legitimação fundiária constitui forma originária de aquisição do direito real de propriedade conferido por ato do poder público, exclusivamente no âmbito da REURB, àquele que detiver em área pública ou possuir em área privada unidade imobiliária com destinação urbana integrante de núcleo urbano informal consolidado."},
+                {"ref": "Lei 13.465/2017, art. 25, § 2º", "literal": false, "texto": "A legitimação de posse não se aplica aos imóveis urbanos situados em área de titularidade do poder público."},
+                {"ref": "LRP, art. 288-A e ss.", "literal": false, "texto": "Disciplinam o registro da regularização fundiária urbana, inclusive a abertura de matrícula e a averbação do memorial."}
+              ],
+              "pegadinhas": [
+                {"errado": "Quem classifica a modalidade é o oficial de registro.", "certo": "É o **Município**, por ato formal, em até 6 meses."},
+                {"errado": "Legitimação de posse pode recair sobre bem público.", "certo": "**Não** (art. 25, § 2º). Quem pode é a **legitimação fundiária**."},
+                {"errado": "Sem matrícula aberta a REURB para.", "certo": "O oficial **abre de ofício**."},
+                {"errado": "A isenção da REURB-S cobre qualquer averbação de construção.", "certo": "Só a **primeira**, e de construção residencial até **70 m²**."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A **legitimação fundiária** é modo de aquisição **originária** criado por lei — rompe a cadeia dominial e extingue ônus anteriores, como a usucapião, mas por ato do **poder público**.",
+                  "É expressão direta da **função social da propriedade** (CF 5º, XXIII; CC 1.228, § 1º) e do direito à moradia."
+                ]
+              }
+            },
+            {
+              "id": "ri-regularizacao-rural",
+              "titulo": "Regularização fundiária rural e Amazônia Legal",
+              "edital": "1.3",
+              "fontes": ["Regularizacao Fundiaria Urbana e Rural"],
+              "regra": "Na face **rural** da Lei 13.465/2017 o protagonista é o **INCRA / União**, não o Município. A titulação dos assentados se dá por **Título de Domínio (TD)** ou **CDRU**, ambos **inegociáveis por 10 anos**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Titulação dos assentados (Lei 8.629/93)",
+                  "colunas": ["Ponto", "Regra"],
+                  "linhas": [
+                    ["Títulos", "**TD** (transfere propriedade) · **CDRU** (concessão de direito real de uso)"],
+                    ["Inalienabilidade", "**10 anos** (art. 18, § 1º)"],
+                    ["Titularidade", "homem, mulher ou **ambos** — obrigatório no casamento e na união estável (art. 18, § 13)"],
+                    ["Crédito de instalação", "a quitação **não** é requisito para liberar as condições resolutivas do TD/CDRU (art. 17, § 8º)"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Ocupações irregulares em assentamentos (art. 26-B) — requisitos cumulativos",
+                  "colunas": ["#", "Requisito"],
+                  "linhas": [
+                    ["Projeto", "assentamento criado há **≥ 2 anos** (de 22/12/2016)"],
+                    ["I", "ocupação e exploração da parcela há **≥ 1 ano** (de 22/12/2016)"],
+                    ["II", "**inexistência de candidatos excedentes** para a parcela na lista do INCRA"],
+                    ["III", "elegibilidade como beneficiário + não incorrer nas vedações do art. 20"],
+                    ["IV", "**quitação ou assunção dos débitos** do crédito de instalação reembolsável do beneficiário original"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Terras da União na Amazônia Legal (Lei 11.952/2009)",
+                  "colunas": ["Ponto", "Regra"],
+                  "linhas": [
+                    ["Beneficiário", "pessoa natural, com ocupação e exploração **direta, mansa e pacífica**"],
+                    ["Vedação", "servidor do INCRA, da SPU e de órgãos de terras"],
+                    ["Limite", "até **2.500 ha**; acima disso, depende do **Congresso Nacional**"],
+                    ["Gratuidade", "até **1 módulo fiscal** → alienação gratuita"],
+                    ["Onerosidade", "entre 1 módulo fiscal e 2.500 ha → 10% a 50% do valor da terra nua"],
+                    ["Marco temporal", "ocupação anterior a **22/07/2008**"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Lote de assentamento ocupado por terceiro",
+                "caso": "Terceiro ocupa há 18 meses lote de assentamento criado há 3 anos, sem autorização do INCRA, e pretende regularizar sua situação. Não há candidatos excedentes na lista e ele preenche os requisitos de beneficiário, mas o beneficiário original deixou débitos de crédito de instalação.",
+                "solucao": "Os prazos estão atendidos — projeto **≥ 2 anos** e ocupação **≥ 1 ano** (contados de 22/12/2016) — e não há candidatos excedentes. Falta o requisito do **inciso IV**: **quitação ou assunção dos débitos do crédito de instalação reembolsável** do beneficiário original, até a assinatura do novo contrato. Sem isso, a regularização não se completa. A troca dos prazos (projeto × ocupação) é a pegadinha clássica."
+              },
+              "citacoes": [
+                {"ref": "Lei 8.629/93, art. 18, § 1º", "literal": false, "texto": "Os títulos de domínio e a CDRU são inegociáveis pelo prazo de 10 anos."},
+                {"ref": "Lei 8.629/93, art. 26-B", "literal": false, "texto": "Admite a regularização de ocupações irregulares em projetos de assentamento, observados os requisitos cumulativos de tempo do projeto, tempo de ocupação, inexistência de candidatos excedentes, elegibilidade e quitação ou assunção dos débitos do crédito de instalação."},
+                {"ref": "Lei 11.952/2009, arts. 5º, 6º, 11 e 12", "literal": false, "texto": "Disciplinam a regularização fundiária em terras da União na Amazônia Legal: requisitos do beneficiário, limite de 2.500 ha, gratuidade até 1 módulo fiscal e onerosidade nas demais faixas."}
+              ],
+              "pegadinhas": [
+                {"errado": "Projeto criado há 5 anos e ocupação de 2 anos.", "certo": "Projeto **2 anos** e ocupação **1 ano** — a banca inverte."},
+                {"errado": "O protagonista da regularização rural é o Município.", "certo": "É o **INCRA / União**. Município é o da **REURB** urbana."},
+                {"errado": "A quitação do crédito de instalação é requisito para liberar as condições resolutivas do TD.", "certo": "**Não é** (art. 17, § 8º) — mas é requisito na regularização do **art. 26-B**."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A **inalienabilidade por 10 anos** do TD e da CDRU é cláusula restritiva legal — mesma família das cláusulas de inalienabilidade do CC (1.848/1.911), que se **averbam** na matrícula.",
+                  "A **CDRU** é direito real típico do art. 1.225, XII do CC — mais uma confirmação do *numerus clausus*."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "nome": "Serviço, publicidade e tecnologia",
+          "cards": [
+            {
+              "id": "ri-publicidade",
+              "titulo": "Publicidade, certidões e LGPD",
+              "edital": "1.3",
+              "fontes": ["Publicidade Certidoes e LGPD"],
+              "regra": "O registro é **público**: qualquer pessoa pode requerer certidão **sem informar motivo ou interesse** (LRP 17). A LGPD **não revoga nem bloqueia** a publicidade registral — a base legal do tratamento é **obrigação legal** e **exercício de função pública**, que **dispensam consentimento**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Espécies de certidão e prazos (LRP 19, § 10)",
+                  "colunas": ["Espécie", "Conteúdo", "Prazo"],
+                  "linhas": [
+                    ["**Inteiro teor**", "reprodução integral da matrícula (propriedade, direitos reais e **ônus**)", "**4 horas** (eletrônica, com número)"],
+                    ["**Situação jurídica atualizada**", "informações vigentes do imóvel e do titular", "**1 dia**"],
+                    ["**Ônus reais**", "existência ou inexistência de gravames e indisponibilidades", "**5 dias**"],
+                    ["**Relatório / narrativa**", "conforme o pedido", "**5 dias**"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "LGPD nos cartórios",
+                  "colunas": ["Ponto", "Regra"],
+                  "linhas": [
+                    ["Cartórios", "são **agentes de tratamento** e se submetem à LGPD"],
+                    ["Base legal", "**obrigação legal** (art. 7º, II) + **função pública** (arts. 7º, VI, e 23) → **dispensa consentimento**"],
+                    ["No RI", "publicidade **ampla** — inteiro teor a qualquer pessoa, sem autorização do titular"],
+                    ["No RCPN", "tensão maior com dados íntimos — publicidade mais restrita"],
+                    ["Uso indevido dos dados", "responsabilidade do **requerente**, não do oficial"],
+                    ["Regulamentação", "Provimentos CNJ **134/2022** e **149/2023**"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Pedido de inteiro teor por terceiro sem justificativa",
+                "caso": "Pessoa que não é proprietária pede certidão de inteiro teor de uma matrícula. O balcão pergunta o motivo e, diante da recusa em explicar, sugere exigir autorização do titular \"por causa da LGPD\".",
+                "solucao": "**Exigência ilegal.** O art. 17 da LRP garante certidão a **qualquer pessoa, sem informar motivo ou interesse**, e a LGPD não altera isso: o tratamento se funda em **obrigação legal e função pública** (arts. 7º, II e VI, e 23), dispensando consentimento. A certidão inclui os **ônus** — é justamente a função da publicidade. O eventual **uso indevido** dos dados é responsabilidade do requerente."
+              },
+              "citacoes": [
+                {"ref": "LRP, art. 17", "literal": false, "texto": "Qualquer pessoa pode requerer certidão dos registros sem informar ao oficial ou ao funcionário o motivo ou interesse do pedido."},
+                {"ref": "Lei 8.935/94, art. 1º", "literal": false, "texto": "Serviços notariais e de registro são os de organização técnica e administrativa destinados a garantir a publicidade, autenticidade, segurança e eficácia dos atos jurídicos."},
+                {"ref": "LGPD, art. 7º, II e VI", "literal": false, "texto": "O tratamento de dados pessoais pode ser realizado para o cumprimento de obrigação legal ou regulatória pelo controlador e para o exercício regular de direitos, bem como pela administração pública, para o tratamento e uso compartilhado de dados necessários à execução de políticas públicas."},
+                {"ref": "Lei 8.935/94, art. 22 (red. Lei 13.286/2016)", "literal": false, "texto": "Os notários e oficiais de registro são civilmente responsáveis por atos que causem danos a terceiros, praticados por culpa ou dolo; a pretensão prescreve em 3 anos."}
+              ],
+              "pegadinhas": [
+                {"errado": "A LGPD passou a exigir consentimento do titular para fornecer certidão.", "certo": "**Falso** — base legal é obrigação legal/função pública."},
+                {"errado": "O RI segue o mesmo regime de publicidade restrita do RCPN.", "certo": "No RI a publicidade é **ampla**."},
+                {"errado": "Prazo uniforme de 30 dias para certidões.", "certo": "**4h / 1 dia / 5 dias** (LRP 19, § 10)."},
+                {"errado": "A responsabilidade do oficial é objetiva.", "certo": "**Subjetiva** — culpa ou dolo (Lei 8.935/94, art. 22)."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A publicidade registral é o que torna o direito real **oponível erga omnes** (CC 1.227) — sem ela, o sistema de direitos reais não funciona.",
+                  "A responsabilidade **subjetiva** do delegatário contrasta com a responsabilidade **objetiva** do Estado (CF 37, § 6º) — distinção cobrada tanto em DNR quanto em Administrativo."
+                ]
+              }
+            },
+            {
+              "id": "ri-eletronico",
+              "titulo": "Registro eletrônico: SREI, ONR e SERP",
+              "edital": "1.3",
+              "fontes": ["RI Registro Eletronico SREI ONR e SERP"],
+              "regra": "**SREI** (Lei 11.977/2009) é o sistema de registro eletrônico de imóveis, operado pelo **ONR** (Lei 13.465/2017). O **SERP** (Lei 14.382/2022) interconecta **todas** as serventias de registros públicos, sob operador nacional que integra ONR, ON-RCPN e ON-RTDPJ.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "ONR — pontos cobráveis",
+                  "colunas": ["Aspecto", "Regra"],
+                  "linhas": [
+                    ["Natureza", "pessoa jurídica de **direito privado, sem fins lucrativos** — não é autarquia nem órgão público"],
+                    ["Governança", "**Comitê Executivo de Gestão**"],
+                    ["Custeio", "**FIC-SREI**, mantido pelas serventias — **sem ônus ao Poder Público**"],
+                    ["Fiscalização", "**Corregedoria Nacional de Justiça**"],
+                    ["Adesão", "**obrigatória**; sistema próprio é permitido **desde que interoperável**"]
+                  ]
+                },
+                {
+                  "tipo": "lista",
+                  "titulo": "SERP e documento eletrônico",
+                  "itens": [
+                    "Finalidades: recepção e envio de títulos, expedição de certidões, visualização de atos e intercâmbio com entes públicos e usuários.",
+                    "Consulta **gratuita ao Poder Público** (Judiciário, Executivo federal, MP e órgãos de investigação).",
+                    "Documento eletrônico é **equiparado ao físico**, com assinatura avançada ou qualificada (ICP-Brasil) — **vedado recusar**.",
+                    "**Competência territorial do RI permanece ABSOLUTA** (local do imóvel). A flexibilização atingiu o **RTD** e os **atos notariais à distância** (e-Notariado)."
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Compra e venda simples enviada pelo SERP",
+                "caso": "Escritura de compra e venda sem cláusulas especiais, assinada digitalmente com certificado ICP-Brasil, chega ao RI pelo SERP. O balcão informa prazo de 10 dias úteis e comenta que documento eletrônico \"precisa ser impresso e conferido\".",
+                "solucao": "Dois erros. O prazo aqui é o **reduzido: 5 dias úteis** — compra e venda sem cláusulas especiais **e** documento recebido **via SERP** (LRP 188). E o documento eletrônico com assinatura qualificada é **equiparado ao físico**: **vedado recusá-lo**. Vale lembrar que a competência do RI continua **absoluta** — o SERP muda o **meio**, não a **competência**."
+              },
+              "citacoes": [
+                {"ref": "Lei 14.382/2022, art. 3º", "literal": false, "texto": "O SERP tem por finalidade viabilizar a recepção e o envio de títulos, a expedição de certidões e a prestação de informações em meio eletrônico, bem como o intercâmbio de documentos e informações entre as serventias e os entes públicos."},
+                {"ref": "Lei 13.465/2017, arts. 76 e ss.", "literal": false, "texto": "Institui o Operador Nacional do Sistema de Registro Eletrônico de Imóveis (ONR), pessoa jurídica de direito privado sem fins lucrativos, fiscalizada pela Corregedoria Nacional de Justiça."},
+                {"ref": "LRP, art. 188", "literal": false, "texto": "Prazo de 10 dias úteis para registro ou nota devolutiva, reduzido a 5 dias úteis nas hipóteses legais."},
+                {"ref": "LRP, art. 19, § 10", "literal": false, "texto": "Prazos de certidão: 4 horas para a de inteiro teor em meio eletrônico com indicação do número da matrícula, 1 dia para a de situação jurídica atualizada e 5 dias para as demais."}
+              ],
+              "pegadinhas": [
+                {"errado": "O ONR é autarquia federal ligada ao CNJ.", "certo": "**PJ de direito privado, sem fins lucrativos**, apenas **fiscalizada** pela Corregedoria Nacional."},
+                {"errado": "O ONR é custeado pelo Poder Público.", "certo": "Pelo **FIC-SREI**, mantido pelas serventias."},
+                {"errado": "A Lei 14.382/2022 flexibilizou a competência territorial do RI.", "certo": "No RI a competência segue **absoluta**; a flexibilização foi no **RTD** e nos atos notariais à distância."},
+                {"errado": "A serventia pode manter apenas seu sistema próprio, isolado.", "certo": "A adesão é **obrigatória**; sistema próprio só se **interoperável**."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A equiparação do documento eletrônico ao físico é aplicação do princípio da **liberdade de forma** (CC 107) combinado com as exigências legais de forma — a assinatura qualificada substitui a assinatura de próprio punho.",
+                  "A **competência absoluta** do RI é consequência da ligação entre direito real e **coisa**: a publicidade se organiza pelo imóvel, não pelas pessoas."
+                ]
+              }
+            },
+            {
+              "id": "ri-competencia-tributos",
+              "titulo": "Competência, fiscalização e tributos (ITBI, ITCMD, DOI)",
+              "edital": "1.3",
+              "fontes": ["Competencia e Fiscalizacao Tributaria"],
+              "regra": "O oficial é **fiscal tributário por dever legal**: exige comprovação do **ITBI** (transmissões **onerosas**, municipal) e do **ITCMD** (**causa mortis** e **doações**, estadual). A fiscalização da serventia cabe ao juízo competente e à **Corregedoria-Geral da Justiça**, com poder normativo do **CNJ**.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Quem tributa o quê",
+                  "colunas": ["Imposto", "Quando", "Competência"],
+                  "linhas": [
+                    ["**ITBI**", "transmissões **onerosas** (compra e venda)", "**Municipal**"],
+                    ["**ITCMD**", "transmissões ***causa mortis*** e **doações**", "**Estadual**"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "DOI e certidões fiscais",
+                  "colunas": ["Ponto", "Regra"],
+                  "linhas": [
+                    ["**DOI**", "Declaração sobre Operações Imobiliárias, enviada à **Receita Federal**, com base no valor da operação ou na base de cálculo do ITBI"],
+                    ["Prazo da DOI", "até o **último dia útil do mês subsequente** à prática dos atos"],
+                    ["**CND**", "exigida no registro de **loteamentos e incorporações**"],
+                    ["Dispensas", "**adjudicação compulsória extrajudicial** e **REURB-S** dispensam a comprovação de regularidade fiscal"],
+                    ["Responsabilidade do oficial", "**subjetiva** (culpa ou dolo), com regresso; prescrição em **3 anos**"]
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Doação e compra e venda no mesmo dia",
+                "caso": "Dois títulos no balcão: escritura de doação de imóvel de pai para filho e escritura de compra e venda entre estranhos. O apresentante entrega apenas uma guia de ITBI paga, para os dois atos.",
+                "solucao": "A **doação** é transmissão gratuita: exige **ITCMD**, tributo **estadual**. A **compra e venda** é onerosa: exige **ITBI**, tributo **municipal**. Uma guia não cobre os dois atos → nota de exigência. O oficial faz **rigorosa fiscalização** do recolhimento, sob pena de responsabilidade (CTN, arts. 134, VI, e 289), e depois informa ambas as operações à **Receita Federal** pela **DOI**, até o último dia útil do mês seguinte."
+              },
+              "citacoes": [
+                {"ref": "CTN, art. 134, VI", "literal": false, "texto": "Nos casos de impossibilidade de exigência do cumprimento da obrigação principal pelo contribuinte, respondem solidariamente os tabeliães, escrivães e demais serventuários de ofício, pelos tributos devidos sobre os atos praticados por eles, ou perante eles, em razão do seu ofício."},
+                {"ref": "CTN, art. 289", "literal": false, "texto": "Impõe aos serventuários o dever de fiscalizar o pagamento dos tributos incidentes sobre os atos praticados perante eles."},
+                {"ref": "Lei 8.935/94, art. 30", "literal": false, "texto": "São deveres dos notários e oficiais de registro, entre outros, fiscalizar o recolhimento dos impostos incidentes sobre os atos que devam praticar."},
+                {"ref": "LRP, art. 169", "literal": false, "texto": "Todos os atos serão praticados no cartório da situação do imóvel, observada a regra própria dos imóveis situados em mais de uma circunscrição."}
+              ],
+              "pegadinhas": [
+                {"errado": "ITBI incide também na doação.", "certo": "Doação e *causa mortis* → **ITCMD** (estadual)."},
+                {"errado": "A DOI vai ao INCRA.", "certo": "Vai à **Receita Federal**."},
+                {"errado": "A CND é sempre exigida (ou nunca é).", "certo": "Exigida em **loteamentos e incorporações**; **dispensada** na adjudicação compulsória extrajudicial e na REURB-S."},
+                {"errado": "A responsabilidade do oficial na fiscalização tributária é objetiva.", "certo": "**Subjetiva**, com prescrição em 3 anos."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A distinção ITBI × ITCMD nasce da distinção civil entre negócio **oneroso** e **gratuito** — e é a mesma que separa evicção (garantia dos onerosos) e doação.",
+                  "A responsabilidade do delegatário por **culpa ou dolo** repete a estrutura da responsabilidade civil subjetiva do CC 186 e 927, *caput*."
+                ]
+              }
+            },
+            {
+              "id": "ri-prov195",
+              "titulo": "Provimento CNJ 195/2025 — SIG-RI, saneamento e autotutela registral",
+              "edital": "1.3",
+              "fontes": ["Prov 195 Grande Reforma"],
+              "regra": "O Prov. 195/2025 (que alterou o Prov. 149/2023) instituiu o **SIG-RI** (mapa georreferenciado que o oficial consulta ativamente), o **IERI-e** (banco estatístico), novos dados obrigatórios na abertura de matrícula, a **averbação de saneamento** e a **autotutela registral** — procedimento extrajudicial em que o próprio oficial concilia antes de ir ao Judiciário.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "SIG-RI × IERI-e",
+                  "colunas": ["", "SIG-RI", "IERI-e"],
+                  "linhas": [
+                    ["O que é", "mapa gráfico georreferenciado", "banco de dados estatístico"],
+                    ["Uso", "consulta **obrigatória** a cada abertura ou alteração perimetral", "alimentado automaticamente pelos sistemas dos cartórios"],
+                    ["Função", "detectar **sobreposições** e erros de polígono", "retrato fundiário nacional"]
+                  ]
+                },
+                {
+                  "tipo": "tabela",
+                  "titulo": "Averbação de saneamento — a exceção que a banca cobra",
+                  "colunas": ["Situação", "Regra"],
+                  "linhas": [
+                    ["Atos **translativos** (compra e venda, doação, permuta)", "✅ **exige** saneamento prévio da matrícula deficiente"],
+                    ["Atos de **constrição** (penhora, arresto, sequestro, indisponibilidade CNIB, garantia fiduciária)", "❌ **vedado** exigir saneamento — registra-se imediatamente"],
+                    ["Informação já consta do acervo do cartório", "oficial sana **de ofício**"],
+                    ["Informação não consta do acervo", "**nota devolutiva em 10 dias**"]
+                  ]
+                },
+                {
+                  "tipo": "timeline",
+                  "titulo": "Autotutela registral — fluxo",
+                  "itens": [
+                    "SIG-RI detecta sobreposição → o oficial instaura o incidente",
+                    "Notificação dos titulares — **15 dias** para manifestação",
+                    "Impugnação → réplica da outra parte",
+                    "**Sessão de conciliação presidida pelo próprio Oficial**",
+                    "Fracassada a conciliação → relatório definitivo ao **Juiz Corregedor**"
+                  ]
+                }
+              ],
+              "exemplo": {
+                "titulo": "Matrícula deficiente e penhora judicial",
+                "caso": "Matrícula antiga sem CPF do titular, sem área e sem CIF. Chegam dois títulos: uma escritura de compra e venda e um mandado de penhora.",
+                "solucao": "**Compra e venda:** nota devolutiva em **10 dias** exigindo o saneamento de **todas** as deficiências — não há hierarquia entre especialidade subjetiva e objetiva; o saneamento é pré-requisito de qualquer ato translativo. **Penhora:** registra-se **imediatamente**, sem exigir saneamento — atos de constrição são **expressamente excepcionados**. Se o SIG-RI apontar **sobreposição com dono diferente**, o oficial não remete direto ao juiz: instaura a **autotutela registral**."
+              },
+              "citacoes": [
+                {"ref": "Prov. CNJ 149/2023, arts. 440-AY a 440-BG (incluídos pelo Prov. 195/2025)", "literal": false, "texto": "Disciplinam o procedimento de autotutela registral, com notificação dos titulares, prazo de manifestação, sessão de conciliação presidida pelo oficial e remessa ao juiz corregedor em caso de insucesso."},
+                {"ref": "Prov. CNJ 195/2025", "literal": false, "texto": "Institui o SIG-RI e o IERI-e, fixa os dados obrigatórios na abertura de matrícula e disciplina a averbação de saneamento, excetuados os atos de constrição."}
+              ],
+              "pegadinhas": [
+                {"errado": "O oficial pode exigir saneamento antes de registrar penhora.", "certo": "**Vedado** — atos de constrição são excepcionados."},
+                {"errado": "Detectada sobreposição, remete-se ao juiz corregedor.", "certo": "Primeiro a **autotutela registral**, com tentativa de **conciliação** pelo oficial."},
+                {"errado": "Duplicidade de matrícula resolve-se sempre de ofício.", "certo": "De ofício só com **mesmo dono e mesma cadeia**; donos diferentes → autotutela."}
+              ],
+              "ponte": {
+                "titulo": "🔗 Raiz civil do tema",
+                "itens": [
+                  "A autotutela registral aproxima o oficial da função **conciliadora** já prevista para as serventias extrajudiciais — mesma lógica da mediação e conciliação notarial.",
+                  "A regra que blinda os **atos de constrição** protege a **responsabilidade patrimonial** do devedor (CC 391): a deficiência formal da matrícula não pode servir de escudo contra a execução."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
