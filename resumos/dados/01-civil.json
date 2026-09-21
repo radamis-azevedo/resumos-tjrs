@@ -5,9 +5,241 @@
     "icone": "📘",
     "peso": "20 questões (20%)",
     "ordem": 1,
+    "cor": "#31497e",
     "nota": "Ponto de reforço prioritário do edital. Toda ficha termina com a ponte para o Direito Notarial e Registral."
   },
   "abas": [
+    {
+      "id": "civil-criticos",
+      "nome": "Pontos críticos",
+      "tipo": "criticos",
+      "intro": "Os assuntos em que a resposta escorregou, reconstruídos: a armadilha, por que ela funciona, a regra correta e um gatilho para a próxima vez. Dois vieses aparecem em quase todos — **escolher a alternativa mais elaborada quando a certa é a mais literal** e **trocar o plano do defeito** (forma × registro, validade × eficácia).",
+      "grupos": [
+        {
+          "nome": "O erro que se repete",
+          "cards": [
+            {
+              "id": "crit-planos",
+              "titulo": "Trocar o plano: validade × eficácia × registro",
+              "armadilha": "A alternativa descreve corretamente um instituto, mas o coloca no plano errado: diz **nulo** onde é **ineficaz**, **inválido** onde falta só **registro**, ou **anulável** onde o ato sequer produz efeito perante terceiros. É a raiz de três erros em provas diferentes.",
+              "porque": "O raciocínio corre para a consequência prática (\"o negócio não vale\") sem separar as três perguntas. Existência, validade e eficácia respondem a coisas distintas, e a FGV monta a alternativa mais elaborada exatamente no plano vizinho ao correto.",
+              "regra": "Pergunte, nesta ordem: **(1)** o ato existe (partes, objeto, forma)? **(2)** é válido (agente capaz, objeto lícito, forma prescrita)? **(3)** é eficaz — e **perante quem**? Falta de poderes é **eficácia** (CC 662). Falta de forma essencial é **validade/nulidade** (CC 166, IV e V). Falta de registro é **eficácia real**: vale entre as partes, não contra terceiros (CC 1.227, 1.245).",
+              "citacoes": [
+                {"ref": "CC, art. 1.245, § 1º", "literal": true, "texto": "Enquanto não se registrar o título translativo, o alienante continua a ser havido como dono do imóvel."},
+                {"ref": "CC, art. 662", "literal": true, "texto": "Os atos praticados por quem não tenha mandato, ou o tenha sem poderes suficientes, são ineficazes em relação àquele em cujo nome foram praticados, salvo se este os ratificar."}
+              ],
+              "gatilho": "Três perguntas, nessa ordem: **existe? vale? produz efeito — contra quem?** Se o enunciado afirma que os requisitos de validade foram observados, a resposta está na eficácia, e toda alternativa que fale em nulidade já se autoeliminou.",
+              "ficha": "civil-planos-invalidade"
+            },
+            {
+              "id": "crit-literal",
+              "titulo": "A alternativa mais elaborada × a cópia limpa da lei",
+              "armadilha": "Uma alternativa reproduz o dispositivo **exatamente**; outra reproduz o mesmo dispositivo e acrescenta uma condição plausível — um prazo, um qualificador, uma exceção \"técnica\". A segunda parece mais completa, e é a errada.",
+              "porque": "Quanto mais se estuda, mais convincente soa o detalhe inventado: ele usa vocabulário do próprio Código. Foi assim nas definições do art. 6º da LINDB (enxerto de \"90 dias\") e na promessa de compra e venda (\"desde que o instrumento seja público\").",
+              "regra": "Em questão de **definição legal**, a certa é a **cópia limpa**. Número, prazo ou qualificador que não está no texto = alternativa errada. O acréscimo costuma vir de outro instituto vizinho, para soar familiar.",
+              "citacoes": [
+                {"ref": "LINDB, art. 6º, § 1º", "literal": true, "texto": "Reputa-se ato jurídico perfeito o já consumado segundo a lei vigente ao tempo em que se efetuou."},
+                {"ref": "CC, art. 1.417", "literal": true, "texto": "Mediante promessa de compra e venda, em que se não pactuou arrependimento, celebrada por instrumento público ou particular, e registrada no Cartório de Registro de Imóveis, adquire o promitente comprador direito real à aquisição do imóvel."}
+              ],
+              "gatilho": "Se duas alternativas dizem a mesma coisa e uma tem **um detalhe a mais**, o detalhe é a armadilha. Desconfie do que parece erudito.",
+              "ficha": "civil-lindb-intertemporal"
+            }
+          ]
+        },
+        {
+          "nome": "Parte Geral e LINDB",
+          "cards": [
+            {
+              "id": "crit-simulacao",
+              "titulo": "Simulação × fraude contra credores",
+              "armadilha": "O enunciado descreve alguém blindando patrimônio às vésperas da execução e a alternativa chama o ato de **anulável** (ou de simulação, conforme o caso). Os dois institutos aparecem juntos justamente porque a consequência é oposta.",
+              "porque": "A intenção de prejudicar credores está presente nos dois; o que muda é se houve **negócio real**. Olhar a intenção, e não a realidade do negócio, leva ao instituto errado.",
+              "regra": "**Simulação** = negócio **aparente**, sem vontade real → **NULO** (CC 167), não convalesce, qualquer interessado alega e o juiz reconhece de ofício. **Fraude contra credores** = negócio **real** que gera ou agrava insolvência → **ANULÁVEL** (CC 158–165), por ação pauliana, decadência de 4 anos.",
+              "citacoes": [
+                {"ref": "CC, art. 167", "literal": false, "texto": "É nulo o negócio jurídico simulado, mas subsistirá o que se dissimulou, se válido for na substância e na forma."},
+                {"ref": "CC, art. 171, II", "literal": false, "texto": "É anulável o negócio jurídico por vício resultante de erro, dolo, coação, estado de perigo, lesão ou fraude contra credores."}
+              ],
+              "gatilho": "**Houve negócio de verdade?** Sim → fraude, anulável. Não, foi teatro → simulação, nulo.",
+              "ficha": "civil-planos-invalidade"
+            },
+            {
+              "id": "crit-decadencia",
+              "titulo": "Decadência legal: de ofício, irrenunciável e não corre contra incapaz",
+              "armadilha": "A alternativa trata a decadência como se fosse prescrição: diz que pode ser renunciada, que depende de alegação da parte ou que corre normalmente contra absolutamente incapaz.",
+              "porque": "Os dois institutos são estudados juntos e as exceções da decadência são pouco repetidas. Só que o regime é quase inverso ao da prescrição.",
+              "regra": "Decadência **legal**: o juiz conhece **de ofício** (CC 210), a renúncia é **nula** (CC 209) e **não corre** contra absolutamente incapaz (CC 208 c/c 198, I). Decadência **convencional**: só se alegada (CC 211). E, salvo disposição legal, não se suspende nem se interrompe (CC 207).",
+              "citacoes": [
+                {"ref": "CC, art. 209", "literal": true, "texto": "É nula a renúncia à decadência fixada em lei."},
+                {"ref": "CC, art. 210", "literal": true, "texto": "Deve o juiz, de ofício, conhecer da decadência, quando estabelecida por lei."}
+              ],
+              "gatilho": "Decadência **legal** é de ordem pública: ninguém renuncia, o juiz enxerga sozinho, e o relógio para diante do incapaz.",
+              "ficha": "civil-prescricao"
+            },
+            {
+              "id": "crit-reparacao",
+              "titulo": "Reparação civil: 3 anos (CC) × 5 anos (CDC)",
+              "armadilha": "O caso envolve dano causado por produto ou serviço e a alternativa oferece o prazo do outro microssistema. Os dois números existem e os dois são de reparação.",
+              "porque": "A pergunta que resolve não é \"qual o prazo da reparação civil\", e sim **qual lei rege a relação**.",
+              "regra": "**Código Civil: 3 anos** (art. 206, § 3º, V). **CDC: 5 anos** para a reparação por fato do produto ou do serviço (art. 27), contados do conhecimento do dano e de sua autoria.",
+              "citacoes": [
+                {"ref": "CC, art. 206, § 3º, V", "literal": false, "texto": "Prescreve em três anos a pretensão de reparação civil."},
+                {"ref": "CDC, art. 27", "literal": false, "texto": "Prescreve em cinco anos a pretensão à reparação pelos danos causados por fato do produto ou do serviço, iniciando-se a contagem do conhecimento do dano e de sua autoria."}
+              ],
+              "gatilho": "**Relação de consumo → 5. Relação civil comum → 3.** Identifique a lei antes do número.",
+              "ficha": "civil-prescricao"
+            },
+            {
+              "id": "crit-repristinacao",
+              "titulo": "Repristinação não é automática",
+              "armadilha": "\"Revogada a lei revogadora, a lei antiga volta a viger.\" Soa lógico e é falso.",
+              "porque": "A intuição de que o ordenamento \"não pode ficar sem regra\" empurra para a restauração automática. A LINDB decidiu o contrário, em nome da segurança jurídica.",
+              "regra": "A lei revogada **não se restaura** por ter a revogadora perdido a vigência — **salvo disposição expressa** em contrário. O efeito repristinatório existe, mas precisa estar escrito na lei nova.",
+              "citacoes": [
+                {"ref": "LINDB, art. 2º, § 3º", "literal": true, "texto": "Salvo disposição em contrário, a lei revogada não se restaura por ter a lei revogadora perdido a vigência."}
+              ],
+              "gatilho": "Ressuscitar lei **só por escrito**. Sem cláusula expressa, a antiga continua morta.",
+              "ficha": "civil-lindb-vigencia"
+            },
+            {
+              "id": "crit-art9",
+              "titulo": "LINDB art. 9º: residência do PROPONENTE",
+              "armadilha": "Troca de polos na mesma frase: \"reputa-se constituída no lugar em que residir o **aceitante**\"; ou requisitos \"**intrínsecos**\" no lugar de extrínsecos.",
+              "porque": "É o padrão de par técnico: a alternativa mantém toda a estrutura do artigo e inverte uma única palavra, que passa despercebida na leitura rápida.",
+              "regra": "A obrigação resultante do contrato reputa-se constituída no lugar em que residir o **proponente** (§ 2º) — quem **fez a proposta**, não quem aceitou. Executando-se a obrigação no Brasil com forma essencial, observa-se a forma brasileira, admitidas as peculiaridades da lei estrangeira quanto aos requisitos **extrínsecos** (§ 1º).",
+              "citacoes": [
+                {"ref": "LINDB, art. 9º, § 2º", "literal": true, "texto": "A obrigação resultante do contrato reputa-se constituida no lugar em que residir o proponente."},
+                {"ref": "CC, art. 435", "literal": true, "texto": "Reputar-se-á celebrado o contrato no lugar em que foi proposto."}
+              ],
+              "gatilho": "**Quem propôs ancora o lugar.** Primeiro passo do caso: quem mandou a proposta?",
+              "ficha": "civil-lindb-internacional"
+            },
+            {
+              "id": "crit-fianca",
+              "titulo": "Lei nova × contrato antigo: a fiança locatícia",
+              "armadilha": "A linha do tempo mostra um fato relevante **depois** da lei nova (uma prorrogação automática), e a alternativa conclui que a lei nova se aplica, por \"efeito imediato\" ou por ser \"nova relação jurídica\".",
+              "porque": "Efeito imediato realmente alcança fatos pendentes — mas o contrato já celebrado é **ato jurídico perfeito**, e a prorrogação não cria contrato novo.",
+              "regra": "Quem define a lei aplicável é a **data do contrato**. Contrato anterior à Lei 12.112/2009: a fiança não se estende à prorrogação sem cláusula expressa (CC 819; Súmula 214/STJ). Contrato posterior: a garantia se estende até a devolução do imóvel, salvo disposição em contrário (Lei 8.245/91, art. 39).",
+              "citacoes": [
+                {"ref": "LINDB, art. 6º", "literal": true, "texto": "A Lei em vigor terá efeito imediato e geral, respeitados o ato jurídico perfeito, o direito adquirido e a coisa julgada."},
+                {"ref": "Súmula 214/STJ", "literal": true, "texto": "O fiador na locação não responde por obrigações resultantes de aditamento ao qual não anuiu."}
+              ],
+              "gatilho": "Na linha do tempo, **marque a data do contrato** antes de olhar qualquer outro evento.",
+              "ficha": "civil-lindb-intertemporal"
+            },
+            {
+              "id": "crit-agente",
+              "titulo": "LINDB 28 × CF 37, § 6º: dois regimes diferentes",
+              "armadilha": "A alternativa aplica a responsabilidade objetiva do Estado (dolo **ou culpa**, com regresso) a um caso de **decisão ou opinião técnica** do agente, onde não há terceiro lesado.",
+              "porque": "Os dois dispositivos falam de responsabilidade de agente público, e o vocabulário se sobrepõe. Mas partem de situações distintas.",
+              "regra": "**CF 37, § 6º**: dano **a terceiro** → o Estado indeniza objetivamente e regride contra o agente por **dolo ou culpa**. **LINDB 28**: decisão ou opinião técnica → o agente responde **pessoalmente**, só por **dolo ou erro grosseiro**. E o art. 22 manda considerar as circunstâncias práticas que limitaram sua ação — por isso a alternativa certa costuma ser a ponderada (\"pode ser atenuada\"), nunca a absoluta (\"é imune\", \"não se submete\").",
+              "citacoes": [
+                {"ref": "LINDB, art. 28", "literal": true, "texto": "O agente público responderá pessoalmente por suas decisões ou opiniões técnicas em caso de dolo ou erro grosseiro."},
+                {"ref": "LINDB, art. 22, § 1º", "literal": true, "texto": "Em decisão sobre regularidade de conduta ou validade de ato, contrato, ajuste, processo ou norma administrativa, serão consideradas as circunstâncias práticas que houverem imposto, limitado ou condicionado a ação do agente."}
+              ],
+              "gatilho": "**Há terceiro lesado?** Sim → CF 37, § 6º. Não, é decisão técnica → LINDB 28: dolo ou **erro grosseiro**.",
+              "ficha": "civil-lindb-internacional"
+            },
+            {
+              "id": "crit-alvara",
+              "titulo": "Alienar imóvel de incapaz: representação não supre alvará",
+              "armadilha": "\"O negócio é **válido**, pois a representação supre a incapacidade, ainda que sua eficácia dependa de homologação judicial.\" A alternativa é sofisticada: usa a regra verdadeira do art. 1.748, parágrafo único, no caso errado.",
+              "porque": "O art. 1.748, p.ú., realmente admite **aprovação ulterior** do juiz — mas é regra geral dos atos do tutor. Para **imóveis** existe requisito específico e cronologicamente **prévio**, que afasta a convalidação genérica.",
+              "regra": "Imóveis de menor sob tutela só podem ser vendidos havendo **manifesta vantagem**, mediante **prévia avaliação judicial e aprovação do juiz** (CC 1.750). Faltando o alvará **prévio**, a resposta de prova é **nulidade** — preterida solenidade que a lei considera essencial (CC 166, V), na linha do art. 1.691, p.ú., que fala literalmente em declaração de nulidade.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Como a banca monta o caso",
+                  "colunas": ["Situação", "Resultado"],
+                  "linhas": [
+                    ["Incapaz representado, **com** alvará", "válido"],
+                    ["Incapaz representado, **sem** alvará (imóvel)", "**nulo** — CC 1.750 + 166, V"],
+                    ["Ato do tutor em geral, sem autorização", "eficácia depende de **aprovação ulterior** (CC 1.748, p.ú.)"]
+                  ]
+                }
+              ],
+              "citacoes": [
+                {"ref": "CC, art. 1.750", "literal": false, "texto": "Os imóveis pertencentes aos menores sob tutela somente podem ser vendidos quando houver manifesta vantagem, mediante prévia avaliação judicial e aprovação do juiz."},
+                {"ref": "CC, art. 166, V", "literal": false, "texto": "É nulo o negócio jurídico quando for preterida alguma solenidade que a lei considere essencial para a sua validade."},
+                {"ref": "CNNR-RS, art. 856, V", "literal": false, "texto": "Antes da lavratura, o tabelião deve exigir a apresentação de alvará para os atos sujeitos a autorização judicial ou quando forem partes incapazes, registrando-o no livro próprio."}
+              ],
+              "gatilho": "**Imóvel de incapaz = alvará antes, sempre.** Sem alvará o tabelião recusa a lavratura — e o ato lavrado assim é nulo, não \"ineficaz até homologação\".",
+              "ficha": "civil-capacidade"
+            }
+          ]
+        },
+        {
+          "nome": "Direitos reais, contratos e sucessões",
+          "cards": [
+            {
+              "id": "crit-promessa",
+              "titulo": "Promessa não registrada × terceiro que registrou",
+              "armadilha": "\"Confere direito real, desde que o instrumento seja **público**.\" Troca-se o requisito do **registro** pelo da **forma**. Variante: \"a venda ao terceiro é nula, pois havia promessa anterior\".",
+              "porque": "A escritura pública é exigida em tantos negócios imobiliários que a mente a transforma em requisito universal. No art. 1.417, a forma é expressamente **indiferente**.",
+              "regra": "Três requisitos cumulativos para o direito real de aquisição: **(i)** ausência de cláusula de arrependimento; **(ii)** forma **livre** — pública ou particular; **(iii)** **registro**. Sem registro, a promessa vale plenamente **entre as partes** (inclusive para adjudicação — Súmula 239/STJ), mas **não é oponível** ao terceiro que comprou e registrou: a esse primeiro restam perdas e danos. A venda posterior **não é nula**; promessa não registrada não gera indisponibilidade.",
+              "blocos": [
+                {
+                  "tipo": "tabela",
+                  "titulo": "Contra quem o direito está sendo oposto?",
+                  "colunas": ["", "Sem registro", "Com registro"],
+                  "linhas": [
+                    ["Natureza", "direito **obrigacional**", "direito **real de aquisição**"],
+                    ["Contra o promitente vendedor", "adjudicação cabe (Súmula 239)", "cabe (CC 1.418)"],
+                    ["Contra terceiro que registrou", "**não oponível**", "oponível"],
+                    ["Venda a terceiro", "válida; resolve-se em perdas e danos", "ineficaz perante o titular do direito real"]
+                  ]
+                }
+              ],
+              "citacoes": [
+                {"ref": "CC, art. 1.417", "literal": true, "texto": "Mediante promessa de compra e venda, em que se não pactuou arrependimento, celebrada por instrumento público ou particular, e registrada no Cartório de Registro de Imóveis, adquire o promitente comprador direito real à aquisição do imóvel."},
+                {"ref": "Súmula 239/STJ", "literal": true, "texto": "O direito à adjudicação compulsória não se condiciona ao registro do compromisso de compra e venda no cartório de imóveis."},
+                {"ref": "Súmula 84/STJ", "literal": true, "texto": "É admissível a oposição de embargos de terceiro fundados em alegação de posse advinda do compromisso de compra e venda de imóvel, ainda que desprovido do registro."}
+              ],
+              "gatilho": "*Contra a outra parte, o registro é dispensável; contra terceiro, é constitutivo.* A pergunta é sempre **contra quem**.",
+              "ficha": "civil-direitos-reais"
+            },
+            {
+              "id": "crit-direitos-reais",
+              "titulo": "Rol taxativo, usufruto e servidão",
+              "armadilha": "Três afirmações que parecem razoáveis e são falsas: o rol do art. 1.225 seria exemplificativo; o usufruto passaria aos herdeiros; a servidão se provaria por acordo entre vizinhos.",
+              "porque": "A autonomia privada é a regra no direito das obrigações — e a intuição a transporta para os direitos reais, onde vale o contrário.",
+              "regra": "**Numerus clausus**: só a lei cria direito real. **Usufruto** é personalíssimo e **extingue-se com a morte** do usufrutuário (CC 1.410, I) — cede-se apenas o exercício. **Servidão** constitui-se por **registro** (CC 1.378) e **não se presume**.",
+              "citacoes": [
+                {"ref": "CC, art. 1.410, I", "literal": false, "texto": "O usufruto extingue-se pela morte do usufrutuário."},
+                {"ref": "CC, art. 1.378", "literal": false, "texto": "A servidão constitui-se mediante declaração expressa dos proprietários, ou por testamento, e subsequente registro no Registro de Imóveis."}
+              ],
+              "gatilho": "Direito real: **só a lei cria, só o registro constitui, e o usufruto morre com o usufrutuário.**",
+              "ficha": "civil-direitos-reais"
+            },
+            {
+              "id": "crit-conjuge",
+              "titulo": "Comunhão parcial: o cônjuge concorre nos PARTICULARES",
+              "armadilha": "A alternativa inverte o objeto da concorrência: faz o cônjuge concorrer sobre os **bens comuns**, onde ele já tem meação.",
+              "porque": "\"Comunhão parcial\" sugere que o cônjuge participa do que é comum. Mas concorrência hereditária e meação são coisas diferentes — e se excluem.",
+              "regra": "Com **descendentes**, a concorrência depende do regime: na comunhão parcial **com** bens particulares, o cônjuge concorre **somente sobre os particulares**; nos comuns ele já tem **meação**. Não havendo particulares, não concorre. Com **ascendentes**, concorre **sempre**, qualquer que seja o regime.",
+              "citacoes": [
+                {"ref": "CC, art. 1.829, I", "literal": false, "texto": "A sucessão legítima defere-se aos descendentes, em concorrência com o cônjuge sobrevivente, salvo se casado no regime da comunhão universal, ou no da separação obrigatória, ou se, no regime da comunhão parcial, o autor da herança não houver deixado bens particulares."},
+                {"ref": "CC, art. 1.832", "literal": false, "texto": "A quota do cônjuge não pode ser inferior à quarta parte da herança, se for ascendente dos herdeiros com que concorrer."}
+              ],
+              "gatilho": "**Meação é o que já é seu; herança é o que era só dele.** O cônjuge herda onde não tem meação.",
+              "ficha": "civil-sucessao-conjuge"
+            },
+            {
+              "id": "crit-eviccao",
+              "titulo": "Evicção subsiste em hasta pública",
+              "armadilha": "\"Adquirido o bem em hasta pública, não há garantia contra a evicção\" — ou \"com cláusula de exclusão, o evicto nada recebe\".",
+              "porque": "A arrematação judicial passa a impressão de compra \"por conta e risco\". O art. 447 ressalva justamente essa hipótese, e o 449 protege quem ignorava o risco.",
+              "regra": "A garantia é **da natureza** do contrato oneroso e **subsiste ainda que a aquisição se tenha realizado em hasta pública** (CC 447). As partes podem reforçar, diminuir ou excluir (448); mas, mesmo excluída, se o evicto **não sabia do risco**, tem direito a **receber o preço** (449).",
+              "citacoes": [
+                {"ref": "CC, art. 447", "literal": false, "texto": "Nos contratos onerosos, o alienante responde pela evicção; subsiste esta garantia ainda que a aquisição se tenha realizado em hasta pública."},
+                {"ref": "CC, art. 449", "literal": false, "texto": "Não obstante a cláusula que exclui a garantia contra a evicção, se esta se der, tem direito o evicto a receber o preço que pagou pela coisa evicta, se não soube do risco ou, dele informado, não o assumiu."}
+              ],
+              "gatilho": "A ressalva da hasta pública está **dentro do próprio artigo**. Cláusula afasta indenização, nunca o **preço** de quem ignorava o risco.",
+              "ficha": "civil-eviccao"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "civil-parte-geral",
       "nome": "Parte Geral e LINDB",

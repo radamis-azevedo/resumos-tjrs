@@ -5,9 +5,86 @@
     "icone": "🏛️",
     "peso": "28 questões (28%)",
     "ordem": 2,
+    "cor": "#1f6b52",
     "nota": "Núcleo do concurso. Nesta rodada está carregado o Registro de Imóveis; TN, RCPN, TP e RTD entram na rodada seguinte."
   },
   "abas": [
+    {
+      "id": "dnr-criticos",
+      "nome": "Pontos críticos",
+      "tipo": "criticos",
+      "intro": "DNR é o ponto forte — os erros aqui são poucos e específicos, o que os torna mais fáceis de fechar. Todos têm a mesma natureza: **em qual livro entra o ato** e **qual é a via, administrativa ou judicial**.",
+      "grupos": [
+        {
+          "nome": "Registro de Imóveis",
+          "cards": [
+            {
+              "id": "crit-imissao",
+              "titulo": "Imissão provisória na posse: Livro 2, registro, sem transferir propriedade",
+              "armadilha": "A alternativa manda o ato para o **Livro 3**, ou o chama de **averbação**, ou afirma que **transfere a propriedade** ao ente público. Três erros possíveis sobre o mesmo ato.",
+              "porque": "A imissão parece \"não dizer respeito diretamente a imóvel matriculado\" — que é a definição do Livro 3. E, por vir de desapropriação, sugere transferência de domínio. Nenhuma das duas impressões se sustenta.",
+              "regra": "O **Livro 3 tem rol taxativo de sete itens** (LRP, art. 178) e a imissão não está lá; logo vai ao **Livro 2**, que é **residual** (art. 176). É **registro**, porque está no inciso I do art. 167 (item 36). E **não transfere propriedade**: o domínio virá depois, com a sentença ou o acordo. Desde a Lei 14.620/2023 os direitos dela oriundos são direito real (CC 1.225, XIV). Só é registrável quando concedida a **ente público ou entidade delegada**.",
+              "blocos": [
+                {
+                  "tipo": "lista",
+                  "titulo": "Os sete itens do Livro 3 (art. 178) — decore e o resto é Livro 2",
+                  "itens": [
+                    "**D**ebêntures (emissão) · **C**édula de crédito industrial · **C**onvenção de condomínio",
+                    "**P**enhor de máquinas e aparelhos industriais · **C**onvenção antenupcial · **P**enhor rural",
+                    "Títulos registrados em **inteiro teor**, a requerimento do interessado",
+                    "⚠️ Dupla entrada: a **convenção** de condomínio é Livro 3; a **instituição** e a **incorporação** são Livro 2 (art. 167, I, 17)."
+                  ]
+                }
+              ],
+              "citacoes": [
+                {"ref": "LRP, art. 176", "literal": true, "texto": "O Livro nº 2 - Registro Geral - será destinado à matrícula dos imóveis e ao registro ou averbação dos atos relacionados no art. 167 e não atribuídos ao Livro nº 3."},
+                {"ref": "LRP, art. 167, I, 36", "literal": false, "texto": "Registra-se a imissão provisória na posse, quando concedida à União, aos Estados, ao Distrito Federal, aos Municípios ou às suas entidades delegadas, e respectiva cessão e promessa de cessão."},
+                {"ref": "LRP, art. 172", "literal": false, "texto": "No Registro de Imóveis serão feitos o registro e a averbação dos títulos ou atos constitutivos, declaratórios, translativos e extintos de direitos reais, quer para sua constituição, transferência e extinção, quer para sua validade em relação a terceiros, quer para a sua disponibilidade."}
+              ],
+              "gatilho": "Duas perguntas: **está nos sete itens do art. 178?** Se não, é Livro 2. **Registro é espécie de ato, não efeito** — há muitos registros que não transferem domínio (hipoteca, penhora, citação, promessa).",
+              "ficha": "ri-livros"
+            },
+            {
+              "id": "crit-area-publica",
+              "titulo": "Retificação sobre área pública: via administrativa, não judicial",
+              "armadilha": "\"A retificação de matrícula que avança sobre terras públicas exige **provimento jurisdicional prévio**.\" Variante: inverter os dois prazos de cinco dias da Lei 6.739/79.",
+              "porque": "A presença do poder público e a gravidade do tema sugerem controle judicial anterior. E há, na própria lei, um artigo antigo (art. 2º) que fala em despacho judicial — remissão ao art. 213 da LRP **na redação anterior** à Lei 10.931/2004, que desjudicializou a retificação.",
+              "regra": "O ente prejudicado promove a retificação **pela via administrativa** (Lei 6.739/79, art. 8º-A). O **oficial retifica em 5 dias úteis contados da prenotação** e **dá ciência ao proprietário nos 5 dias seguintes à retificação** — contraditório **diferido**: primeiro corrige, depois avisa. Recusando-se a retificar, o oficial **suscita dúvida** (§ 2º). O particular inconformado ajuíza **ação anulatória**, que **não susta os efeitos** (art. 3º).",
+              "blocos": [
+                {
+                  "tipo": "timeline",
+                  "titulo": "Ordem de preferência da Lei 6.739/79",
+                  "itens": [
+                    "**Retificação administrativa pelo oficial** — art. 8º-A (caminho primeiro)",
+                    "**Cancelamento pelo Corregedor-Geral** (ou Juiz Federal, se interesse da União) — arts. 1º e 8º-B, quando não couber o 8º-A",
+                    "**Ação anulatória do particular** — art. 3º, sem efeito suspensivo"
+                  ]
+                }
+              ],
+              "citacoes": [
+                {"ref": "Lei 6.739/79, art. 8º-A, § 1º", "literal": true, "texto": "O Oficial do Registro de Imóveis, no prazo de cinco dias úteis, contado da prenotação do requerimento, procederá à retificação requerida e dela dará ciência ao proprietário, nos cinco dias seguintes à retificação."},
+                {"ref": "LRP, art. 213, § 8º", "literal": true, "texto": "As áreas públicas poderão ser demarcadas ou ter seus registros retificados pelo mesmo procedimento previsto neste artigo, desde que constem do registro ou sejam logradouros devidamente averbados."},
+                {"ref": "LRP, art. 212", "literal": false, "texto": "Se o registro ou a averbação for omissa, imprecisa ou não exprimir a verdade, a retificação será feita pelo Oficial do Registro de Imóveis, por meio do procedimento administrativo previsto no art. 213, facultado ao interessado requerer a retificação judicial."}
+              ],
+              "gatilho": "**Retifica em 5, avisa em 5** — na ordem. E, desde 2004, retificação **nasce administrativa**: o juiz é opção, nunca pressuposto.",
+              "ficha": "ri-retificacao"
+            },
+            {
+              "id": "crit-impugnacao",
+              "titulo": "Usucapião extrajudicial: o que acontece depois da impugnação",
+              "armadilha": "Duas versões erradas circulam: que **qualquer** impugnação manda os autos ao juízo, e que lá o rito é de **jurisdição voluntária**. A segunda aparece até em material de estudo desatualizado.",
+              "porque": "Como o procedimento é extrajudicial e consensual, parece natural que a continuação judicial seja de jurisdição voluntária. O § 10 diz o contrário, com todas as letras, desde a Lei 14.382/2022.",
+              "regra": "Impugnação **justificada** → o oficial remete os autos ao juízo competente, **cabendo ao requerente emendar a petição inicial para adequá-la ao procedimento COMUM**. Impugnação **injustificada** → **não é admitida pelo registrador**, e ao interessado cabe a **suscitação de dúvida** do art. 198 (não é simples \"desconsiderar e prosseguir\").",
+              "citacoes": [
+                {"ref": "LRP, art. 216-A, § 10", "literal": true, "texto": "Em caso de impugnação justificada do pedido de reconhecimento extrajudicial de usucapião, o oficial de registro de imóveis remeterá os autos ao juízo competente da comarca da situação do imóvel, cabendo ao requerente emendar a petição inicial para adequá-la ao procedimento comum, porém, em caso de impugnação injustificada, esta não será admitida pelo registrador, cabendo ao interessado o manejo da suscitação de dúvida nos moldes do art. 198 desta Lei."}
+              ],
+              "gatilho": "**Justificada vai ao juiz pelo procedimento comum; injustificada nem é admitida** — e quem se inconforma suscita dúvida.",
+              "ficha": "ri-usucapiao-procedimento"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "ri",
       "nome": "Registro de Imóveis",
@@ -401,8 +478,8 @@
                     "Requerimento protocolado no RI → qualificação dos documentos",
                     "Oficial notifica: proprietário registrado + confrontantes que não assinaram a planta",
                     "**15 dias** — silêncio = **concordância**",
-                    "Impugnação **infundada** → oficial desconsidera e prossegue",
-                    "Impugnação **fundamentada** → paralisa e **remete ao juízo** (jurisdição voluntária)",
+                    "Impugnação **injustificada** → **não é admitida** pelo registrador; ao interessado cabe **suscitar dúvida** (art. 198)",
+                    "Impugnação **justificada** → remessa ao juízo, com emenda da inicial para o **procedimento comum**",
                     "Sem impugnação fundamentada → **registro da usucapião**"
                   ]
                 }
@@ -416,13 +493,13 @@
                 {"ref": "LRP, art. 216-A, caput", "literal": false, "texto": "Sem prejuízo da via jurisdicional, é admitido o pedido de reconhecimento extrajudicial de usucapião, processado diretamente no registro de imóveis da comarca em que estiver situado o imóvel, a requerimento do interessado, representado por advogado."},
                 {"ref": "LRP, art. 216-A, § 2º", "literal": false, "texto": "Se a planta não estiver assinada por qualquer titular de direito registrado, este será notificado pelo oficial para manifestar consentimento em 15 dias, interpretado o silêncio como concordância."},
                 {"ref": "LRP, art. 216-A, § 3º", "literal": false, "texto": "O oficial dará ciência à União, ao Estado, ao Distrito Federal e ao Município, pessoalmente, por intermédio do oficial de registro de títulos e documentos, ou pelo correio com aviso de recebimento, para manifestação em 15 dias."},
-                {"ref": "LRP, art. 216-A, § 10", "literal": false, "texto": "Em caso de impugnação do pedido, o oficial remeterá os autos ao juízo competente da comarca da situação do imóvel."},
+                {"ref": "LRP, art. 216-A, § 10", "literal": true, "texto": "Em caso de impugnação justificada do pedido de reconhecimento extrajudicial de usucapião, o oficial de registro de imóveis remeterá os autos ao juízo competente da comarca da situação do imóvel, cabendo ao requerente emendar a petição inicial para adequá-la ao procedimento comum, porém, em caso de impugnação injustificada, esta não será admitida pelo registrador, cabendo ao interessado o manejo da suscitação de dúvida nos moldes do art. 198 desta Lei."},
                 {"ref": "LRP, art. 216-A, § 11", "literal": true, "texto": "No caso de o imóvel usucapiendo ser unidade autônoma de condomínio edilício, fica dispensado consentimento dos titulares de direitos reais e outros direitos registrados ou averbados na matrícula dos imóveis confinantes e bastará a notificação do síndico para se manifestar na forma do §2º deste artigo."}
               ],
               "pegadinhas": [
                 {"errado": "Prazo de 30 dias para o titular se manifestar.", "certo": "**15 dias** (§ 2º)."},
                 {"errado": "Silêncio do notificado significa discordância.", "certo": "Significa **concordância**."},
-                {"errado": "Qualquer impugnação manda os autos ao juízo.", "certo": "Só a **fundamentada** — e o rito lá é de **jurisdição voluntária**, não procedimento comum."},
+                {"errado": "Qualquer impugnação manda os autos ao juízo, e lá o rito é de jurisdição voluntária.", "certo": "Só a **justificada** vai ao juízo — e o requerente **emenda a inicial para o procedimento comum** (§ 10). A injustificada **não é admitida** pelo registrador."},
                 {"errado": "A ata notarial atesta apenas o tempo de posse.", "certo": "Tempo **do requerente e dos antecessores** + **características** da posse (art. 216-A, I)."},
                 {"errado": "O requerente comunica as fazendas públicas.", "certo": "É o **Oficial** (§ 3º)."},
                 {"errado": "Exige-se maior, capaz e sem filhos incapazes.", "certo": "Isso é requisito de **divórcio/inventário extrajudicial** (Res. CNJ 35/2007). Aqui só se exige **advogado**."},
@@ -486,7 +563,7 @@
               "titulo": "Adjudicação compulsória extrajudicial (LRP 216-B)",
               "edital": "1.3",
               "fontes": ["Adjudicação Compulsória Extrajudicial", "Adjudicacao CNIB Busca Apreensao"],
-              "regra": "Procedimento no RI para transferir a propriedade ao promitente comprador que **quitou o preço** quando o vendedor recusa, falece ou desaparece. É aquisição **derivada** — substitui a vontade do vendedor. **Dispensa o registro prévio** da promessa na matrícula (216-B, § 1º): o \"contrato de gaveta\" instrui o pedido.",
+              "regra": "Procedimento no RI para transferir a propriedade ao promitente comprador que **quitou o preço** quando o vendedor recusa, falece ou desaparece. É aquisição **derivada** — substitui a vontade do vendedor. **Dispensa o registro prévio** da promessa e a **regularidade fiscal do vendedor** (216-B, **§ 2º**): o \"contrato de gaveta\" instrui o pedido. Legitimados (§ 1º): o promitente comprador, seus cessionários ou sucessores **e também o promitente vendedor**, representados por advogado.",
               "blocos": [
                 {
                   "tipo": "lista",
@@ -504,8 +581,9 @@
                   "titulo": "Pontos que a banca cobra",
                   "colunas": ["Ponto", "Regra"],
                   "linhas": [
-                    ["Registro prévio da promessa", "**dispensado** (§ 1º)"],
-                    ["Regularidade fiscal do vendedor", "**dispensada** — sem CND"],
+                    ["Registro prévio da promessa", "**dispensado** (§ 2º)"],
+                    ["Regularidade fiscal do vendedor", "**dispensada** (§ 2º) — mas o **ITBI é exigido** (§ 1º, V)"],
+                    ["Legitimados (§ 1º)", "promitente comprador, cessionários e sucessores **e o promitente vendedor** — com advogado (o Prov. 149, art. 440-C, p.ú., admite defensor público)"],
                     ["Cláusula de arrependimento", "em regra **impede** — exceto loteamento ou incorporação com carência decorrida"],
                     ["**Ação judicial em curso**", "**ativa impede**; **suspensa há ≥ 90 dias úteis** (certidão do juízo) **permite** a via extrajudicial"],
                     ["Notificação do requerido", "**15 dias úteis** para anuir ou impugnar; silêncio → presunção de veracidade do inadimplemento"],
@@ -521,13 +599,16 @@
               },
               "citacoes": [
                 {"ref": "LRP, art. 216-B", "literal": false, "texto": "Sem prejuízo da via jurisdicional, é admitido o pedido de adjudicação compulsória de imóvel objeto de promessa de venda ou de cessão, processado diretamente perante o registro de imóveis da situação do imóvel."},
-                {"ref": "LRP, art. 216-B, § 1º", "literal": false, "texto": "O pedido independe do prévio registro do instrumento de promessa e da comprovação da regularidade fiscal do promitente vendedor."},
+                {"ref": "LRP, art. 216-B, § 2º", "literal": true, "texto": "O deferimento da adjudicação independe de prévio registro dos instrumentos de promessa de compra e venda ou de cessão e da comprovação da regularidade fiscal do promitente vendedor."},
+                {"ref": "LRP, art. 216-B, § 1º", "literal": true, "texto": "São legitimados a requerer a adjudicação o promitente comprador ou qualquer dos seus cessionários ou promitentes cessionários, ou seus sucessores, bem como o promitente vendedor, representados por advogado."},
                 {"ref": "Súmula 239/STJ", "literal": true, "texto": "O direito à adjudicação compulsória não se condiciona ao registro do compromisso de compra e venda no cartório de imóveis."},
                 {"ref": "Prov. CNJ 149/2023, arts. 440-A e ss.", "literal": false, "texto": "Disciplinam o procedimento da adjudicação compulsória extrajudicial, inclusive prazos de notificação e de decisão do oficial."}
               ],
               "pegadinhas": [
-                {"errado": "É preciso registrar antes a promessa na matrícula.", "certo": "**Dispensado** (§ 1º) — inclusive o contrato de gaveta serve."},
-                {"errado": "Exige-se CND do vendedor.", "certo": "A regularidade fiscal do transmitente **não condiciona** a adjudicação extrajudicial."},
+                {"errado": "É preciso registrar antes a promessa na matrícula.", "certo": "**Dispensado** (§ 2º) — inclusive o contrato de gaveta serve."},
+                {"errado": "Exige-se CND do vendedor.", "certo": "A regularidade fiscal do transmitente **não condiciona** a adjudicação (§ 2º)."},
+                {"errado": "A adjudicação extrajudicial dispensa o ITBI.", "certo": "Dispensa registro prévio e regularidade fiscal do vendedor — **não o ITBI**, que instrui o pedido (§ 1º, V)."},
+                {"errado": "Só o promitente comprador é legitimado.", "certo": "O **promitente vendedor também é** (§ 1º)."},
                 {"errado": "Qualquer ação judicial em curso impede.", "certo": "Suspensa há **≥ 90 dias úteis**, a via extrajudicial é cabível."}
               ],
               "ponte": {
