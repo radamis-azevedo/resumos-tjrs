@@ -45,8 +45,7 @@ DADOS_PADRAO = RAIZ / "resumos" / "dados"
 # docs/ é a pasta publicada pelo GitHub Pages (Settings → Pages → branch main, /docs)
 SAIDA_PADRAO = RAIZ / "docs" / "index.html"
 VAULT_PADRAO = Path(
-    "/Users/radamisazevedo/Library/Mobile Documents/iCloud~md~obsidian/"
-    "Documents/Obsidian Henrique/04 Estudos"
+    "/Users/radamisazevedo/Obsidian/Obsidian Henrique/04 Estudos"
 )
 IGNORAR_NO_VAULT = {"Provas Anteriores e Simulados"}
 COR_PADRAO = "#7a5230"
